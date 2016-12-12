@@ -1,0 +1,38 @@
+grammar org.dsl.bimchecker.Bimmodel with org.eclipse.xtext.common.Terminals
+
+generate bimmodel "http://www.dsl.org/bimchecker/Bimmodel"
+
+Bimmodel:
+	(rules+=Rule)*
+;
+
+Rule:
+	ObjectName '{'
+		Alias
+		(Annotation)?
+	'}' 
+;
+
+Alias:
+	'alias' '{'
+		(alias+=IFCNAME NEWLINE)*
+		IFCNAME 
+	'}'
+;
+
+Annotation:
+	'anno' ':' ID (AnnotationDetail)?
+;
+
+AnnotationDetail:
+	'('
+	 	(STRING '|')* STRING
+	')'
+;
+
+ObjectName : 
+	//STRING
+	ID
+;
+terminal NEWLINE : ('\r' | '\n');
+terminal IFCNAME : "ifc"('a'..'z')+;

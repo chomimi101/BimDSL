@@ -1,0 +1,40 @@
+grammar org.dsl.bimchecker.Bimmodel with org.eclipse.xtext.xbase.Xbase
+
+
+import "http://www.eclipse.org/xtext/xbase/Xbase" as xbase
+generate bimmodel "http://www.dsl.org/bimchecker/Bimmodel"
+
+Bimmodel:
+	(rules+=Rule)*
+;
+
+Rule:
+	name=ObjectName '{'
+		alialist=Aliass
+		(annoinfo=Annotation)?
+	'}' 
+;
+
+Aliass:
+	'alias' '{'
+		aliass+=IFCNAME
+		(';' aliass+=IFCNAME)*
+	'}'
+;
+
+Annotation:
+	'anno' ':' annotationName=ID (annodetail=AnnotationDetail)? 
+;
+
+AnnotationDetail:
+	'('
+	 	(annodetail+=STRING '|')* annodetail+=STRING
+	')'
+;
+
+ObjectName : 
+	STRING
+;
+//terminal NEWLINE : ('\r' | '\n');
+terminal IFCNAME : "ifc"('a'..'z')+;
+//terminal SPACE		: (' '|'\t')+;

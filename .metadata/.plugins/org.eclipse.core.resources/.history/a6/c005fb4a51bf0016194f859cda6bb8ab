@@ -1,0 +1,9 @@
+grammar org.dsl.bimchecker.Bimmodel with org.eclipse.xtext.common.Terminals
+
+generate bimmodel "http://www.dsl.org/bimchecker/Bimmodel"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
