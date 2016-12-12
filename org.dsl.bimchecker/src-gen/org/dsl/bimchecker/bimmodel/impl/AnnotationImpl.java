@@ -22,11 +22,11 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.dsl.bimchecker.bimmodel.impl.AnnotationImpl#getAnnotationName <em>Annotation Name</em>}</li>
  *   <li>{@link org.dsl.bimchecker.bimmodel.impl.AnnotationImpl#getAnnodetail <em>Annodetail</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */

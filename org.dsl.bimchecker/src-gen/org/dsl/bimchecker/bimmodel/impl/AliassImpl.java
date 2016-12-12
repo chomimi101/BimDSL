@@ -22,10 +22,10 @@ import org.eclipse.emf.ecore.util.EDataTypeEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.dsl.bimchecker.bimmodel.impl.AliassImpl#getAliass <em>Aliass</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */

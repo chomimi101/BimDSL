@@ -23,12 +23,12 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.dsl.bimchecker.bimmodel.impl.RuleImpl#getName <em>Name</em>}</li>
  *   <li>{@link org.dsl.bimchecker.bimmodel.impl.RuleImpl#getAlialist <em>Alialist</em>}</li>
  *   <li>{@link org.dsl.bimchecker.bimmodel.impl.RuleImpl#getAnnoinfo <em>Annoinfo</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */

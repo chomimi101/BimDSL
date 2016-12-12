@@ -12,11 +12,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.dsl.bimchecker.bimmodel.Annotation#getAnnotationName <em>Annotation Name</em>}</li>
  *   <li>{@link org.dsl.bimchecker.bimmodel.Annotation#getAnnodetail <em>Annodetail</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.dsl.bimchecker.bimmodel.BimmodelPackage#getAnnotation()
  * @model

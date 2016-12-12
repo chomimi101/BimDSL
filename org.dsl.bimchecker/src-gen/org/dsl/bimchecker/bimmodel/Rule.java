@@ -12,12 +12,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.dsl.bimchecker.bimmodel.Rule#getName <em>Name</em>}</li>
  *   <li>{@link org.dsl.bimchecker.bimmodel.Rule#getAlialist <em>Alialist</em>}</li>
  *   <li>{@link org.dsl.bimchecker.bimmodel.Rule#getAnnoinfo <em>Annoinfo</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.dsl.bimchecker.bimmodel.BimmodelPackage#getRule()
  * @model

@@ -14,10 +14,10 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.dsl.bimchecker.bimmodel.Aliass#getAliass <em>Aliass</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.dsl.bimchecker.bimmodel.BimmodelPackage#getAliass()
  * @model

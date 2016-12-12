@@ -27,10 +27,10 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.dsl.bimchecker.bimmodel.impl.BimmodelImpl#getRules <em>Rules</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
