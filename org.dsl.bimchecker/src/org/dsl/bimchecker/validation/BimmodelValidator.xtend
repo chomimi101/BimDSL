@@ -11,6 +11,7 @@ import org.dsl.bimchecker.bimmodel.BimmodelPackage
 
 import static org.dsl.bimchecker.bimmodel.BimmodelPackage.Literals.*
 import static org.eclipse.xtext.xbase.XbasePackage.Literals.*
+import org.dsl.bimchecker.bimmodel.Aliass
 
 /**
  * This class contains custom validation rules. 
@@ -34,11 +35,20 @@ class BimmodelValidator extends AbstractBimmodelValidator {
 	
 	@Check
 	def checkRuleNameIsUnique(Bimmodel m){
+		
 		//var superRule = (r.eContainer as Rule)
 		val ruleNames = newHashSet
 		for (rule : m.rules) {
 			if (!ruleNames.add(rule.name)) {
 				error('Rule names must be unique.', rule, RULE__NAME)
+			}
+			val tmp = rule.alialist;
+			if(tmp.aliass.contains("ifcspace")){
+				var annoname = rule.annoinfo.annotationName;
+				var annovalue = rule.annoinfo.annodetail;
+				if(!(annoname.compareTo("Longname")==0 && annovalue==null)){
+					error("Rule with alia ifcspace can only have annotation 'LongName'",rule,RULE__NAME)
+				}
 			}
 		}
 	}

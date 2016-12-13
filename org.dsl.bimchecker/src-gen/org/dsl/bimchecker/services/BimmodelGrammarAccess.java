@@ -94,21 +94,20 @@ public class BimmodelGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cLeftCurlyBracketKeyword_1 = (Keyword)cGroup.eContents().get(1);
 		private final Assignment cAliassAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cAliassIFCNAMETerminalRuleCall_2_0 = (RuleCall)cAliassAssignment_2.eContents().get(0);
-		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
-		private final Keyword cSemicolonKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
-		private final Assignment cAliassAssignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
-		private final RuleCall cAliassIFCNAMETerminalRuleCall_3_1_0 = (RuleCall)cAliassAssignment_3_1.eContents().get(0);
+		private final Assignment cAliassAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final RuleCall cAliassIFCNAMETerminalRuleCall_3_0 = (RuleCall)cAliassAssignment_3.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		
 		////别名由至少一个ifc专属名词(IFCNAME)组成
 		////aliass对应于Aliass类的属性成员
 		//Aliass:
 		//	'alias' '{'
-		//	aliass+=IFCNAME (';' aliass+=IFCNAME)*
+		//	aliass+=IFCNAME
+		//	aliass+=IFCNAME*
 		//	'}';
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'alias' '{' aliass+=IFCNAME (';' aliass+=IFCNAME)* '}'
+		//'alias' '{' aliass+=IFCNAME aliass+=IFCNAME* '}'
 		public Group getGroup() { return cGroup; }
 		
 		//'alias'
@@ -123,17 +122,11 @@ public class BimmodelGrammarAccess extends AbstractGrammarElementFinder {
 		//IFCNAME
 		public RuleCall getAliassIFCNAMETerminalRuleCall_2_0() { return cAliassIFCNAMETerminalRuleCall_2_0; }
 		
-		//(';' aliass+=IFCNAME)*
-		public Group getGroup_3() { return cGroup_3; }
-		
-		//';'
-		public Keyword getSemicolonKeyword_3_0() { return cSemicolonKeyword_3_0; }
-		
-		//aliass+=IFCNAME
-		public Assignment getAliassAssignment_3_1() { return cAliassAssignment_3_1; }
+		//aliass+=IFCNAME*
+		public Assignment getAliassAssignment_3() { return cAliassAssignment_3; }
 		
 		//IFCNAME
-		public RuleCall getAliassIFCNAMETerminalRuleCall_3_1_0() { return cAliassIFCNAMETerminalRuleCall_3_1_0; }
+		public RuleCall getAliassIFCNAMETerminalRuleCall_3_0() { return cAliassIFCNAMETerminalRuleCall_3_0; }
 		
 		//'}'
 		public Keyword getRightCurlyBracketKeyword_4() { return cRightCurlyBracketKeyword_4; }
@@ -141,7 +134,7 @@ public class BimmodelGrammarAccess extends AbstractGrammarElementFinder {
 	public class AnnotationElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.dsl.bimchecker.Bimmodel.Annotation");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cAnnoKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Keyword cAnnotationKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cColonKeyword_1 = (Keyword)cGroup.eContents().get(1);
 		private final Assignment cAnnotationNameAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cAnnotationNameIDTerminalRuleCall_2_0 = (RuleCall)cAnnotationNameAssignment_2.eContents().get(0);
@@ -151,14 +144,14 @@ public class BimmodelGrammarAccess extends AbstractGrammarElementFinder {
 		////标注由标识符(ID)以及至多一个标注参数列表(AnnotationDetail)组成
 		////annotationName,annodetail对应于Annotation类的属性成员
 		//Annotation:
-		//	'anno' ':' annotationName=ID annodetail=AnnotationDetail?;
+		//	'annotation' ':' annotationName=ID annodetail=AnnotationDetail?;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'anno' ':' annotationName=ID annodetail=AnnotationDetail?
+		//'annotation' ':' annotationName=ID annodetail=AnnotationDetail?
 		public Group getGroup() { return cGroup; }
 		
-		//'anno'
-		public Keyword getAnnoKeyword_0() { return cAnnoKeyword_0; }
+		//'annotation'
+		public Keyword getAnnotationKeyword_0() { return cAnnotationKeyword_0; }
 		
 		//':'
 		public Keyword getColonKeyword_1() { return cColonKeyword_1; }
@@ -327,7 +320,8 @@ public class BimmodelGrammarAccess extends AbstractGrammarElementFinder {
 	////aliass对应于Aliass类的属性成员
 	//Aliass:
 	//	'alias' '{'
-	//	aliass+=IFCNAME (';' aliass+=IFCNAME)*
+	//	aliass+=IFCNAME
+	//	aliass+=IFCNAME*
 	//	'}';
 	public AliassElements getAliassAccess() {
 		return pAliass;
@@ -340,7 +334,7 @@ public class BimmodelGrammarAccess extends AbstractGrammarElementFinder {
 	////标注由标识符(ID)以及至多一个标注参数列表(AnnotationDetail)组成
 	////annotationName,annodetail对应于Annotation类的属性成员
 	//Annotation:
-	//	'anno' ':' annotationName=ID annodetail=AnnotationDetail?;
+	//	'annotation' ':' annotationName=ID annodetail=AnnotationDetail?;
 	public AnnotationElements getAnnotationAccess() {
 		return pAnnotation;
 	}

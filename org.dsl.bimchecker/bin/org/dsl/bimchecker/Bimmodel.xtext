@@ -24,14 +24,14 @@ Rule:
 Aliass:
 	'alias' '{'
 		aliass+=IFCNAME
-		(';' aliass+=IFCNAME)*
+		(aliass+=IFCNAME)*
 	'}'
 ;
 
 //标注由标识符(ID)以及至多一个标注参数列表(AnnotationDetail)组成
 //annotationName,annodetail对应于Annotation类的属性成员
 Annotation:
-	'anno' ':' annotationName=ID (annodetail=AnnotationDetail)? 
+	'annotation' ':' annotationName=ID (annodetail=AnnotationDetail)? 
 ;
 
 //标注参数列表由一个或多个的字符串组成，后期还是封装成类似于ObjectName的规则进行限制
@@ -50,5 +50,5 @@ ObjectName :
 //terminal NEWLINE : ('\r' | '\n');
 
 //用于限制别名中的字符串，都必须以ifc开头
-terminal IFCNAME : "ifc"('a'..'z')+;
+terminal IFCNAME : "ifc"(('a'..'z')+);
 

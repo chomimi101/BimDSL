@@ -76,7 +76,6 @@ public class BimmodelParser extends AbstractContentAssistParser {
 					put(grammarAccess.getXImportDeclarationAccess().getAlternatives_1_0_3(), "rule__XImportDeclaration__Alternatives_1_0_3");
 					put(grammarAccess.getRuleAccess().getGroup(), "rule__Rule__Group__0");
 					put(grammarAccess.getAliassAccess().getGroup(), "rule__Aliass__Group__0");
-					put(grammarAccess.getAliassAccess().getGroup_3(), "rule__Aliass__Group_3__0");
 					put(grammarAccess.getAnnotationAccess().getGroup(), "rule__Annotation__Group__0");
 					put(grammarAccess.getAnnotationDetailAccess().getGroup(), "rule__AnnotationDetail__Group__0");
 					put(grammarAccess.getAnnotationDetailAccess().getGroup_1(), "rule__AnnotationDetail__Group_1__0");
@@ -264,7 +263,7 @@ public class BimmodelParser extends AbstractContentAssistParser {
 					put(grammarAccess.getRuleAccess().getAlialistAssignment_2(), "rule__Rule__AlialistAssignment_2");
 					put(grammarAccess.getRuleAccess().getAnnoinfoAssignment_3(), "rule__Rule__AnnoinfoAssignment_3");
 					put(grammarAccess.getAliassAccess().getAliassAssignment_2(), "rule__Aliass__AliassAssignment_2");
-					put(grammarAccess.getAliassAccess().getAliassAssignment_3_1(), "rule__Aliass__AliassAssignment_3_1");
+					put(grammarAccess.getAliassAccess().getAliassAssignment_3(), "rule__Aliass__AliassAssignment_3");
 					put(grammarAccess.getAnnotationAccess().getAnnotationNameAssignment_2(), "rule__Annotation__AnnotationNameAssignment_2");
 					put(grammarAccess.getAnnotationAccess().getAnnodetailAssignment_3(), "rule__Annotation__AnnodetailAssignment_3");
 					put(grammarAccess.getAnnotationDetailAccess().getAnnosAssignment_1_0(), "rule__AnnotationDetail__AnnosAssignment_1_0");

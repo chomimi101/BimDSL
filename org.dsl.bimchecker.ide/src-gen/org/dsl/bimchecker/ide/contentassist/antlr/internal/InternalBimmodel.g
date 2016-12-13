@@ -3401,9 +3401,9 @@ rule__Aliass__Group__3__Impl
 	}
 :
 (
-	{ before(grammarAccess.getAliassAccess().getGroup_3()); }
-	(rule__Aliass__Group_3__0)*
-	{ after(grammarAccess.getAliassAccess().getGroup_3()); }
+	{ before(grammarAccess.getAliassAccess().getAliassAssignment_3()); }
+	(rule__Aliass__AliassAssignment_3)*
+	{ after(grammarAccess.getAliassAccess().getAliassAssignment_3()); }
 )
 ;
 finally {
@@ -3437,60 +3437,6 @@ finally {
 }
 
 
-rule__Aliass__Group_3__0
-	@init {
-		int stackSize = keepStackSize();
-	}
-:
-	rule__Aliass__Group_3__0__Impl
-	rule__Aliass__Group_3__1
-;
-finally {
-	restoreStackSize(stackSize);
-}
-
-rule__Aliass__Group_3__0__Impl
-	@init {
-		int stackSize = keepStackSize();
-	}
-:
-(
-	{ before(grammarAccess.getAliassAccess().getSemicolonKeyword_3_0()); }
-	';'
-	{ after(grammarAccess.getAliassAccess().getSemicolonKeyword_3_0()); }
-)
-;
-finally {
-	restoreStackSize(stackSize);
-}
-
-rule__Aliass__Group_3__1
-	@init {
-		int stackSize = keepStackSize();
-	}
-:
-	rule__Aliass__Group_3__1__Impl
-;
-finally {
-	restoreStackSize(stackSize);
-}
-
-rule__Aliass__Group_3__1__Impl
-	@init {
-		int stackSize = keepStackSize();
-	}
-:
-(
-	{ before(grammarAccess.getAliassAccess().getAliassAssignment_3_1()); }
-	(rule__Aliass__AliassAssignment_3_1)
-	{ after(grammarAccess.getAliassAccess().getAliassAssignment_3_1()); }
-)
-;
-finally {
-	restoreStackSize(stackSize);
-}
-
-
 rule__Annotation__Group__0
 	@init {
 		int stackSize = keepStackSize();
@@ -3509,9 +3455,9 @@ rule__Annotation__Group__0__Impl
 	}
 :
 (
-	{ before(grammarAccess.getAnnotationAccess().getAnnoKeyword_0()); }
-	'anno'
-	{ after(grammarAccess.getAnnotationAccess().getAnnoKeyword_0()); }
+	{ before(grammarAccess.getAnnotationAccess().getAnnotationKeyword_0()); }
+	'annotation'
+	{ after(grammarAccess.getAnnotationAccess().getAnnotationKeyword_0()); }
 )
 ;
 finally {
@@ -15480,15 +15426,15 @@ finally {
 	restoreStackSize(stackSize);
 }
 
-rule__Aliass__AliassAssignment_3_1
+rule__Aliass__AliassAssignment_3
 	@init {
 		int stackSize = keepStackSize();
 	}
 :
 	(
-		{ before(grammarAccess.getAliassAccess().getAliassIFCNAMETerminalRuleCall_3_1_0()); }
+		{ before(grammarAccess.getAliassAccess().getAliassIFCNAMETerminalRuleCall_3_0()); }
 		RULE_IFCNAME
-		{ after(grammarAccess.getAliassAccess().getAliassIFCNAMETerminalRuleCall_3_1_0()); }
+		{ after(grammarAccess.getAliassAccess().getAliassIFCNAMETerminalRuleCall_3_0()); }
 	)
 ;
 finally {

@@ -223,32 +223,26 @@ ruleAliass returns [EObject current=null]
 			)
 		)
 		(
-			otherlv_3=';'
-			{
-				newLeafNode(otherlv_3, grammarAccess.getAliassAccess().getSemicolonKeyword_3_0());
-			}
 			(
-				(
-					lv_aliass_4_0=RULE_IFCNAME
-					{
-						newLeafNode(lv_aliass_4_0, grammarAccess.getAliassAccess().getAliassIFCNAMETerminalRuleCall_3_1_0());
+				lv_aliass_3_0=RULE_IFCNAME
+				{
+					newLeafNode(lv_aliass_3_0, grammarAccess.getAliassAccess().getAliassIFCNAMETerminalRuleCall_3_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getAliassRule());
 					}
-					{
-						if ($current==null) {
-							$current = createModelElement(grammarAccess.getAliassRule());
-						}
-						addWithLastConsumed(
-							$current,
-							"aliass",
-							lv_aliass_4_0,
-							"org.dsl.bimchecker.Bimmodel.IFCNAME");
-					}
-				)
+					addWithLastConsumed(
+						$current,
+						"aliass",
+						lv_aliass_3_0,
+						"org.dsl.bimchecker.Bimmodel.IFCNAME");
+				}
 			)
 		)*
-		otherlv_5='}'
+		otherlv_4='}'
 		{
-			newLeafNode(otherlv_5, grammarAccess.getAliassAccess().getRightCurlyBracketKeyword_4());
+			newLeafNode(otherlv_4, grammarAccess.getAliassAccess().getRightCurlyBracketKeyword_4());
 		}
 	)
 ;
@@ -269,9 +263,9 @@ ruleAnnotation returns [EObject current=null]
 	leaveRule();
 }:
 	(
-		otherlv_0='anno'
+		otherlv_0='annotation'
 		{
-			newLeafNode(otherlv_0, grammarAccess.getAnnotationAccess().getAnnoKeyword_0());
+			newLeafNode(otherlv_0, grammarAccess.getAnnotationAccess().getAnnotationKeyword_0());
 		}
 		otherlv_1=':'
 		{
