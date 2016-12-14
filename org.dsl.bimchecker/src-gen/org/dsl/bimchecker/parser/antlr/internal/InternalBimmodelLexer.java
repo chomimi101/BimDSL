@@ -14,6 +14,7 @@ import java.util.ArrayList;
 public class InternalBimmodelLexer extends Lexer {
     public static final int RULE_HEX=7;
     public static final int T__50=50;
+    public static final int T__90=90;
     public static final int T__19=19;
     public static final int T__15=15;
     public static final int T__59=59;
@@ -179,11 +180,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__17;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:14:7: ( 'annotation' )
-            // InternalBimmodel.g:14:9: 'annotation'
+            // InternalBimmodel.g:14:7: ( '=' )
+            // InternalBimmodel.g:14:9: '='
             {
-            match("annotation"); 
-
+            match('='); 
 
             }
 
@@ -200,10 +200,11 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__18;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:15:7: ( ':' )
-            // InternalBimmodel.g:15:9: ':'
+            // InternalBimmodel.g:15:7: ( 'or' )
+            // InternalBimmodel.g:15:9: 'or'
             {
-            match(':'); 
+            match("or"); 
+
 
             }
 
@@ -220,10 +221,11 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__19;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:16:7: ( '(' )
-            // InternalBimmodel.g:16:9: '('
+            // InternalBimmodel.g:16:7: ( 'annotation' )
+            // InternalBimmodel.g:16:9: 'annotation'
             {
-            match('('); 
+            match("annotation"); 
+
 
             }
 
@@ -240,10 +242,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__20;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:17:7: ( '|' )
-            // InternalBimmodel.g:17:9: '|'
+            // InternalBimmodel.g:17:7: ( ':' )
+            // InternalBimmodel.g:17:9: ':'
             {
-            match('|'); 
+            match(':'); 
 
             }
 
@@ -260,10 +262,11 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__21;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:18:7: ( ')' )
-            // InternalBimmodel.g:18:9: ')'
+            // InternalBimmodel.g:18:7: ( '+=' )
+            // InternalBimmodel.g:18:9: '+='
             {
-            match(')'); 
+            match("+="); 
+
 
             }
 
@@ -280,10 +283,11 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__22;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:19:7: ( '=' )
-            // InternalBimmodel.g:19:9: '='
+            // InternalBimmodel.g:19:7: ( '-=' )
+            // InternalBimmodel.g:19:9: '-='
             {
-            match('='); 
+            match("-="); 
+
 
             }
 
@@ -300,10 +304,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__23;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:20:7: ( '+=' )
-            // InternalBimmodel.g:20:9: '+='
+            // InternalBimmodel.g:20:7: ( '*=' )
+            // InternalBimmodel.g:20:9: '*='
             {
-            match("+="); 
+            match("*="); 
 
 
             }
@@ -321,10 +325,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__24;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:21:7: ( '-=' )
-            // InternalBimmodel.g:21:9: '-='
+            // InternalBimmodel.g:21:7: ( '/=' )
+            // InternalBimmodel.g:21:9: '/='
             {
-            match("-="); 
+            match("/="); 
 
 
             }
@@ -342,10 +346,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__25;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:22:7: ( '*=' )
-            // InternalBimmodel.g:22:9: '*='
+            // InternalBimmodel.g:22:7: ( '%=' )
+            // InternalBimmodel.g:22:9: '%='
             {
-            match("*="); 
+            match("%="); 
 
 
             }
@@ -363,11 +367,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__26;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:23:7: ( '/=' )
-            // InternalBimmodel.g:23:9: '/='
+            // InternalBimmodel.g:23:7: ( '<' )
+            // InternalBimmodel.g:23:9: '<'
             {
-            match("/="); 
-
+            match('<'); 
 
             }
 
@@ -384,11 +387,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__27;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:24:7: ( '%=' )
-            // InternalBimmodel.g:24:9: '%='
+            // InternalBimmodel.g:24:7: ( '>' )
+            // InternalBimmodel.g:24:9: '>'
             {
-            match("%="); 
-
+            match('>'); 
 
             }
 
@@ -405,10 +407,11 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__28;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:25:7: ( '<' )
-            // InternalBimmodel.g:25:9: '<'
+            // InternalBimmodel.g:25:7: ( '>=' )
+            // InternalBimmodel.g:25:9: '>='
             {
-            match('<'); 
+            match(">="); 
+
 
             }
 
@@ -425,10 +428,11 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__29;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:26:7: ( '>' )
-            // InternalBimmodel.g:26:9: '>'
+            // InternalBimmodel.g:26:7: ( '||' )
+            // InternalBimmodel.g:26:9: '||'
             {
-            match('>'); 
+            match("||"); 
+
 
             }
 
@@ -445,10 +449,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__30;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:27:7: ( '>=' )
-            // InternalBimmodel.g:27:9: '>='
+            // InternalBimmodel.g:27:7: ( '&&' )
+            // InternalBimmodel.g:27:9: '&&'
             {
-            match(">="); 
+            match("&&"); 
 
 
             }
@@ -466,10 +470,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__31;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:28:7: ( '||' )
-            // InternalBimmodel.g:28:9: '||'
+            // InternalBimmodel.g:28:7: ( '==' )
+            // InternalBimmodel.g:28:9: '=='
             {
-            match("||"); 
+            match("=="); 
 
 
             }
@@ -487,10 +491,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__32;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:29:7: ( '&&' )
-            // InternalBimmodel.g:29:9: '&&'
+            // InternalBimmodel.g:29:7: ( '!=' )
+            // InternalBimmodel.g:29:9: '!='
             {
-            match("&&"); 
+            match("!="); 
 
 
             }
@@ -508,10 +512,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__33;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:30:7: ( '==' )
-            // InternalBimmodel.g:30:9: '=='
+            // InternalBimmodel.g:30:7: ( '===' )
+            // InternalBimmodel.g:30:9: '==='
             {
-            match("=="); 
+            match("==="); 
 
 
             }
@@ -529,10 +533,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__34;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:31:7: ( '!=' )
-            // InternalBimmodel.g:31:9: '!='
+            // InternalBimmodel.g:31:7: ( '!==' )
+            // InternalBimmodel.g:31:9: '!=='
             {
-            match("!="); 
+            match("!=="); 
 
 
             }
@@ -550,10 +554,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__35;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:32:7: ( '===' )
-            // InternalBimmodel.g:32:9: '==='
+            // InternalBimmodel.g:32:7: ( 'instanceof' )
+            // InternalBimmodel.g:32:9: 'instanceof'
             {
-            match("==="); 
+            match("instanceof"); 
 
 
             }
@@ -571,10 +575,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__36;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:33:7: ( '!==' )
-            // InternalBimmodel.g:33:9: '!=='
+            // InternalBimmodel.g:33:7: ( '->' )
+            // InternalBimmodel.g:33:9: '->'
             {
-            match("!=="); 
+            match("->"); 
 
 
             }
@@ -592,10 +596,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__37;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:34:7: ( 'instanceof' )
-            // InternalBimmodel.g:34:9: 'instanceof'
+            // InternalBimmodel.g:34:7: ( '..<' )
+            // InternalBimmodel.g:34:9: '..<'
             {
-            match("instanceof"); 
+            match("..<"); 
 
 
             }
@@ -613,10 +617,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__38;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:35:7: ( '->' )
-            // InternalBimmodel.g:35:9: '->'
+            // InternalBimmodel.g:35:7: ( '..' )
+            // InternalBimmodel.g:35:9: '..'
             {
-            match("->"); 
+            match(".."); 
 
 
             }
@@ -634,10 +638,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__39;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:36:7: ( '..<' )
-            // InternalBimmodel.g:36:9: '..<'
+            // InternalBimmodel.g:36:7: ( '=>' )
+            // InternalBimmodel.g:36:9: '=>'
             {
-            match("..<"); 
+            match("=>"); 
 
 
             }
@@ -655,10 +659,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__40;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:37:7: ( '..' )
-            // InternalBimmodel.g:37:9: '..'
+            // InternalBimmodel.g:37:7: ( '<>' )
+            // InternalBimmodel.g:37:9: '<>'
             {
-            match(".."); 
+            match("<>"); 
 
 
             }
@@ -676,10 +680,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__41;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:38:7: ( '=>' )
-            // InternalBimmodel.g:38:9: '=>'
+            // InternalBimmodel.g:38:7: ( '?:' )
+            // InternalBimmodel.g:38:9: '?:'
             {
-            match("=>"); 
+            match("?:"); 
 
 
             }
@@ -697,11 +701,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__42;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:39:7: ( '<>' )
-            // InternalBimmodel.g:39:9: '<>'
+            // InternalBimmodel.g:39:7: ( '+' )
+            // InternalBimmodel.g:39:9: '+'
             {
-            match("<>"); 
-
+            match('+'); 
 
             }
 
@@ -718,11 +721,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__43;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:40:7: ( '?:' )
-            // InternalBimmodel.g:40:9: '?:'
+            // InternalBimmodel.g:40:7: ( '-' )
+            // InternalBimmodel.g:40:9: '-'
             {
-            match("?:"); 
-
+            match('-'); 
 
             }
 
@@ -739,10 +741,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__44;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:41:7: ( '+' )
-            // InternalBimmodel.g:41:9: '+'
+            // InternalBimmodel.g:41:7: ( '*' )
+            // InternalBimmodel.g:41:9: '*'
             {
-            match('+'); 
+            match('*'); 
 
             }
 
@@ -759,10 +761,11 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__45;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:42:7: ( '-' )
-            // InternalBimmodel.g:42:9: '-'
+            // InternalBimmodel.g:42:7: ( '**' )
+            // InternalBimmodel.g:42:9: '**'
             {
-            match('-'); 
+            match("**"); 
+
 
             }
 
@@ -779,10 +782,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__46;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:43:7: ( '*' )
-            // InternalBimmodel.g:43:9: '*'
+            // InternalBimmodel.g:43:7: ( '/' )
+            // InternalBimmodel.g:43:9: '/'
             {
-            match('*'); 
+            match('/'); 
 
             }
 
@@ -799,11 +802,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__47;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:44:7: ( '**' )
-            // InternalBimmodel.g:44:9: '**'
+            // InternalBimmodel.g:44:7: ( '%' )
+            // InternalBimmodel.g:44:9: '%'
             {
-            match("**"); 
-
+            match('%'); 
 
             }
 
@@ -820,10 +822,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__48;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:45:7: ( '/' )
-            // InternalBimmodel.g:45:9: '/'
+            // InternalBimmodel.g:45:7: ( '!' )
+            // InternalBimmodel.g:45:9: '!'
             {
-            match('/'); 
+            match('!'); 
 
             }
 
@@ -840,10 +842,11 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__49;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:46:7: ( '%' )
-            // InternalBimmodel.g:46:9: '%'
+            // InternalBimmodel.g:46:7: ( 'as' )
+            // InternalBimmodel.g:46:9: 'as'
             {
-            match('%'); 
+            match("as"); 
+
 
             }
 
@@ -860,10 +863,11 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__50;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:47:7: ( '!' )
-            // InternalBimmodel.g:47:9: '!'
+            // InternalBimmodel.g:47:7: ( '++' )
+            // InternalBimmodel.g:47:9: '++'
             {
-            match('!'); 
+            match("++"); 
+
 
             }
 
@@ -880,10 +884,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__51;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:48:7: ( 'as' )
-            // InternalBimmodel.g:48:9: 'as'
+            // InternalBimmodel.g:48:7: ( '--' )
+            // InternalBimmodel.g:48:9: '--'
             {
-            match("as"); 
+            match("--"); 
 
 
             }
@@ -901,11 +905,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__52;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:49:7: ( '++' )
-            // InternalBimmodel.g:49:9: '++'
+            // InternalBimmodel.g:49:7: ( '.' )
+            // InternalBimmodel.g:49:9: '.'
             {
-            match("++"); 
-
+            match('.'); 
 
             }
 
@@ -922,10 +925,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__53;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:50:7: ( '--' )
-            // InternalBimmodel.g:50:9: '--'
+            // InternalBimmodel.g:50:7: ( '::' )
+            // InternalBimmodel.g:50:9: '::'
             {
-            match("--"); 
+            match("::"); 
 
 
             }
@@ -943,10 +946,11 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__54;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:51:7: ( '.' )
-            // InternalBimmodel.g:51:9: '.'
+            // InternalBimmodel.g:51:7: ( '?.' )
+            // InternalBimmodel.g:51:9: '?.'
             {
-            match('.'); 
+            match("?."); 
+
 
             }
 
@@ -963,11 +967,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__55;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:52:7: ( '::' )
-            // InternalBimmodel.g:52:9: '::'
+            // InternalBimmodel.g:52:7: ( ',' )
+            // InternalBimmodel.g:52:9: ','
             {
-            match("::"); 
-
+            match(','); 
 
             }
 
@@ -984,11 +987,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__56;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:53:7: ( '?.' )
-            // InternalBimmodel.g:53:9: '?.'
+            // InternalBimmodel.g:53:7: ( '(' )
+            // InternalBimmodel.g:53:9: '('
             {
-            match("?."); 
-
+            match('('); 
 
             }
 
@@ -1005,10 +1007,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__57;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:54:7: ( ',' )
-            // InternalBimmodel.g:54:9: ','
+            // InternalBimmodel.g:54:7: ( ')' )
+            // InternalBimmodel.g:54:9: ')'
             {
-            match(','); 
+            match(')'); 
 
             }
 
@@ -1085,10 +1087,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__61;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:58:7: ( ';' )
-            // InternalBimmodel.g:58:9: ';'
+            // InternalBimmodel.g:58:7: ( '|' )
+            // InternalBimmodel.g:58:9: '|'
             {
-            match(';'); 
+            match('|'); 
 
             }
 
@@ -1105,11 +1107,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__62;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:59:7: ( 'if' )
-            // InternalBimmodel.g:59:9: 'if'
+            // InternalBimmodel.g:59:7: ( ';' )
+            // InternalBimmodel.g:59:9: ';'
             {
-            match("if"); 
-
+            match(';'); 
 
             }
 
@@ -1126,10 +1127,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__63;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:60:7: ( 'else' )
-            // InternalBimmodel.g:60:9: 'else'
+            // InternalBimmodel.g:60:7: ( 'if' )
+            // InternalBimmodel.g:60:9: 'if'
             {
-            match("else"); 
+            match("if"); 
 
 
             }
@@ -1147,10 +1148,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__64;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:61:7: ( 'switch' )
-            // InternalBimmodel.g:61:9: 'switch'
+            // InternalBimmodel.g:61:7: ( 'else' )
+            // InternalBimmodel.g:61:9: 'else'
             {
-            match("switch"); 
+            match("else"); 
 
 
             }
@@ -1168,10 +1169,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__65;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:62:7: ( 'default' )
-            // InternalBimmodel.g:62:9: 'default'
+            // InternalBimmodel.g:62:7: ( 'switch' )
+            // InternalBimmodel.g:62:9: 'switch'
             {
-            match("default"); 
+            match("switch"); 
 
 
             }
@@ -1189,10 +1190,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__66;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:63:7: ( 'case' )
-            // InternalBimmodel.g:63:9: 'case'
+            // InternalBimmodel.g:63:7: ( 'default' )
+            // InternalBimmodel.g:63:9: 'default'
             {
-            match("case"); 
+            match("default"); 
 
 
             }
@@ -1210,10 +1211,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__67;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:64:7: ( 'for' )
-            // InternalBimmodel.g:64:9: 'for'
+            // InternalBimmodel.g:64:7: ( 'case' )
+            // InternalBimmodel.g:64:9: 'case'
             {
-            match("for"); 
+            match("case"); 
 
 
             }
@@ -1231,10 +1232,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__68;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:65:7: ( 'while' )
-            // InternalBimmodel.g:65:9: 'while'
+            // InternalBimmodel.g:65:7: ( 'for' )
+            // InternalBimmodel.g:65:9: 'for'
             {
-            match("while"); 
+            match("for"); 
 
 
             }
@@ -1252,10 +1253,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__69;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:66:7: ( 'do' )
-            // InternalBimmodel.g:66:9: 'do'
+            // InternalBimmodel.g:66:7: ( 'while' )
+            // InternalBimmodel.g:66:9: 'while'
             {
-            match("do"); 
+            match("while"); 
 
 
             }
@@ -1273,10 +1274,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__70;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:67:7: ( 'var' )
-            // InternalBimmodel.g:67:9: 'var'
+            // InternalBimmodel.g:67:7: ( 'do' )
+            // InternalBimmodel.g:67:9: 'do'
             {
-            match("var"); 
+            match("do"); 
 
 
             }
@@ -1294,10 +1295,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__71;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:68:7: ( 'val' )
-            // InternalBimmodel.g:68:9: 'val'
+            // InternalBimmodel.g:68:7: ( 'var' )
+            // InternalBimmodel.g:68:9: 'var'
             {
-            match("val"); 
+            match("var"); 
 
 
             }
@@ -1315,10 +1316,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__72;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:69:7: ( 'extends' )
-            // InternalBimmodel.g:69:9: 'extends'
+            // InternalBimmodel.g:69:7: ( 'val' )
+            // InternalBimmodel.g:69:9: 'val'
             {
-            match("extends"); 
+            match("val"); 
 
 
             }
@@ -1336,10 +1337,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__73;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:70:7: ( 'static' )
-            // InternalBimmodel.g:70:9: 'static'
+            // InternalBimmodel.g:70:7: ( 'extends' )
+            // InternalBimmodel.g:70:9: 'extends'
             {
-            match("static"); 
+            match("extends"); 
 
 
             }
@@ -1357,10 +1358,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__74;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:71:7: ( 'import' )
-            // InternalBimmodel.g:71:9: 'import'
+            // InternalBimmodel.g:71:7: ( 'static' )
+            // InternalBimmodel.g:71:9: 'static'
             {
-            match("import"); 
+            match("static"); 
 
 
             }
@@ -1378,10 +1379,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__75;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:72:7: ( 'extension' )
-            // InternalBimmodel.g:72:9: 'extension'
+            // InternalBimmodel.g:72:7: ( 'import' )
+            // InternalBimmodel.g:72:9: 'import'
             {
-            match("extension"); 
+            match("import"); 
 
 
             }
@@ -1399,10 +1400,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__76;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:73:7: ( 'super' )
-            // InternalBimmodel.g:73:9: 'super'
+            // InternalBimmodel.g:73:7: ( 'extension' )
+            // InternalBimmodel.g:73:9: 'extension'
             {
-            match("super"); 
+            match("extension"); 
 
 
             }
@@ -1420,10 +1421,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__77;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:74:7: ( 'new' )
-            // InternalBimmodel.g:74:9: 'new'
+            // InternalBimmodel.g:74:7: ( 'super' )
+            // InternalBimmodel.g:74:9: 'super'
             {
-            match("new"); 
+            match("super"); 
 
 
             }
@@ -1441,10 +1442,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__78;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:75:7: ( 'false' )
-            // InternalBimmodel.g:75:9: 'false'
+            // InternalBimmodel.g:75:7: ( 'new' )
+            // InternalBimmodel.g:75:9: 'new'
             {
-            match("false"); 
+            match("new"); 
 
 
             }
@@ -1462,10 +1463,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__79;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:76:7: ( 'true' )
-            // InternalBimmodel.g:76:9: 'true'
+            // InternalBimmodel.g:76:7: ( 'false' )
+            // InternalBimmodel.g:76:9: 'false'
             {
-            match("true"); 
+            match("false"); 
 
 
             }
@@ -1483,10 +1484,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__80;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:77:7: ( 'null' )
-            // InternalBimmodel.g:77:9: 'null'
+            // InternalBimmodel.g:77:7: ( 'true' )
+            // InternalBimmodel.g:77:9: 'true'
             {
-            match("null"); 
+            match("true"); 
 
 
             }
@@ -1504,10 +1505,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__81;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:78:7: ( 'typeof' )
-            // InternalBimmodel.g:78:9: 'typeof'
+            // InternalBimmodel.g:78:7: ( 'null' )
+            // InternalBimmodel.g:78:9: 'null'
             {
-            match("typeof"); 
+            match("null"); 
 
 
             }
@@ -1525,10 +1526,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__82;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:79:7: ( 'throw' )
-            // InternalBimmodel.g:79:9: 'throw'
+            // InternalBimmodel.g:79:7: ( 'typeof' )
+            // InternalBimmodel.g:79:9: 'typeof'
             {
-            match("throw"); 
+            match("typeof"); 
 
 
             }
@@ -1546,10 +1547,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__83;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:80:7: ( 'return' )
-            // InternalBimmodel.g:80:9: 'return'
+            // InternalBimmodel.g:80:7: ( 'throw' )
+            // InternalBimmodel.g:80:9: 'throw'
             {
-            match("return"); 
+            match("throw"); 
 
 
             }
@@ -1567,10 +1568,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__84;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:81:7: ( 'try' )
-            // InternalBimmodel.g:81:9: 'try'
+            // InternalBimmodel.g:81:7: ( 'return' )
+            // InternalBimmodel.g:81:9: 'return'
             {
-            match("try"); 
+            match("return"); 
 
 
             }
@@ -1588,10 +1589,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__85;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:82:7: ( 'finally' )
-            // InternalBimmodel.g:82:9: 'finally'
+            // InternalBimmodel.g:82:7: ( 'try' )
+            // InternalBimmodel.g:82:9: 'try'
             {
-            match("finally"); 
+            match("try"); 
 
 
             }
@@ -1609,10 +1610,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__86;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:83:7: ( 'synchronized' )
-            // InternalBimmodel.g:83:9: 'synchronized'
+            // InternalBimmodel.g:83:7: ( 'finally' )
+            // InternalBimmodel.g:83:9: 'finally'
             {
-            match("synchronized"); 
+            match("finally"); 
 
 
             }
@@ -1630,10 +1631,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__87;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:84:7: ( 'catch' )
-            // InternalBimmodel.g:84:9: 'catch'
+            // InternalBimmodel.g:84:7: ( 'synchronized' )
+            // InternalBimmodel.g:84:9: 'synchronized'
             {
-            match("catch"); 
+            match("synchronized"); 
 
 
             }
@@ -1651,10 +1652,11 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__88;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:85:7: ( '?' )
-            // InternalBimmodel.g:85:9: '?'
+            // InternalBimmodel.g:85:7: ( 'catch' )
+            // InternalBimmodel.g:85:9: 'catch'
             {
-            match('?'); 
+            match("catch"); 
+
 
             }
 
@@ -1671,10 +1673,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = T__89;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:86:7: ( '&' )
-            // InternalBimmodel.g:86:9: '&'
+            // InternalBimmodel.g:86:7: ( '?' )
+            // InternalBimmodel.g:86:9: '?'
             {
-            match('&'); 
+            match('?'); 
 
             }
 
@@ -1686,17 +1688,37 @@ public class InternalBimmodelLexer extends Lexer {
     }
     // $ANTLR end "T__89"
 
+    // $ANTLR start "T__90"
+    public final void mT__90() throws RecognitionException {
+        try {
+            int _type = T__90;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalBimmodel.g:87:7: ( '&' )
+            // InternalBimmodel.g:87:9: '&'
+            {
+            match('&'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__90"
+
     // $ANTLR start "RULE_IFCNAME"
     public final void mRULE_IFCNAME() throws RecognitionException {
         try {
             int _type = RULE_IFCNAME;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:6689:14: ( 'ifc' ( 'a' .. 'z' )+ )
-            // InternalBimmodel.g:6689:16: 'ifc' ( 'a' .. 'z' )+
+            // InternalBimmodel.g:6687:14: ( 'ifc' ( 'a' .. 'z' )+ )
+            // InternalBimmodel.g:6687:16: 'ifc' ( 'a' .. 'z' )+
             {
             match("ifc"); 
 
-            // InternalBimmodel.g:6689:22: ( 'a' .. 'z' )+
+            // InternalBimmodel.g:6687:22: ( 'a' .. 'z' )+
             int cnt1=0;
             loop1:
             do {
@@ -1710,7 +1732,7 @@ public class InternalBimmodelLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // InternalBimmodel.g:6689:23: 'a' .. 'z'
+            	    // InternalBimmodel.g:6687:23: 'a' .. 'z'
             	    {
             	    matchRange('a','z'); 
 
@@ -1742,10 +1764,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = RULE_HEX;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:6691:10: ( ( '0x' | '0X' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+ ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )? )
-            // InternalBimmodel.g:6691:12: ( '0x' | '0X' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+ ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )?
+            // InternalBimmodel.g:6689:10: ( ( '0x' | '0X' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+ ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )? )
+            // InternalBimmodel.g:6689:12: ( '0x' | '0X' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+ ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )?
             {
-            // InternalBimmodel.g:6691:12: ( '0x' | '0X' )
+            // InternalBimmodel.g:6689:12: ( '0x' | '0X' )
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -1773,7 +1795,7 @@ public class InternalBimmodelLexer extends Lexer {
             }
             switch (alt2) {
                 case 1 :
-                    // InternalBimmodel.g:6691:13: '0x'
+                    // InternalBimmodel.g:6689:13: '0x'
                     {
                     match("0x"); 
 
@@ -1781,7 +1803,7 @@ public class InternalBimmodelLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // InternalBimmodel.g:6691:18: '0X'
+                    // InternalBimmodel.g:6689:18: '0X'
                     {
                     match("0X"); 
 
@@ -1791,7 +1813,7 @@ public class InternalBimmodelLexer extends Lexer {
 
             }
 
-            // InternalBimmodel.g:6691:24: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+
+            // InternalBimmodel.g:6689:24: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+
             int cnt3=0;
             loop3:
             do {
@@ -1829,7 +1851,7 @@ public class InternalBimmodelLexer extends Lexer {
                 cnt3++;
             } while (true);
 
-            // InternalBimmodel.g:6691:58: ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )?
+            // InternalBimmodel.g:6689:58: ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )?
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -1838,10 +1860,10 @@ public class InternalBimmodelLexer extends Lexer {
             }
             switch (alt5) {
                 case 1 :
-                    // InternalBimmodel.g:6691:59: '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) )
+                    // InternalBimmodel.g:6689:59: '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) )
                     {
                     match('#'); 
-                    // InternalBimmodel.g:6691:63: ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) )
+                    // InternalBimmodel.g:6689:63: ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) )
                     int alt4=2;
                     int LA4_0 = input.LA(1);
 
@@ -1859,7 +1881,7 @@ public class InternalBimmodelLexer extends Lexer {
                     }
                     switch (alt4) {
                         case 1 :
-                            // InternalBimmodel.g:6691:64: ( 'b' | 'B' ) ( 'i' | 'I' )
+                            // InternalBimmodel.g:6689:64: ( 'b' | 'B' ) ( 'i' | 'I' )
                             {
                             if ( input.LA(1)=='B'||input.LA(1)=='b' ) {
                                 input.consume();
@@ -1883,7 +1905,7 @@ public class InternalBimmodelLexer extends Lexer {
                             }
                             break;
                         case 2 :
-                            // InternalBimmodel.g:6691:84: ( 'l' | 'L' )
+                            // InternalBimmodel.g:6689:84: ( 'l' | 'L' )
                             {
                             if ( input.LA(1)=='L'||input.LA(1)=='l' ) {
                                 input.consume();
@@ -1922,11 +1944,11 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:6693:10: ( '0' .. '9' ( '0' .. '9' | '_' )* )
-            // InternalBimmodel.g:6693:12: '0' .. '9' ( '0' .. '9' | '_' )*
+            // InternalBimmodel.g:6691:10: ( '0' .. '9' ( '0' .. '9' | '_' )* )
+            // InternalBimmodel.g:6691:12: '0' .. '9' ( '0' .. '9' | '_' )*
             {
             matchRange('0','9'); 
-            // InternalBimmodel.g:6693:21: ( '0' .. '9' | '_' )*
+            // InternalBimmodel.g:6691:21: ( '0' .. '9' | '_' )*
             loop6:
             do {
                 int alt6=2;
@@ -1975,11 +1997,11 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = RULE_DECIMAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:6695:14: ( RULE_INT ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )? ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )? )
-            // InternalBimmodel.g:6695:16: RULE_INT ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )? ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )?
+            // InternalBimmodel.g:6693:14: ( RULE_INT ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )? ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )? )
+            // InternalBimmodel.g:6693:16: RULE_INT ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )? ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )?
             {
             mRULE_INT(); 
-            // InternalBimmodel.g:6695:25: ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )?
+            // InternalBimmodel.g:6693:25: ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )?
             int alt8=2;
             int LA8_0 = input.LA(1);
 
@@ -1988,7 +2010,7 @@ public class InternalBimmodelLexer extends Lexer {
             }
             switch (alt8) {
                 case 1 :
-                    // InternalBimmodel.g:6695:26: ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT
+                    // InternalBimmodel.g:6693:26: ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT
                     {
                     if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
                         input.consume();
@@ -1999,7 +2021,7 @@ public class InternalBimmodelLexer extends Lexer {
                         recover(mse);
                         throw mse;}
 
-                    // InternalBimmodel.g:6695:36: ( '+' | '-' )?
+                    // InternalBimmodel.g:6693:36: ( '+' | '-' )?
                     int alt7=2;
                     int LA7_0 = input.LA(1);
 
@@ -2032,7 +2054,7 @@ public class InternalBimmodelLexer extends Lexer {
 
             }
 
-            // InternalBimmodel.g:6695:58: ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )?
+            // InternalBimmodel.g:6693:58: ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )?
             int alt9=3;
             int LA9_0 = input.LA(1);
 
@@ -2044,7 +2066,7 @@ public class InternalBimmodelLexer extends Lexer {
             }
             switch (alt9) {
                 case 1 :
-                    // InternalBimmodel.g:6695:59: ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' )
+                    // InternalBimmodel.g:6693:59: ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' )
                     {
                     if ( input.LA(1)=='B'||input.LA(1)=='b' ) {
                         input.consume();
@@ -2068,7 +2090,7 @@ public class InternalBimmodelLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // InternalBimmodel.g:6695:87: ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' )
+                    // InternalBimmodel.g:6693:87: ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' )
                     {
                     if ( input.LA(1)=='D'||input.LA(1)=='F'||input.LA(1)=='L'||input.LA(1)=='d'||input.LA(1)=='f'||input.LA(1)=='l' ) {
                         input.consume();
@@ -2101,10 +2123,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:6697:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )* )
-            // InternalBimmodel.g:6697:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
+            // InternalBimmodel.g:6695:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )* )
+            // InternalBimmodel.g:6695:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
             {
-            // InternalBimmodel.g:6697:11: ( '^' )?
+            // InternalBimmodel.g:6695:11: ( '^' )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -2113,7 +2135,7 @@ public class InternalBimmodelLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // InternalBimmodel.g:6697:11: '^'
+                    // InternalBimmodel.g:6695:11: '^'
                     {
                     match('^'); 
 
@@ -2131,7 +2153,7 @@ public class InternalBimmodelLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // InternalBimmodel.g:6697:44: ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
+            // InternalBimmodel.g:6695:44: ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
             loop11:
             do {
                 int alt11=2;
@@ -2180,10 +2202,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:6699:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? ) )
-            // InternalBimmodel.g:6699:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? )
+            // InternalBimmodel.g:6697:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? ) )
+            // InternalBimmodel.g:6697:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? )
             {
-            // InternalBimmodel.g:6699:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? )
+            // InternalBimmodel.g:6697:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? )
             int alt16=2;
             int LA16_0 = input.LA(1);
 
@@ -2201,10 +2223,10 @@ public class InternalBimmodelLexer extends Lexer {
             }
             switch (alt16) {
                 case 1 :
-                    // InternalBimmodel.g:6699:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )?
+                    // InternalBimmodel.g:6697:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )?
                     {
                     match('\"'); 
-                    // InternalBimmodel.g:6699:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // InternalBimmodel.g:6697:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop12:
                     do {
                         int alt12=3;
@@ -2220,7 +2242,7 @@ public class InternalBimmodelLexer extends Lexer {
 
                         switch (alt12) {
                     	case 1 :
-                    	    // InternalBimmodel.g:6699:21: '\\\\' .
+                    	    // InternalBimmodel.g:6697:21: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -2228,7 +2250,7 @@ public class InternalBimmodelLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // InternalBimmodel.g:6699:28: ~ ( ( '\\\\' | '\"' ) )
+                    	    // InternalBimmodel.g:6697:28: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -2248,7 +2270,7 @@ public class InternalBimmodelLexer extends Lexer {
                         }
                     } while (true);
 
-                    // InternalBimmodel.g:6699:44: ( '\"' )?
+                    // InternalBimmodel.g:6697:44: ( '\"' )?
                     int alt13=2;
                     int LA13_0 = input.LA(1);
 
@@ -2257,7 +2279,7 @@ public class InternalBimmodelLexer extends Lexer {
                     }
                     switch (alt13) {
                         case 1 :
-                            // InternalBimmodel.g:6699:44: '\"'
+                            // InternalBimmodel.g:6697:44: '\"'
                             {
                             match('\"'); 
 
@@ -2270,10 +2292,10 @@ public class InternalBimmodelLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // InternalBimmodel.g:6699:49: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )?
+                    // InternalBimmodel.g:6697:49: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )?
                     {
                     match('\''); 
-                    // InternalBimmodel.g:6699:54: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // InternalBimmodel.g:6697:54: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop14:
                     do {
                         int alt14=3;
@@ -2289,7 +2311,7 @@ public class InternalBimmodelLexer extends Lexer {
 
                         switch (alt14) {
                     	case 1 :
-                    	    // InternalBimmodel.g:6699:55: '\\\\' .
+                    	    // InternalBimmodel.g:6697:55: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -2297,7 +2319,7 @@ public class InternalBimmodelLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // InternalBimmodel.g:6699:62: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // InternalBimmodel.g:6697:62: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -2317,7 +2339,7 @@ public class InternalBimmodelLexer extends Lexer {
                         }
                     } while (true);
 
-                    // InternalBimmodel.g:6699:79: ( '\\'' )?
+                    // InternalBimmodel.g:6697:79: ( '\\'' )?
                     int alt15=2;
                     int LA15_0 = input.LA(1);
 
@@ -2326,7 +2348,7 @@ public class InternalBimmodelLexer extends Lexer {
                     }
                     switch (alt15) {
                         case 1 :
-                            // InternalBimmodel.g:6699:79: '\\''
+                            // InternalBimmodel.g:6697:79: '\\''
                             {
                             match('\''); 
 
@@ -2357,12 +2379,12 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:6701:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // InternalBimmodel.g:6701:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // InternalBimmodel.g:6699:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // InternalBimmodel.g:6699:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // InternalBimmodel.g:6701:24: ( options {greedy=false; } : . )*
+            // InternalBimmodel.g:6699:24: ( options {greedy=false; } : . )*
             loop17:
             do {
                 int alt17=2;
@@ -2387,7 +2409,7 @@ public class InternalBimmodelLexer extends Lexer {
 
                 switch (alt17) {
             	case 1 :
-            	    // InternalBimmodel.g:6701:52: .
+            	    // InternalBimmodel.g:6699:52: .
             	    {
             	    matchAny(); 
 
@@ -2417,12 +2439,12 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:6703:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // InternalBimmodel.g:6703:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // InternalBimmodel.g:6701:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // InternalBimmodel.g:6701:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // InternalBimmodel.g:6703:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // InternalBimmodel.g:6701:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop18:
             do {
                 int alt18=2;
@@ -2435,7 +2457,7 @@ public class InternalBimmodelLexer extends Lexer {
 
                 switch (alt18) {
             	case 1 :
-            	    // InternalBimmodel.g:6703:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // InternalBimmodel.g:6701:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -2455,7 +2477,7 @@ public class InternalBimmodelLexer extends Lexer {
                 }
             } while (true);
 
-            // InternalBimmodel.g:6703:40: ( ( '\\r' )? '\\n' )?
+            // InternalBimmodel.g:6701:40: ( ( '\\r' )? '\\n' )?
             int alt20=2;
             int LA20_0 = input.LA(1);
 
@@ -2464,9 +2486,9 @@ public class InternalBimmodelLexer extends Lexer {
             }
             switch (alt20) {
                 case 1 :
-                    // InternalBimmodel.g:6703:41: ( '\\r' )? '\\n'
+                    // InternalBimmodel.g:6701:41: ( '\\r' )? '\\n'
                     {
-                    // InternalBimmodel.g:6703:41: ( '\\r' )?
+                    // InternalBimmodel.g:6701:41: ( '\\r' )?
                     int alt19=2;
                     int LA19_0 = input.LA(1);
 
@@ -2475,7 +2497,7 @@ public class InternalBimmodelLexer extends Lexer {
                     }
                     switch (alt19) {
                         case 1 :
-                            // InternalBimmodel.g:6703:41: '\\r'
+                            // InternalBimmodel.g:6701:41: '\\r'
                             {
                             match('\r'); 
 
@@ -2507,10 +2529,10 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:6705:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // InternalBimmodel.g:6705:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // InternalBimmodel.g:6703:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // InternalBimmodel.g:6703:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // InternalBimmodel.g:6705:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // InternalBimmodel.g:6703:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt21=0;
             loop21:
             do {
@@ -2564,8 +2586,8 @@ public class InternalBimmodelLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBimmodel.g:6707:16: ( . )
-            // InternalBimmodel.g:6707:18: .
+            // InternalBimmodel.g:6705:16: ( . )
+            // InternalBimmodel.g:6705:18: .
             {
             matchAny(); 
 
@@ -2580,8 +2602,8 @@ public class InternalBimmodelLexer extends Lexer {
     // $ANTLR end "RULE_ANY_OTHER"
 
     public void mTokens() throws RecognitionException {
-        // InternalBimmodel.g:1:8: ( T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | RULE_IFCNAME | RULE_HEX | RULE_INT | RULE_DECIMAL | RULE_ID | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
-        int alt22=86;
+        // InternalBimmodel.g:1:8: ( T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | RULE_IFCNAME | RULE_HEX | RULE_INT | RULE_DECIMAL | RULE_ID | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
+        int alt22=87;
         alt22 = dfa22.predict(input);
         switch (alt22) {
             case 1 :
@@ -3117,70 +3139,77 @@ public class InternalBimmodelLexer extends Lexer {
                 }
                 break;
             case 77 :
-                // InternalBimmodel.g:1:466: RULE_IFCNAME
+                // InternalBimmodel.g:1:466: T__90
+                {
+                mT__90(); 
+
+                }
+                break;
+            case 78 :
+                // InternalBimmodel.g:1:472: RULE_IFCNAME
                 {
                 mRULE_IFCNAME(); 
 
                 }
                 break;
-            case 78 :
-                // InternalBimmodel.g:1:479: RULE_HEX
+            case 79 :
+                // InternalBimmodel.g:1:485: RULE_HEX
                 {
                 mRULE_HEX(); 
 
                 }
                 break;
-            case 79 :
-                // InternalBimmodel.g:1:488: RULE_INT
+            case 80 :
+                // InternalBimmodel.g:1:494: RULE_INT
                 {
                 mRULE_INT(); 
 
                 }
                 break;
-            case 80 :
-                // InternalBimmodel.g:1:497: RULE_DECIMAL
+            case 81 :
+                // InternalBimmodel.g:1:503: RULE_DECIMAL
                 {
                 mRULE_DECIMAL(); 
 
                 }
                 break;
-            case 81 :
-                // InternalBimmodel.g:1:510: RULE_ID
+            case 82 :
+                // InternalBimmodel.g:1:516: RULE_ID
                 {
                 mRULE_ID(); 
 
                 }
                 break;
-            case 82 :
-                // InternalBimmodel.g:1:518: RULE_STRING
+            case 83 :
+                // InternalBimmodel.g:1:524: RULE_STRING
                 {
                 mRULE_STRING(); 
 
                 }
                 break;
-            case 83 :
-                // InternalBimmodel.g:1:530: RULE_ML_COMMENT
+            case 84 :
+                // InternalBimmodel.g:1:536: RULE_ML_COMMENT
                 {
                 mRULE_ML_COMMENT(); 
 
                 }
                 break;
-            case 84 :
-                // InternalBimmodel.g:1:546: RULE_SL_COMMENT
+            case 85 :
+                // InternalBimmodel.g:1:552: RULE_SL_COMMENT
                 {
                 mRULE_SL_COMMENT(); 
 
                 }
                 break;
-            case 85 :
-                // InternalBimmodel.g:1:562: RULE_WS
+            case 86 :
+                // InternalBimmodel.g:1:568: RULE_WS
                 {
                 mRULE_WS(); 
 
                 }
                 break;
-            case 86 :
-                // InternalBimmodel.g:1:570: RULE_ANY_OTHER
+            case 87 :
+                // InternalBimmodel.g:1:576: RULE_ANY_OTHER
                 {
                 mRULE_ANY_OTHER(); 
 
@@ -3194,31 +3223,30 @@ public class InternalBimmodelLexer extends Lexer {
 
     protected DFA22 dfa22 = new DFA22(this);
     static final String DFA22_eotS =
-        "\3\uffff\1\61\1\63\1\uffff\1\66\1\uffff\1\72\1\75\1\101\1\104\1\110\1\112\1\114\1\116\1\120\1\122\1\61\1\127\1\132\5\uffff\12\61\2\166\1\53\7\uffff\2\61\1\174\7\uffff\1\176\30\uffff\1\u0080\1\uffff\1\61\1\u0083\1\61\1\u0086\11\uffff\7\61\1\u008e\14\61\1\uffff\1\166\4\uffff\2\61\5\uffff\2\61\1\uffff\1\61\2\uffff\7\61\1\uffff\2\61\1\u00ac\3\61\1\u00b0\1\u00b1\1\u00b2\2\61\1\u00b5\6\61\1\u00bc\1\61\1\u00be\6\61\1\u00c5\1\61\1\uffff\3\61\3\uffff\1\u00ca\1\u00cb\1\uffff\3\61\1\u00cf\2\61\1\uffff\1\61\1\uffff\3\61\1\u00d7\2\61\1\uffff\1\u00da\1\u00db\1\61\1\u00dd\2\uffff\1\61\1\u00df\1\61\1\uffff\2\61\1\u00e3\2\61\1\u00e6\1\u00e7\1\uffff\2\61\2\uffff\1\61\1\uffff\1\u00eb\1\uffff\1\u00ec\2\61\1\uffff\1\u00ef\1\61\2\uffff\1\61\1\u00f2\1\u00f3\2\uffff\2\61\1\uffff\2\61\2\uffff\2\61\1\u00fa\1\61\1\u00fc\1\u00fd\1\uffff\1\61\2\uffff\1\61\1\u0100\1\uffff";
+        "\3\uffff\1\62\1\65\1\62\1\70\1\73\1\77\1\102\1\106\1\110\1\112\1\114\1\116\1\120\1\122\1\62\1\127\1\132\7\uffff\12\62\2\170\1\54\7\uffff\2\62\1\176\1\uffff\1\u0080\2\uffff\1\u0081\32\uffff\1\u0083\1\uffff\1\62\1\u0086\1\62\1\u0089\13\uffff\7\62\1\u0091\14\62\1\uffff\1\170\4\uffff\2\62\6\uffff\2\62\1\uffff\1\62\2\uffff\7\62\1\uffff\2\62\1\u00af\3\62\1\u00b3\1\u00b4\1\u00b5\2\62\1\u00b8\6\62\1\u00bf\1\62\1\u00c1\6\62\1\u00c8\1\62\1\uffff\3\62\3\uffff\1\u00cd\1\u00ce\1\uffff\3\62\1\u00d2\2\62\1\uffff\1\62\1\uffff\3\62\1\u00da\2\62\1\uffff\1\u00dd\1\u00de\1\62\1\u00e0\2\uffff\1\62\1\u00e2\1\62\1\uffff\2\62\1\u00e6\2\62\1\u00e9\1\u00ea\1\uffff\2\62\2\uffff\1\62\1\uffff\1\u00ee\1\uffff\1\u00ef\2\62\1\uffff\1\u00f2\1\62\2\uffff\1\62\1\u00f5\1\u00f6\2\uffff\2\62\1\uffff\2\62\2\uffff\2\62\1\u00fd\1\62\1\u00ff\1\u0100\1\uffff\1\62\2\uffff\1\62\1\u0103\1\uffff";
     static final String DFA22_eofS =
-        "\u0101\uffff";
+        "\u0104\uffff";
     static final String DFA22_minS =
-        "\1\0\2\uffff\1\154\1\72\1\uffff\1\174\1\uffff\1\75\1\53\1\55\2\52\1\75\1\76\1\75\1\46\1\75\1\146\2\56\5\uffff\1\154\1\164\1\145\2\141\1\150\1\141\1\145\1\150\1\145\2\60\1\44\7\uffff\1\151\1\156\1\44\7\uffff\1\75\30\uffff\1\75\1\uffff\1\163\1\44\1\160\1\74\11\uffff\1\163\1\164\1\151\1\141\1\160\1\156\1\146\1\44\1\163\1\162\1\154\1\156\1\151\1\154\1\167\1\154\1\165\1\160\1\162\1\164\1\uffff\1\60\4\uffff\1\141\1\157\5\uffff\1\164\1\141\1\uffff\1\157\2\uffff\2\145\2\164\1\145\1\143\1\141\1\uffff\1\145\1\143\1\44\1\163\1\141\1\154\3\44\1\154\1\145\1\44\1\145\1\157\1\165\1\163\1\164\1\141\1\44\1\162\1\44\1\156\1\143\1\151\1\162\1\150\1\165\1\44\1\150\1\uffff\1\145\1\154\1\145\3\uffff\2\44\1\uffff\1\157\1\167\1\162\1\44\1\141\1\156\1\uffff\1\164\1\uffff\1\144\1\150\1\143\1\44\1\162\1\154\1\uffff\2\44\1\154\1\44\2\uffff\1\146\1\44\1\156\1\uffff\1\164\1\143\1\44\1\163\1\151\2\44\1\uffff\1\157\1\164\2\uffff\1\171\1\uffff\1\44\1\uffff\1\44\1\151\1\145\1\uffff\1\44\1\157\2\uffff\1\156\2\44\2\uffff\2\157\1\uffff\1\156\1\151\2\uffff\1\156\1\146\1\44\1\172\2\44\1\uffff\1\145\2\uffff\1\144\1\44\1\uffff";
+        "\1\0\2\uffff\1\154\1\75\1\162\1\72\1\53\1\55\2\52\1\75\1\76\1\75\1\174\1\46\1\75\1\146\2\56\7\uffff\1\154\1\164\1\145\2\141\1\150\1\141\1\145\1\150\1\145\2\60\1\44\7\uffff\1\151\1\156\1\44\1\uffff\1\75\2\uffff\1\44\32\uffff\1\75\1\uffff\1\163\1\44\1\160\1\74\13\uffff\1\163\1\164\1\151\1\141\1\160\1\156\1\146\1\44\1\163\1\162\1\154\1\156\1\151\1\154\1\167\1\154\1\165\1\160\1\162\1\164\1\uffff\1\60\4\uffff\1\141\1\157\6\uffff\1\164\1\141\1\uffff\1\157\2\uffff\2\145\2\164\1\145\1\143\1\141\1\uffff\1\145\1\143\1\44\1\163\1\141\1\154\3\44\1\154\1\145\1\44\1\145\1\157\1\165\1\163\1\164\1\141\1\44\1\162\1\44\1\156\1\143\1\151\1\162\1\150\1\165\1\44\1\150\1\uffff\1\145\1\154\1\145\3\uffff\2\44\1\uffff\1\157\1\167\1\162\1\44\1\141\1\156\1\uffff\1\164\1\uffff\1\144\1\150\1\143\1\44\1\162\1\154\1\uffff\2\44\1\154\1\44\2\uffff\1\146\1\44\1\156\1\uffff\1\164\1\143\1\44\1\163\1\151\2\44\1\uffff\1\157\1\164\2\uffff\1\171\1\uffff\1\44\1\uffff\1\44\1\151\1\145\1\uffff\1\44\1\157\2\uffff\1\156\2\44\2\uffff\2\157\1\uffff\1\156\1\151\2\uffff\1\156\1\146\1\44\1\172\2\44\1\uffff\1\145\2\uffff\1\144\1\44\1\uffff";
     static final String DFA22_maxS =
-        "\1\uffff\2\uffff\1\163\1\72\1\uffff\1\174\1\uffff\1\76\1\75\1\76\3\75\1\76\1\75\1\46\1\75\1\156\1\56\1\72\5\uffff\1\170\1\171\1\157\1\141\1\157\1\150\1\141\1\165\1\171\1\145\1\170\1\154\1\172\7\uffff\1\151\1\156\1\172\7\uffff\1\75\30\uffff\1\75\1\uffff\1\163\1\172\1\160\1\74\11\uffff\1\163\1\164\1\151\1\141\1\160\1\156\1\146\1\172\1\164\1\162\1\154\1\156\1\151\1\162\1\167\1\154\1\171\1\160\1\162\1\164\1\uffff\1\154\4\uffff\1\141\1\157\5\uffff\1\164\1\172\1\uffff\1\157\2\uffff\2\145\2\164\1\145\1\143\1\141\1\uffff\1\145\1\143\1\172\1\163\1\141\1\154\3\172\1\154\1\145\1\172\1\145\1\157\1\165\1\163\1\164\1\141\1\172\1\162\1\172\1\156\1\143\1\151\1\162\1\150\1\165\1\172\1\150\1\uffff\1\145\1\154\1\145\3\uffff\2\172\1\uffff\1\157\1\167\1\162\1\172\1\141\1\156\1\uffff\1\164\1\uffff\1\163\1\150\1\143\1\172\1\162\1\154\1\uffff\2\172\1\154\1\172\2\uffff\1\146\1\172\1\156\1\uffff\1\164\1\143\1\172\1\163\1\151\2\172\1\uffff\1\157\1\164\2\uffff\1\171\1\uffff\1\172\1\uffff\1\172\1\151\1\145\1\uffff\1\172\1\157\2\uffff\1\156\2\172\2\uffff\2\157\1\uffff\1\156\1\151\2\uffff\1\156\1\146\4\172\1\uffff\1\145\2\uffff\1\144\1\172\1\uffff";
+        "\1\uffff\2\uffff\1\163\1\76\1\162\1\72\1\75\1\76\3\75\1\76\1\75\1\174\1\46\1\75\1\156\1\56\1\72\7\uffff\1\170\1\171\1\157\1\141\1\157\1\150\1\141\1\165\1\171\1\145\1\170\1\154\1\172\7\uffff\1\151\1\156\1\172\1\uffff\1\75\2\uffff\1\172\32\uffff\1\75\1\uffff\1\163\1\172\1\160\1\74\13\uffff\1\163\1\164\1\151\1\141\1\160\1\156\1\146\1\172\1\164\1\162\1\154\1\156\1\151\1\162\1\167\1\154\1\171\1\160\1\162\1\164\1\uffff\1\154\4\uffff\1\141\1\157\6\uffff\1\164\1\172\1\uffff\1\157\2\uffff\2\145\2\164\1\145\1\143\1\141\1\uffff\1\145\1\143\1\172\1\163\1\141\1\154\3\172\1\154\1\145\1\172\1\145\1\157\1\165\1\163\1\164\1\141\1\172\1\162\1\172\1\156\1\143\1\151\1\162\1\150\1\165\1\172\1\150\1\uffff\1\145\1\154\1\145\3\uffff\2\172\1\uffff\1\157\1\167\1\162\1\172\1\141\1\156\1\uffff\1\164\1\uffff\1\163\1\150\1\143\1\172\1\162\1\154\1\uffff\2\172\1\154\1\172\2\uffff\1\146\1\172\1\156\1\uffff\1\164\1\143\1\172\1\163\1\151\2\172\1\uffff\1\157\1\164\2\uffff\1\171\1\uffff\1\172\1\uffff\1\172\1\151\1\145\1\uffff\1\172\1\157\2\uffff\1\156\2\172\2\uffff\2\157\1\uffff\1\156\1\151\2\uffff\1\156\1\146\4\172\1\uffff\1\145\2\uffff\1\144\1\172\1\uffff";
     static final String DFA22_acceptS =
-        "\1\uffff\1\1\1\2\2\uffff\1\6\1\uffff\1\10\15\uffff\1\54\1\55\1\56\1\57\1\60\15\uffff\1\121\2\122\1\125\1\126\1\1\1\2\3\uffff\1\121\1\52\1\5\1\6\1\22\1\7\1\10\1\uffff\1\34\1\11\1\12\1\47\1\37\1\13\1\31\1\50\1\40\1\14\1\42\1\41\1\15\1\123\1\124\1\43\1\16\1\44\1\35\1\17\1\21\1\20\1\23\1\114\1\uffff\1\45\4\uffff\1\51\1\36\1\53\1\113\1\54\1\55\1\56\1\57\1\60\24\uffff\1\116\1\uffff\1\117\1\120\1\122\1\125\2\uffff\1\46\1\26\1\24\1\27\1\25\2\uffff\1\61\1\uffff\1\32\1\33\7\uffff\1\70\35\uffff\1\66\3\uffff\1\71\1\72\1\100\2\uffff\1\107\6\uffff\1\115\1\uffff\1\62\6\uffff\1\65\4\uffff\1\103\1\102\3\uffff\1\3\7\uffff\1\77\2\uffff\1\112\1\101\1\uffff\1\67\1\uffff\1\105\3\uffff\1\75\2\uffff\1\63\1\74\3\uffff\1\104\1\106\2\uffff\1\73\2\uffff\1\64\1\110\6\uffff\1\76\1\uffff\1\4\1\30\2\uffff\1\111";
+        "\1\uffff\1\1\1\2\21\uffff\1\52\1\53\1\54\1\55\1\56\1\57\1\61\15\uffff\1\122\2\123\1\126\1\127\1\1\1\2\3\uffff\1\122\1\uffff\1\32\1\4\1\uffff\1\50\1\7\1\10\1\45\1\35\1\11\1\27\1\46\1\36\1\12\1\40\1\37\1\13\1\124\1\125\1\41\1\14\1\42\1\33\1\15\1\17\1\16\1\20\1\60\1\21\1\115\1\uffff\1\43\4\uffff\1\47\1\34\1\51\1\114\1\52\1\53\1\54\1\55\1\56\1\57\1\61\24\uffff\1\117\1\uffff\1\120\1\121\1\123\1\126\2\uffff\1\44\1\24\1\22\1\5\1\25\1\23\2\uffff\1\62\1\uffff\1\30\1\31\7\uffff\1\71\35\uffff\1\67\3\uffff\1\72\1\73\1\101\2\uffff\1\110\6\uffff\1\116\1\uffff\1\63\6\uffff\1\66\4\uffff\1\104\1\103\3\uffff\1\3\7\uffff\1\100\2\uffff\1\113\1\102\1\uffff\1\70\1\uffff\1\106\3\uffff\1\76\2\uffff\1\64\1\75\3\uffff\1\105\1\107\2\uffff\1\74\2\uffff\1\65\1\111\6\uffff\1\77\1\uffff\1\6\1\26\2\uffff\1\112";
     static final String DFA22_specialS =
-        "\1\0\u0100\uffff}>";
+        "\1\0\u0103\uffff}>";
     static final String[] DFA22_transitionS = {
-            "\11\53\2\52\2\53\1\52\22\53\1\52\1\21\1\50\1\26\1\47\1\15\1\20\1\51\1\5\1\7\1\13\1\11\1\25\1\12\1\23\1\14\1\44\11\45\1\4\1\31\1\16\1\10\1\17\1\24\1\53\32\47\1\27\1\53\1\30\1\46\1\47\1\53\1\3\1\47\1\35\1\34\1\32\1\36\2\47\1\22\4\47\1\41\3\47\1\43\1\33\1\42\1\47\1\40\1\37\3\47\1\1\1\6\1\2\uff82\53",
+            "\11\54\2\53\2\54\1\53\22\54\1\53\1\20\1\51\1\27\1\50\1\13\1\17\1\52\1\25\1\26\1\11\1\7\1\24\1\10\1\22\1\12\1\45\11\46\1\6\1\32\1\14\1\4\1\15\1\23\1\54\32\50\1\30\1\54\1\31\1\47\1\50\1\54\1\3\1\50\1\36\1\35\1\33\1\37\2\50\1\21\4\50\1\42\1\5\2\50\1\44\1\34\1\43\1\50\1\41\1\40\3\50\1\1\1\16\1\2\uff82\54",
             "",
             "",
-            "\1\56\1\uffff\1\57\4\uffff\1\60",
-            "\1\62",
-            "",
-            "\1\65",
-            "",
-            "\1\70\1\71",
-            "\1\74\21\uffff\1\73",
-            "\1\100\17\uffff\1\76\1\77",
-            "\1\103\22\uffff\1\102",
-            "\1\106\4\uffff\1\107\15\uffff\1\105",
+            "\1\57\1\uffff\1\60\4\uffff\1\61",
+            "\1\63\1\64",
+            "\1\66",
+            "\1\67",
+            "\1\72\21\uffff\1\71",
+            "\1\76\17\uffff\1\74\1\75",
+            "\1\101\22\uffff\1\100",
+            "\1\104\4\uffff\1\105\15\uffff\1\103",
+            "\1\107",
             "\1\111",
             "\1\113",
             "\1\115",
@@ -3232,19 +3260,21 @@ public class InternalBimmodelLexer extends Lexer {
             "",
             "",
             "",
-            "\1\140\13\uffff\1\141",
-            "\1\143\1\144\1\uffff\1\142\1\uffff\1\145",
-            "\1\146\11\uffff\1\147",
-            "\1\150",
-            "\1\152\7\uffff\1\153\5\uffff\1\151",
-            "\1\154",
-            "\1\155",
-            "\1\156\17\uffff\1\157",
-            "\1\162\11\uffff\1\160\6\uffff\1\161",
-            "\1\163",
-            "\12\165\10\uffff\1\167\1\uffff\3\167\5\uffff\1\167\13\uffff\1\164\6\uffff\1\165\2\uffff\1\167\1\uffff\3\167\5\uffff\1\167\13\uffff\1\164",
-            "\12\165\10\uffff\1\167\1\uffff\3\167\5\uffff\1\167\22\uffff\1\165\2\uffff\1\167\1\uffff\3\167\5\uffff\1\167",
-            "\1\61\34\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "",
+            "",
+            "\1\142\13\uffff\1\143",
+            "\1\145\1\146\1\uffff\1\144\1\uffff\1\147",
+            "\1\150\11\uffff\1\151",
+            "\1\152",
+            "\1\154\7\uffff\1\155\5\uffff\1\153",
+            "\1\156",
+            "\1\157",
+            "\1\160\17\uffff\1\161",
+            "\1\164\11\uffff\1\162\6\uffff\1\163",
+            "\1\165",
+            "\12\167\10\uffff\1\171\1\uffff\3\171\5\uffff\1\171\13\uffff\1\166\6\uffff\1\167\2\uffff\1\171\1\uffff\3\171\5\uffff\1\171\13\uffff\1\166",
+            "\12\167\10\uffff\1\171\1\uffff\3\171\5\uffff\1\171\22\uffff\1\167\2\uffff\1\171\1\uffff\3\171\5\uffff\1\171",
+            "\1\62\34\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
             "",
             "",
             "",
@@ -3252,216 +3282,218 @@ public class InternalBimmodelLexer extends Lexer {
             "",
             "",
             "",
-            "\1\172",
-            "\1\173",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "\1\174",
             "\1\175",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
             "",
             "\1\177",
             "",
-            "\1\u0081",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\2\61\1\u0082\27\61",
+            "",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "\1\u0082",
+            "",
             "\1\u0084",
-            "\1\u0085",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\2\62\1\u0085\27\62",
             "\1\u0087",
             "\1\u0088",
-            "\1\u0089",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "\1\u008a",
             "\1\u008b",
             "\1\u008c",
             "\1\u008d",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
-            "\1\u008f\1\u0090",
-            "\1\u0091",
-            "\1\u0092",
-            "\1\u0093",
+            "\1\u008e",
+            "\1\u008f",
+            "\1\u0090",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
+            "\1\u0092\1\u0093",
             "\1\u0094",
-            "\1\u0096\5\uffff\1\u0095",
+            "\1\u0095",
+            "\1\u0096",
             "\1\u0097",
-            "\1\u0098",
-            "\1\u0099\3\uffff\1\u009a",
+            "\1\u0099\5\uffff\1\u0098",
+            "\1\u009a",
             "\1\u009b",
-            "\1\u009c",
-            "\1\u009d",
-            "",
-            "\12\165\10\uffff\1\167\1\uffff\3\167\5\uffff\1\167\22\uffff\1\165\2\uffff\1\167\1\uffff\3\167\5\uffff\1\167",
-            "",
-            "",
-            "",
-            "",
+            "\1\u009c\3\uffff\1\u009d",
             "\1\u009e",
             "\1\u009f",
-            "",
-            "",
-            "",
-            "",
-            "",
             "\1\u00a0",
-            "\32\u00a1",
             "",
+            "\12\167\10\uffff\1\171\1\uffff\3\171\5\uffff\1\171\22\uffff\1\167\2\uffff\1\171\1\uffff\3\171\5\uffff\1\171",
+            "",
+            "",
+            "",
+            "",
+            "\1\u00a1",
             "\1\u00a2",
             "",
             "",
+            "",
+            "",
+            "",
+            "",
             "\1\u00a3",
-            "\1\u00a4",
+            "\32\u00a4",
+            "",
             "\1\u00a5",
+            "",
+            "",
             "\1\u00a6",
             "\1\u00a7",
             "\1\u00a8",
             "\1\u00a9",
-            "",
             "\1\u00aa",
             "\1\u00ab",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "\1\u00ac",
+            "",
             "\1\u00ad",
             "\1\u00ae",
-            "\1\u00af",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
-            "\1\u00b3",
-            "\1\u00b4",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
+            "\1\u00b0",
+            "\1\u00b1",
+            "\1\u00b2",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
             "\1\u00b6",
             "\1\u00b7",
-            "\1\u00b8",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
             "\1\u00b9",
             "\1\u00ba",
             "\1\u00bb",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\u00a1",
+            "\1\u00bc",
             "\1\u00bd",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
-            "\1\u00bf",
+            "\1\u00be",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\u00a4",
             "\1\u00c0",
-            "\1\u00c1",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
             "\1\u00c2",
             "\1\u00c3",
             "\1\u00c4",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "\1\u00c5",
             "\1\u00c6",
-            "",
             "\1\u00c7",
-            "\1\u00c8",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
             "\1\u00c9",
             "",
-            "",
-            "",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
-            "",
+            "\1\u00ca",
+            "\1\u00cb",
             "\1\u00cc",
-            "\1\u00cd",
-            "\1\u00ce",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "",
+            "",
+            "",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
+            "",
+            "\1\u00cf",
             "\1\u00d0",
             "\1\u00d1",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
+            "\1\u00d3",
+            "\1\u00d4",
             "",
-            "\1\u00d2",
-            "",
-            "\1\u00d3\16\uffff\1\u00d4",
             "\1\u00d5",
-            "\1\u00d6",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "",
+            "\1\u00d6\16\uffff\1\u00d7",
             "\1\u00d8",
             "\1\u00d9",
-            "",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
+            "\1\u00db",
             "\1\u00dc",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
             "",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
+            "\1\u00df",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
             "",
-            "\1\u00de",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
-            "\1\u00e0",
             "",
             "\1\u00e1",
-            "\1\u00e2",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
+            "\1\u00e3",
+            "",
             "\1\u00e4",
             "\1\u00e5",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
-            "",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
+            "\1\u00e7",
             "\1\u00e8",
-            "\1\u00e9",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
+            "",
+            "\1\u00eb",
+            "\1\u00ec",
             "",
             "",
-            "\1\u00ea",
-            "",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
-            "",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
             "\1\u00ed",
-            "\1\u00ee",
             "",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
+            "",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
             "\1\u00f0",
-            "",
-            "",
             "\1\u00f1",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
+            "\1\u00f3",
             "",
             "",
             "\1\u00f4",
-            "\1\u00f5",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
             "",
-            "\1\u00f6",
+            "",
             "\1\u00f7",
-            "",
-            "",
             "\1\u00f8",
+            "",
             "\1\u00f9",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "\1\u00fa",
+            "",
+            "",
             "\1\u00fb",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
-            "",
+            "\1\u00fc",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
             "\1\u00fe",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
+            "",
+            "\1\u0101",
             "",
             "",
-            "\1\u00ff",
-            "\1\61\13\uffff\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "\1\u0102",
+            "\1\62\13\uffff\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62",
             ""
     };
 
@@ -3495,7 +3527,7 @@ public class InternalBimmodelLexer extends Lexer {
             this.transition = DFA22_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | RULE_IFCNAME | RULE_HEX | RULE_INT | RULE_DECIMAL | RULE_ID | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
+            return "1:1: Tokens : ( T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | RULE_IFCNAME | RULE_HEX | RULE_INT | RULE_DECIMAL | RULE_ID | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             IntStream input = _input;
@@ -3511,85 +3543,87 @@ public class InternalBimmodelLexer extends Lexer {
 
                         else if ( (LA22_0=='a') ) {s = 3;}
 
-                        else if ( (LA22_0==':') ) {s = 4;}
+                        else if ( (LA22_0=='=') ) {s = 4;}
 
-                        else if ( (LA22_0=='(') ) {s = 5;}
+                        else if ( (LA22_0=='o') ) {s = 5;}
 
-                        else if ( (LA22_0=='|') ) {s = 6;}
+                        else if ( (LA22_0==':') ) {s = 6;}
 
-                        else if ( (LA22_0==')') ) {s = 7;}
+                        else if ( (LA22_0=='+') ) {s = 7;}
 
-                        else if ( (LA22_0=='=') ) {s = 8;}
+                        else if ( (LA22_0=='-') ) {s = 8;}
 
-                        else if ( (LA22_0=='+') ) {s = 9;}
+                        else if ( (LA22_0=='*') ) {s = 9;}
 
-                        else if ( (LA22_0=='-') ) {s = 10;}
+                        else if ( (LA22_0=='/') ) {s = 10;}
 
-                        else if ( (LA22_0=='*') ) {s = 11;}
+                        else if ( (LA22_0=='%') ) {s = 11;}
 
-                        else if ( (LA22_0=='/') ) {s = 12;}
+                        else if ( (LA22_0=='<') ) {s = 12;}
 
-                        else if ( (LA22_0=='%') ) {s = 13;}
+                        else if ( (LA22_0=='>') ) {s = 13;}
 
-                        else if ( (LA22_0=='<') ) {s = 14;}
+                        else if ( (LA22_0=='|') ) {s = 14;}
 
-                        else if ( (LA22_0=='>') ) {s = 15;}
+                        else if ( (LA22_0=='&') ) {s = 15;}
 
-                        else if ( (LA22_0=='&') ) {s = 16;}
+                        else if ( (LA22_0=='!') ) {s = 16;}
 
-                        else if ( (LA22_0=='!') ) {s = 17;}
+                        else if ( (LA22_0=='i') ) {s = 17;}
 
-                        else if ( (LA22_0=='i') ) {s = 18;}
+                        else if ( (LA22_0=='.') ) {s = 18;}
 
-                        else if ( (LA22_0=='.') ) {s = 19;}
+                        else if ( (LA22_0=='?') ) {s = 19;}
 
-                        else if ( (LA22_0=='?') ) {s = 20;}
+                        else if ( (LA22_0==',') ) {s = 20;}
 
-                        else if ( (LA22_0==',') ) {s = 21;}
+                        else if ( (LA22_0=='(') ) {s = 21;}
 
-                        else if ( (LA22_0=='#') ) {s = 22;}
+                        else if ( (LA22_0==')') ) {s = 22;}
 
-                        else if ( (LA22_0=='[') ) {s = 23;}
+                        else if ( (LA22_0=='#') ) {s = 23;}
 
-                        else if ( (LA22_0==']') ) {s = 24;}
+                        else if ( (LA22_0=='[') ) {s = 24;}
 
-                        else if ( (LA22_0==';') ) {s = 25;}
+                        else if ( (LA22_0==']') ) {s = 25;}
 
-                        else if ( (LA22_0=='e') ) {s = 26;}
+                        else if ( (LA22_0==';') ) {s = 26;}
 
-                        else if ( (LA22_0=='s') ) {s = 27;}
+                        else if ( (LA22_0=='e') ) {s = 27;}
 
-                        else if ( (LA22_0=='d') ) {s = 28;}
+                        else if ( (LA22_0=='s') ) {s = 28;}
 
-                        else if ( (LA22_0=='c') ) {s = 29;}
+                        else if ( (LA22_0=='d') ) {s = 29;}
 
-                        else if ( (LA22_0=='f') ) {s = 30;}
+                        else if ( (LA22_0=='c') ) {s = 30;}
 
-                        else if ( (LA22_0=='w') ) {s = 31;}
+                        else if ( (LA22_0=='f') ) {s = 31;}
 
-                        else if ( (LA22_0=='v') ) {s = 32;}
+                        else if ( (LA22_0=='w') ) {s = 32;}
 
-                        else if ( (LA22_0=='n') ) {s = 33;}
+                        else if ( (LA22_0=='v') ) {s = 33;}
 
-                        else if ( (LA22_0=='t') ) {s = 34;}
+                        else if ( (LA22_0=='n') ) {s = 34;}
 
-                        else if ( (LA22_0=='r') ) {s = 35;}
+                        else if ( (LA22_0=='t') ) {s = 35;}
 
-                        else if ( (LA22_0=='0') ) {s = 36;}
+                        else if ( (LA22_0=='r') ) {s = 36;}
 
-                        else if ( ((LA22_0>='1' && LA22_0<='9')) ) {s = 37;}
+                        else if ( (LA22_0=='0') ) {s = 37;}
 
-                        else if ( (LA22_0=='^') ) {s = 38;}
+                        else if ( ((LA22_0>='1' && LA22_0<='9')) ) {s = 38;}
 
-                        else if ( (LA22_0=='$'||(LA22_0>='A' && LA22_0<='Z')||LA22_0=='_'||LA22_0=='b'||(LA22_0>='g' && LA22_0<='h')||(LA22_0>='j' && LA22_0<='m')||(LA22_0>='o' && LA22_0<='q')||LA22_0=='u'||(LA22_0>='x' && LA22_0<='z')) ) {s = 39;}
+                        else if ( (LA22_0=='^') ) {s = 39;}
 
-                        else if ( (LA22_0=='\"') ) {s = 40;}
+                        else if ( (LA22_0=='$'||(LA22_0>='A' && LA22_0<='Z')||LA22_0=='_'||LA22_0=='b'||(LA22_0>='g' && LA22_0<='h')||(LA22_0>='j' && LA22_0<='m')||(LA22_0>='p' && LA22_0<='q')||LA22_0=='u'||(LA22_0>='x' && LA22_0<='z')) ) {s = 40;}
 
-                        else if ( (LA22_0=='\'') ) {s = 41;}
+                        else if ( (LA22_0=='\"') ) {s = 41;}
 
-                        else if ( ((LA22_0>='\t' && LA22_0<='\n')||LA22_0=='\r'||LA22_0==' ') ) {s = 42;}
+                        else if ( (LA22_0=='\'') ) {s = 42;}
 
-                        else if ( ((LA22_0>='\u0000' && LA22_0<='\b')||(LA22_0>='\u000B' && LA22_0<='\f')||(LA22_0>='\u000E' && LA22_0<='\u001F')||LA22_0=='@'||LA22_0=='\\'||LA22_0=='`'||(LA22_0>='~' && LA22_0<='\uFFFF')) ) {s = 43;}
+                        else if ( ((LA22_0>='\t' && LA22_0<='\n')||LA22_0=='\r'||LA22_0==' ') ) {s = 43;}
+
+                        else if ( ((LA22_0>='\u0000' && LA22_0<='\b')||(LA22_0>='\u000B' && LA22_0<='\f')||(LA22_0>='\u000E' && LA22_0<='\u001F')||LA22_0=='@'||LA22_0=='\\'||LA22_0=='`'||(LA22_0>='~' && LA22_0<='\uFFFF')) ) {s = 44;}
 
                         if ( s>=0 ) return s;
                         break;

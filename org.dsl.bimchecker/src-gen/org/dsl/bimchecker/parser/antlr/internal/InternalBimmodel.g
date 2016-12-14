@@ -200,9 +200,9 @@ ruleAliass returns [EObject current=null]
 		{
 			newLeafNode(otherlv_0, grammarAccess.getAliassAccess().getAliasKeyword_0());
 		}
-		otherlv_1='{'
+		otherlv_1='='
 		{
-			newLeafNode(otherlv_1, grammarAccess.getAliassAccess().getLeftCurlyBracketKeyword_1());
+			newLeafNode(otherlv_1, grammarAccess.getAliassAccess().getEqualsSignKeyword_1());
 		}
 		(
 			(
@@ -223,27 +223,29 @@ ruleAliass returns [EObject current=null]
 			)
 		)
 		(
+			otherlv_3='or'
+			{
+				newLeafNode(otherlv_3, grammarAccess.getAliassAccess().getOrKeyword_3_0());
+			}
 			(
-				lv_aliass_3_0=RULE_IFCNAME
-				{
-					newLeafNode(lv_aliass_3_0, grammarAccess.getAliassAccess().getAliassIFCNAMETerminalRuleCall_3_0());
-				}
-				{
-					if ($current==null) {
-						$current = createModelElement(grammarAccess.getAliassRule());
+				(
+					lv_aliass_4_0=RULE_IFCNAME
+					{
+						newLeafNode(lv_aliass_4_0, grammarAccess.getAliassAccess().getAliassIFCNAMETerminalRuleCall_3_1_0());
 					}
-					addWithLastConsumed(
-						$current,
-						"aliass",
-						lv_aliass_3_0,
-						"org.dsl.bimchecker.Bimmodel.IFCNAME");
-				}
+					{
+						if ($current==null) {
+							$current = createModelElement(grammarAccess.getAliassRule());
+						}
+						addWithLastConsumed(
+							$current,
+							"aliass",
+							lv_aliass_4_0,
+							"org.dsl.bimchecker.Bimmodel.IFCNAME");
+					}
+				)
 			)
 		)*
-		otherlv_4='}'
-		{
-			newLeafNode(otherlv_4, grammarAccess.getAliassAccess().getRightCurlyBracketKeyword_4());
-		}
 	)
 ;
 
@@ -327,9 +329,9 @@ ruleAnnotationDetail returns [EObject current=null]
 	leaveRule();
 }:
 	(
-		otherlv_0='('
+		otherlv_0='='
 		{
-			newLeafNode(otherlv_0, grammarAccess.getAnnotationDetailAccess().getLeftParenthesisKeyword_0());
+			newLeafNode(otherlv_0, grammarAccess.getAnnotationDetailAccess().getEqualsSignKeyword_0());
 		}
 		(
 			(
@@ -350,9 +352,9 @@ ruleAnnotationDetail returns [EObject current=null]
 					}
 				)
 			)
-			otherlv_2='|'
+			otherlv_2='or'
 			{
-				newLeafNode(otherlv_2, grammarAccess.getAnnotationDetailAccess().getVerticalLineKeyword_1_1());
+				newLeafNode(otherlv_2, grammarAccess.getAnnotationDetailAccess().getOrKeyword_1_1());
 			}
 		)*
 		(
@@ -373,10 +375,6 @@ ruleAnnotationDetail returns [EObject current=null]
 				}
 			)
 		)
-		otherlv_4=')'
-		{
-			newLeafNode(otherlv_4, grammarAccess.getAnnotationDetailAccess().getRightParenthesisKeyword_3());
-		}
 	)
 ;
 

@@ -23,10 +23,11 @@ import java.util.HashMap;
 @SuppressWarnings("all")
 public class InternalBimmodelParser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_HEX", "RULE_INT", "RULE_DECIMAL", "RULE_IFCNAME", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'='", "'||'", "'&&'", "'+='", "'-='", "'*='", "'/='", "'%='", "'=='", "'!='", "'==='", "'!=='", "'>='", "'>'", "'<'", "'->'", "'..<'", "'..'", "'=>'", "'<>'", "'?:'", "'+'", "'-'", "'*'", "'**'", "'/'", "'%'", "'!'", "'++'", "'--'", "'.'", "'val'", "'extends'", "'static'", "'import'", "'extension'", "'super'", "'false'", "'{'", "'}'", "'alias'", "'annotation'", "':'", "'('", "')'", "'|'", "'instanceof'", "'as'", "','", "'#'", "'['", "']'", "';'", "'if'", "'else'", "'switch'", "'default'", "'case'", "'for'", "'while'", "'do'", "'new'", "'null'", "'typeof'", "'throw'", "'return'", "'try'", "'finally'", "'synchronized'", "'catch'", "'?'", "'&'", "'::'", "'?.'", "'var'", "'true'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_HEX", "RULE_INT", "RULE_DECIMAL", "RULE_IFCNAME", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'='", "'||'", "'&&'", "'+='", "'-='", "'*='", "'/='", "'%='", "'=='", "'!='", "'==='", "'!=='", "'>='", "'>'", "'<'", "'->'", "'..<'", "'..'", "'=>'", "'<>'", "'?:'", "'+'", "'-'", "'*'", "'**'", "'/'", "'%'", "'!'", "'++'", "'--'", "'.'", "'val'", "'extends'", "'static'", "'import'", "'extension'", "'super'", "'false'", "'{'", "'}'", "'alias'", "'or'", "'annotation'", "':'", "'instanceof'", "'as'", "','", "')'", "'#'", "'['", "']'", "';'", "'('", "'if'", "'else'", "'switch'", "'default'", "'case'", "'for'", "'while'", "'do'", "'new'", "'null'", "'typeof'", "'throw'", "'return'", "'try'", "'finally'", "'synchronized'", "'catch'", "'?'", "'&'", "'::'", "'?.'", "'|'", "'var'", "'true'"
     };
     public static final int RULE_HEX=6;
     public static final int T__50=50;
+    public static final int T__90=90;
     public static final int T__19=19;
     public static final int T__15=15;
     public static final int T__59=59;
@@ -7070,11 +7071,11 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 {
                 int LA3_1 = input.LA(2);
 
-                if ( (LA3_1==EOF||(LA3_1>=RULE_STRING && LA3_1<=RULE_DECIMAL)||(LA3_1>=15 && LA3_1<=53)||(LA3_1>=56 && LA3_1<=58)||(LA3_1>=60 && LA3_1<=83)||(LA3_1>=86 && LA3_1<=89)) ) {
-                    alt3=2;
-                }
-                else if ( (LA3_1==14) ) {
+                if ( (LA3_1==14) ) {
                     alt3=1;
+                }
+                else if ( (LA3_1==EOF||(LA3_1>=RULE_STRING && LA3_1<=RULE_DECIMAL)||(LA3_1>=15 && LA3_1<=53)||(LA3_1>=57 && LA3_1<=83)||(LA3_1>=86 && LA3_1<=87)||(LA3_1>=89 && LA3_1<=90)) ) {
+                    alt3=2;
                 }
                 else {
                     if (state.backtracking>0) {state.failed=true; return ;}
@@ -7089,11 +7090,11 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 {
                 int LA3_2 = input.LA(2);
 
-                if ( (LA3_2==EOF||(LA3_2>=RULE_STRING && LA3_2<=RULE_DECIMAL)||(LA3_2>=15 && LA3_2<=53)||(LA3_2>=56 && LA3_2<=58)||(LA3_2>=60 && LA3_2<=83)||(LA3_2>=86 && LA3_2<=89)) ) {
-                    alt3=2;
-                }
-                else if ( (LA3_2==14) ) {
+                if ( (LA3_2==14) ) {
                     alt3=1;
+                }
+                else if ( (LA3_2==EOF||(LA3_2>=RULE_STRING && LA3_2<=RULE_DECIMAL)||(LA3_2>=15 && LA3_2<=53)||(LA3_2>=57 && LA3_2<=83)||(LA3_2>=86 && LA3_2<=87)||(LA3_2>=89 && LA3_2<=90)) ) {
+                    alt3=2;
                 }
                 else {
                     if (state.backtracking>0) {state.failed=true; return ;}
@@ -7108,11 +7109,11 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 {
                 int LA3_3 = input.LA(2);
 
-                if ( (LA3_3==EOF||(LA3_3>=RULE_STRING && LA3_3<=RULE_DECIMAL)||(LA3_3>=15 && LA3_3<=53)||(LA3_3>=56 && LA3_3<=58)||(LA3_3>=60 && LA3_3<=83)||(LA3_3>=86 && LA3_3<=89)) ) {
-                    alt3=2;
-                }
-                else if ( (LA3_3==14) ) {
+                if ( (LA3_3==14) ) {
                     alt3=1;
+                }
+                else if ( (LA3_3==EOF||(LA3_3>=RULE_STRING && LA3_3<=RULE_DECIMAL)||(LA3_3>=15 && LA3_3<=53)||(LA3_3>=57 && LA3_3<=83)||(LA3_3>=86 && LA3_3<=87)||(LA3_3>=89 && LA3_3<=90)) ) {
+                    alt3=2;
                 }
                 else {
                     if (state.backtracking>0) {state.failed=true; return ;}
@@ -7127,7 +7128,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 {
                 int LA3_4 = input.LA(2);
 
-                if ( (LA3_4==EOF||(LA3_4>=RULE_STRING && LA3_4<=RULE_DECIMAL)||(LA3_4>=15 && LA3_4<=53)||(LA3_4>=56 && LA3_4<=58)||(LA3_4>=60 && LA3_4<=83)||(LA3_4>=86 && LA3_4<=89)) ) {
+                if ( (LA3_4==EOF||(LA3_4>=RULE_STRING && LA3_4<=RULE_DECIMAL)||(LA3_4>=15 && LA3_4<=53)||(LA3_4>=57 && LA3_4<=83)||(LA3_4>=86 && LA3_4<=87)||(LA3_4>=89 && LA3_4<=90)) ) {
                     alt3=2;
                 }
                 else if ( (LA3_4==14) ) {
@@ -7146,11 +7147,11 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 {
                 int LA3_5 = input.LA(2);
 
-                if ( (LA3_5==EOF||(LA3_5>=RULE_STRING && LA3_5<=RULE_DECIMAL)||(LA3_5>=15 && LA3_5<=53)||(LA3_5>=56 && LA3_5<=58)||(LA3_5>=60 && LA3_5<=83)||(LA3_5>=86 && LA3_5<=89)) ) {
-                    alt3=2;
-                }
-                else if ( (LA3_5==14) ) {
+                if ( (LA3_5==14) ) {
                     alt3=1;
+                }
+                else if ( (LA3_5==EOF||(LA3_5>=RULE_STRING && LA3_5<=RULE_DECIMAL)||(LA3_5>=15 && LA3_5<=53)||(LA3_5>=57 && LA3_5<=83)||(LA3_5>=86 && LA3_5<=87)||(LA3_5>=89 && LA3_5<=90)) ) {
+                    alt3=2;
                 }
                 else {
                     if (state.backtracking>0) {state.failed=true; return ;}
@@ -7172,9 +7173,9 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             case 50:
             case 51:
             case 52:
-            case 57:
+            case 62:
             case 63:
-            case 64:
+            case 66:
             case 67:
             case 69:
             case 72:
@@ -7187,7 +7188,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             case 79:
             case 80:
             case 82:
-            case 89:
+            case 90:
                 {
                 alt3=2;
                 }
@@ -7643,7 +7644,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             int alt6=2;
             int LA6_0 = input.LA(1);
 
-            if ( (LA6_0==60) ) {
+            if ( (LA6_0==58) ) {
                 alt6=1;
             }
             else if ( ((LA6_0>=26 && LA6_0<=28)) ) {
@@ -7751,11 +7752,11 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 {
                 int LA7_2 = input.LA(2);
 
-                if ( (LA7_2==14) ) {
-                    alt7=2;
-                }
-                else if ( (LA7_2==EOF||(LA7_2>=RULE_STRING && LA7_2<=RULE_DECIMAL)||LA7_2==28||(LA7_2>=35 && LA7_2<=36)||LA7_2==41||(LA7_2>=46 && LA7_2<=52)||LA7_2==57||(LA7_2>=63 && LA7_2<=64)||LA7_2==67||LA7_2==69||(LA7_2>=72 && LA7_2<=80)||LA7_2==82||LA7_2==89) ) {
+                if ( (LA7_2==EOF||(LA7_2>=RULE_STRING && LA7_2<=RULE_DECIMAL)||LA7_2==28||(LA7_2>=35 && LA7_2<=36)||LA7_2==41||(LA7_2>=46 && LA7_2<=52)||(LA7_2>=62 && LA7_2<=63)||(LA7_2>=66 && LA7_2<=67)||LA7_2==69||(LA7_2>=72 && LA7_2<=80)||LA7_2==82||LA7_2==90) ) {
                     alt7=4;
+                }
+                else if ( (LA7_2==14) ) {
+                    alt7=2;
                 }
                 else {
                     if (state.backtracking>0) {state.failed=true; return ;}
@@ -8129,7 +8130,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 if ( (LA9_1==27) ) {
                     alt9=1;
                 }
-                else if ( (LA9_1==EOF||(LA9_1>=RULE_STRING && LA9_1<=RULE_DECIMAL)||LA9_1==28||(LA9_1>=35 && LA9_1<=36)||LA9_1==41||(LA9_1>=46 && LA9_1<=52)||LA9_1==57||(LA9_1>=63 && LA9_1<=64)||LA9_1==67||LA9_1==69||(LA9_1>=72 && LA9_1<=80)||LA9_1==82||LA9_1==89) ) {
+                else if ( (LA9_1==EOF||(LA9_1>=RULE_STRING && LA9_1<=RULE_DECIMAL)||LA9_1==28||(LA9_1>=35 && LA9_1<=36)||LA9_1==41||(LA9_1>=46 && LA9_1<=52)||(LA9_1>=62 && LA9_1<=63)||(LA9_1>=66 && LA9_1<=67)||LA9_1==69||(LA9_1>=72 && LA9_1<=80)||LA9_1==82||LA9_1==90) ) {
                     alt9=2;
                 }
                 else {
@@ -8562,7 +8563,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( ((LA13_0>=35 && LA13_0<=36)||LA13_0==41) ) {
                 alt13=1;
             }
-            else if ( ((LA13_0>=RULE_STRING && LA13_0<=RULE_DECIMAL)||LA13_0==28||(LA13_0>=46 && LA13_0<=52)||LA13_0==57||(LA13_0>=63 && LA13_0<=64)||LA13_0==67||LA13_0==69||(LA13_0>=72 && LA13_0<=80)||LA13_0==82||LA13_0==89) ) {
+            else if ( ((LA13_0>=RULE_STRING && LA13_0<=RULE_DECIMAL)||LA13_0==28||(LA13_0>=46 && LA13_0<=52)||(LA13_0>=62 && LA13_0<=63)||(LA13_0>=66 && LA13_0<=67)||LA13_0==69||(LA13_0>=72 && LA13_0<=80)||LA13_0==82||LA13_0==90) ) {
                 alt13=2;
             }
             else {
@@ -9615,18 +9616,18 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:2679:1: ( ( ruleXCollectionLiteral ) | ( ( ruleXClosure ) ) | ( ruleXBooleanLiteral ) | ( ruleXNumberLiteral ) | ( ruleXNullLiteral ) | ( ruleXStringLiteral ) | ( ruleXTypeLiteral ) )
             int alt21=7;
             switch ( input.LA(1) ) {
-            case 63:
+            case 62:
                 {
                 alt21=1;
                 }
                 break;
-            case 64:
+            case 63:
                 {
                 alt21=2;
                 }
                 break;
             case 51:
-            case 89:
+            case 90:
                 {
                 alt21=3;
                 }
@@ -9857,13 +9858,13 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             int alt22=2;
             int LA22_0 = input.LA(1);
 
-            if ( (LA22_0==63) ) {
+            if ( (LA22_0==62) ) {
                 int LA22_1 = input.LA(2);
 
                 if ( (LA22_1==52) ) {
                     alt22=1;
                 }
-                else if ( (LA22_1==64) ) {
+                else if ( (LA22_1==63) ) {
                     alt22=2;
                 }
                 else {
@@ -10042,10 +10043,10 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             int alt24=2;
             int LA24_0 = input.LA(1);
 
-            if ( (LA24_0==56) ) {
+            if ( (LA24_0==57) ) {
                 alt24=1;
             }
-            else if ( (LA24_0==62) ) {
+            else if ( (LA24_0==60) ) {
                 alt24=2;
             }
             else {
@@ -10142,10 +10143,10 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             int alt25=2;
             int LA25_0 = input.LA(1);
 
-            if ( (LA25_0==45||LA25_0==88) ) {
+            if ( (LA25_0==45||LA25_0==89) ) {
                 alt25=1;
             }
-            else if ( ((LA25_0>=RULE_STRING && LA25_0<=RULE_DECIMAL)||LA25_0==28||(LA25_0>=35 && LA25_0<=36)||LA25_0==41||(LA25_0>=46 && LA25_0<=52)||LA25_0==57||(LA25_0>=63 && LA25_0<=64)||LA25_0==67||LA25_0==69||(LA25_0>=72 && LA25_0<=80)||LA25_0==82||LA25_0==89) ) {
+            else if ( ((LA25_0>=RULE_STRING && LA25_0<=RULE_DECIMAL)||LA25_0==28||(LA25_0>=35 && LA25_0<=36)||LA25_0==41||(LA25_0>=46 && LA25_0<=52)||(LA25_0>=62 && LA25_0<=63)||(LA25_0>=66 && LA25_0<=67)||LA25_0==69||(LA25_0>=72 && LA25_0<=80)||LA25_0==82||LA25_0==90) ) {
                 alt25=2;
             }
             else {
@@ -10230,7 +10231,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             int alt26=2;
             int LA26_0 = input.LA(1);
 
-            if ( (LA26_0==88) ) {
+            if ( (LA26_0==89) ) {
                 alt26=1;
             }
             else if ( (LA26_0==45) ) {
@@ -10337,7 +10338,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                     throw nvae;
                 }
             }
-            else if ( (LA27_0==32||LA27_0==57) ) {
+            else if ( (LA27_0==32||LA27_0==66) ) {
                 alt27=1;
             }
             else {
@@ -10853,7 +10854,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( (LA32_0==51) ) {
                 alt32=1;
             }
-            else if ( (LA32_0==89) ) {
+            else if ( (LA32_0==90) ) {
                 alt32=2;
             }
             else {
@@ -11293,7 +11294,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( (LA37_0==RULE_ID) ) {
                 alt37=1;
             }
-            else if ( (LA37_0==32||LA37_0==57) ) {
+            else if ( (LA37_0==32||LA37_0==66) ) {
                 alt37=2;
             }
             else {
@@ -11384,7 +11385,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             int alt38=2;
             int LA38_0 = input.LA(1);
 
-            if ( (LA38_0==RULE_ID||LA38_0==32||LA38_0==57) ) {
+            if ( (LA38_0==RULE_ID||LA38_0==32||LA38_0==66) ) {
                 alt38=1;
             }
             else if ( (LA38_0==84) ) {
@@ -12091,7 +12092,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             int alt42=2;
             int LA42_0 = input.LA(1);
 
-            if ( (LA42_0==55) ) {
+            if ( (LA42_0==56) ) {
                 alt42=1;
             }
             switch (alt42) {
@@ -12217,7 +12218,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:3309:1: ( rule__Aliass__Group__0__Impl rule__Aliass__Group__1 )
             // InternalBimmodel.g:3310:2: rule__Aliass__Group__0__Impl rule__Aliass__Group__1
             {
-            pushFollow(FOLLOW_5);
+            pushFollow(FOLLOW_8);
             rule__Aliass__Group__0__Impl();
 
             state._fsp--;
@@ -12296,7 +12297,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:3336:1: ( rule__Aliass__Group__1__Impl rule__Aliass__Group__2 )
             // InternalBimmodel.g:3337:2: rule__Aliass__Group__1__Impl rule__Aliass__Group__2
             {
-            pushFollow(FOLLOW_8);
+            pushFollow(FOLLOW_9);
             rule__Aliass__Group__1__Impl();
 
             state._fsp--;
@@ -12325,24 +12326,24 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Aliass__Group__1__Impl"
-    // InternalBimmodel.g:3344:1: rule__Aliass__Group__1__Impl : ( '{' ) ;
+    // InternalBimmodel.g:3344:1: rule__Aliass__Group__1__Impl : ( '=' ) ;
     public final void rule__Aliass__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalBimmodel.g:3348:1: ( ( '{' ) )
-            // InternalBimmodel.g:3349:1: ( '{' )
+            // InternalBimmodel.g:3348:1: ( ( '=' ) )
+            // InternalBimmodel.g:3349:1: ( '=' )
             {
-            // InternalBimmodel.g:3349:1: ( '{' )
-            // InternalBimmodel.g:3350:2: '{'
+            // InternalBimmodel.g:3349:1: ( '=' )
+            // InternalBimmodel.g:3350:2: '='
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getAliassAccess().getLeftCurlyBracketKeyword_1()); 
+               before(grammarAccess.getAliassAccess().getEqualsSignKeyword_1()); 
             }
-            match(input,52,FOLLOW_2); if (state.failed) return ;
+            match(input,14,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getAliassAccess().getLeftCurlyBracketKeyword_1()); 
+               after(grammarAccess.getAliassAccess().getEqualsSignKeyword_1()); 
             }
 
             }
@@ -12375,7 +12376,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:3363:1: ( rule__Aliass__Group__2__Impl rule__Aliass__Group__3 )
             // InternalBimmodel.g:3364:2: rule__Aliass__Group__2__Impl rule__Aliass__Group__3
             {
-            pushFollow(FOLLOW_9);
+            pushFollow(FOLLOW_10);
             rule__Aliass__Group__2__Impl();
 
             state._fsp--;
@@ -12455,22 +12456,17 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Aliass__Group__3"
-    // InternalBimmodel.g:3386:1: rule__Aliass__Group__3 : rule__Aliass__Group__3__Impl rule__Aliass__Group__4 ;
+    // InternalBimmodel.g:3386:1: rule__Aliass__Group__3 : rule__Aliass__Group__3__Impl ;
     public final void rule__Aliass__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalBimmodel.g:3390:1: ( rule__Aliass__Group__3__Impl rule__Aliass__Group__4 )
-            // InternalBimmodel.g:3391:2: rule__Aliass__Group__3__Impl rule__Aliass__Group__4
+            // InternalBimmodel.g:3390:1: ( rule__Aliass__Group__3__Impl )
+            // InternalBimmodel.g:3391:2: rule__Aliass__Group__3__Impl
             {
-            pushFollow(FOLLOW_9);
-            rule__Aliass__Group__3__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
             pushFollow(FOLLOW_2);
-            rule__Aliass__Group__4();
+            rule__Aliass__Group__3__Impl();
 
             state._fsp--;
             if (state.failed) return ;
@@ -12493,38 +12489,38 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Aliass__Group__3__Impl"
-    // InternalBimmodel.g:3398:1: rule__Aliass__Group__3__Impl : ( ( rule__Aliass__AliassAssignment_3 )* ) ;
+    // InternalBimmodel.g:3397:1: rule__Aliass__Group__3__Impl : ( ( rule__Aliass__Group_3__0 )* ) ;
     public final void rule__Aliass__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalBimmodel.g:3402:1: ( ( ( rule__Aliass__AliassAssignment_3 )* ) )
-            // InternalBimmodel.g:3403:1: ( ( rule__Aliass__AliassAssignment_3 )* )
+            // InternalBimmodel.g:3401:1: ( ( ( rule__Aliass__Group_3__0 )* ) )
+            // InternalBimmodel.g:3402:1: ( ( rule__Aliass__Group_3__0 )* )
             {
-            // InternalBimmodel.g:3403:1: ( ( rule__Aliass__AliassAssignment_3 )* )
-            // InternalBimmodel.g:3404:2: ( rule__Aliass__AliassAssignment_3 )*
+            // InternalBimmodel.g:3402:1: ( ( rule__Aliass__Group_3__0 )* )
+            // InternalBimmodel.g:3403:2: ( rule__Aliass__Group_3__0 )*
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getAliassAccess().getAliassAssignment_3()); 
+               before(grammarAccess.getAliassAccess().getGroup_3()); 
             }
-            // InternalBimmodel.g:3405:2: ( rule__Aliass__AliassAssignment_3 )*
+            // InternalBimmodel.g:3404:2: ( rule__Aliass__Group_3__0 )*
             loop43:
             do {
                 int alt43=2;
                 int LA43_0 = input.LA(1);
 
-                if ( (LA43_0==RULE_IFCNAME) ) {
+                if ( (LA43_0==55) ) {
                     alt43=1;
                 }
 
 
                 switch (alt43) {
             	case 1 :
-            	    // InternalBimmodel.g:3405:3: rule__Aliass__AliassAssignment_3
+            	    // InternalBimmodel.g:3404:3: rule__Aliass__Group_3__0
             	    {
-            	    pushFollow(FOLLOW_10);
-            	    rule__Aliass__AliassAssignment_3();
+            	    pushFollow(FOLLOW_11);
+            	    rule__Aliass__Group_3__0();
 
             	    state._fsp--;
             	    if (state.failed) return ;
@@ -12538,7 +12534,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             } while (true);
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getAliassAccess().getAliassAssignment_3()); 
+               after(grammarAccess.getAliassAccess().getGroup_3()); 
             }
 
             }
@@ -12561,18 +12557,23 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "rule__Aliass__Group__3__Impl"
 
 
-    // $ANTLR start "rule__Aliass__Group__4"
-    // InternalBimmodel.g:3413:1: rule__Aliass__Group__4 : rule__Aliass__Group__4__Impl ;
-    public final void rule__Aliass__Group__4() throws RecognitionException {
+    // $ANTLR start "rule__Aliass__Group_3__0"
+    // InternalBimmodel.g:3413:1: rule__Aliass__Group_3__0 : rule__Aliass__Group_3__0__Impl rule__Aliass__Group_3__1 ;
+    public final void rule__Aliass__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalBimmodel.g:3417:1: ( rule__Aliass__Group__4__Impl )
-            // InternalBimmodel.g:3418:2: rule__Aliass__Group__4__Impl
+            // InternalBimmodel.g:3417:1: ( rule__Aliass__Group_3__0__Impl rule__Aliass__Group_3__1 )
+            // InternalBimmodel.g:3418:2: rule__Aliass__Group_3__0__Impl rule__Aliass__Group_3__1
             {
+            pushFollow(FOLLOW_9);
+            rule__Aliass__Group_3__0__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
             pushFollow(FOLLOW_2);
-            rule__Aliass__Group__4__Impl();
+            rule__Aliass__Group_3__1();
 
             state._fsp--;
             if (state.failed) return ;
@@ -12591,28 +12592,28 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__Aliass__Group__4"
+    // $ANTLR end "rule__Aliass__Group_3__0"
 
 
-    // $ANTLR start "rule__Aliass__Group__4__Impl"
-    // InternalBimmodel.g:3424:1: rule__Aliass__Group__4__Impl : ( '}' ) ;
-    public final void rule__Aliass__Group__4__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Aliass__Group_3__0__Impl"
+    // InternalBimmodel.g:3425:1: rule__Aliass__Group_3__0__Impl : ( 'or' ) ;
+    public final void rule__Aliass__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalBimmodel.g:3428:1: ( ( '}' ) )
-            // InternalBimmodel.g:3429:1: ( '}' )
+            // InternalBimmodel.g:3429:1: ( ( 'or' ) )
+            // InternalBimmodel.g:3430:1: ( 'or' )
             {
-            // InternalBimmodel.g:3429:1: ( '}' )
-            // InternalBimmodel.g:3430:2: '}'
+            // InternalBimmodel.g:3430:1: ( 'or' )
+            // InternalBimmodel.g:3431:2: 'or'
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getAliassAccess().getRightCurlyBracketKeyword_4()); 
+               before(grammarAccess.getAliassAccess().getOrKeyword_3_0()); 
             }
-            match(input,53,FOLLOW_2); if (state.failed) return ;
+            match(input,55,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getAliassAccess().getRightCurlyBracketKeyword_4()); 
+               after(grammarAccess.getAliassAccess().getOrKeyword_3_0()); 
             }
 
             }
@@ -12632,20 +12633,104 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__Aliass__Group__4__Impl"
+    // $ANTLR end "rule__Aliass__Group_3__0__Impl"
+
+
+    // $ANTLR start "rule__Aliass__Group_3__1"
+    // InternalBimmodel.g:3440:1: rule__Aliass__Group_3__1 : rule__Aliass__Group_3__1__Impl ;
+    public final void rule__Aliass__Group_3__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalBimmodel.g:3444:1: ( rule__Aliass__Group_3__1__Impl )
+            // InternalBimmodel.g:3445:2: rule__Aliass__Group_3__1__Impl
+            {
+            pushFollow(FOLLOW_2);
+            rule__Aliass__Group_3__1__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Aliass__Group_3__1"
+
+
+    // $ANTLR start "rule__Aliass__Group_3__1__Impl"
+    // InternalBimmodel.g:3451:1: rule__Aliass__Group_3__1__Impl : ( ( rule__Aliass__AliassAssignment_3_1 ) ) ;
+    public final void rule__Aliass__Group_3__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalBimmodel.g:3455:1: ( ( ( rule__Aliass__AliassAssignment_3_1 ) ) )
+            // InternalBimmodel.g:3456:1: ( ( rule__Aliass__AliassAssignment_3_1 ) )
+            {
+            // InternalBimmodel.g:3456:1: ( ( rule__Aliass__AliassAssignment_3_1 ) )
+            // InternalBimmodel.g:3457:2: ( rule__Aliass__AliassAssignment_3_1 )
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getAliassAccess().getAliassAssignment_3_1()); 
+            }
+            // InternalBimmodel.g:3458:2: ( rule__Aliass__AliassAssignment_3_1 )
+            // InternalBimmodel.g:3458:3: rule__Aliass__AliassAssignment_3_1
+            {
+            pushFollow(FOLLOW_2);
+            rule__Aliass__AliassAssignment_3_1();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getAliassAccess().getAliassAssignment_3_1()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Aliass__Group_3__1__Impl"
 
 
     // $ANTLR start "rule__Annotation__Group__0"
-    // InternalBimmodel.g:3440:1: rule__Annotation__Group__0 : rule__Annotation__Group__0__Impl rule__Annotation__Group__1 ;
+    // InternalBimmodel.g:3467:1: rule__Annotation__Group__0 : rule__Annotation__Group__0__Impl rule__Annotation__Group__1 ;
     public final void rule__Annotation__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalBimmodel.g:3444:1: ( rule__Annotation__Group__0__Impl rule__Annotation__Group__1 )
-            // InternalBimmodel.g:3445:2: rule__Annotation__Group__0__Impl rule__Annotation__Group__1
+            // InternalBimmodel.g:3471:1: ( rule__Annotation__Group__0__Impl rule__Annotation__Group__1 )
+            // InternalBimmodel.g:3472:2: rule__Annotation__Group__0__Impl rule__Annotation__Group__1
             {
-            pushFollow(FOLLOW_11);
+            pushFollow(FOLLOW_12);
             rule__Annotation__Group__0__Impl();
 
             state._fsp--;
@@ -12674,22 +12759,22 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Annotation__Group__0__Impl"
-    // InternalBimmodel.g:3452:1: rule__Annotation__Group__0__Impl : ( 'annotation' ) ;
+    // InternalBimmodel.g:3479:1: rule__Annotation__Group__0__Impl : ( 'annotation' ) ;
     public final void rule__Annotation__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalBimmodel.g:3456:1: ( ( 'annotation' ) )
-            // InternalBimmodel.g:3457:1: ( 'annotation' )
+            // InternalBimmodel.g:3483:1: ( ( 'annotation' ) )
+            // InternalBimmodel.g:3484:1: ( 'annotation' )
             {
-            // InternalBimmodel.g:3457:1: ( 'annotation' )
-            // InternalBimmodel.g:3458:2: 'annotation'
+            // InternalBimmodel.g:3484:1: ( 'annotation' )
+            // InternalBimmodel.g:3485:2: 'annotation'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAnnotationAccess().getAnnotationKeyword_0()); 
             }
-            match(input,55,FOLLOW_2); if (state.failed) return ;
+            match(input,56,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAnnotationAccess().getAnnotationKeyword_0()); 
             }
@@ -12715,16 +12800,16 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Annotation__Group__1"
-    // InternalBimmodel.g:3467:1: rule__Annotation__Group__1 : rule__Annotation__Group__1__Impl rule__Annotation__Group__2 ;
+    // InternalBimmodel.g:3494:1: rule__Annotation__Group__1 : rule__Annotation__Group__1__Impl rule__Annotation__Group__2 ;
     public final void rule__Annotation__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalBimmodel.g:3471:1: ( rule__Annotation__Group__1__Impl rule__Annotation__Group__2 )
-            // InternalBimmodel.g:3472:2: rule__Annotation__Group__1__Impl rule__Annotation__Group__2
+            // InternalBimmodel.g:3498:1: ( rule__Annotation__Group__1__Impl rule__Annotation__Group__2 )
+            // InternalBimmodel.g:3499:2: rule__Annotation__Group__1__Impl rule__Annotation__Group__2
             {
-            pushFollow(FOLLOW_12);
+            pushFollow(FOLLOW_13);
             rule__Annotation__Group__1__Impl();
 
             state._fsp--;
@@ -12753,22 +12838,22 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Annotation__Group__1__Impl"
-    // InternalBimmodel.g:3479:1: rule__Annotation__Group__1__Impl : ( ':' ) ;
+    // InternalBimmodel.g:3506:1: rule__Annotation__Group__1__Impl : ( ':' ) ;
     public final void rule__Annotation__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalBimmodel.g:3483:1: ( ( ':' ) )
-            // InternalBimmodel.g:3484:1: ( ':' )
+            // InternalBimmodel.g:3510:1: ( ( ':' ) )
+            // InternalBimmodel.g:3511:1: ( ':' )
             {
-            // InternalBimmodel.g:3484:1: ( ':' )
-            // InternalBimmodel.g:3485:2: ':'
+            // InternalBimmodel.g:3511:1: ( ':' )
+            // InternalBimmodel.g:3512:2: ':'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAnnotationAccess().getColonKeyword_1()); 
             }
-            match(input,56,FOLLOW_2); if (state.failed) return ;
+            match(input,57,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAnnotationAccess().getColonKeyword_1()); 
             }
@@ -12794,16 +12879,16 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Annotation__Group__2"
-    // InternalBimmodel.g:3494:1: rule__Annotation__Group__2 : rule__Annotation__Group__2__Impl rule__Annotation__Group__3 ;
+    // InternalBimmodel.g:3521:1: rule__Annotation__Group__2 : rule__Annotation__Group__2__Impl rule__Annotation__Group__3 ;
     public final void rule__Annotation__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalBimmodel.g:3498:1: ( rule__Annotation__Group__2__Impl rule__Annotation__Group__3 )
-            // InternalBimmodel.g:3499:2: rule__Annotation__Group__2__Impl rule__Annotation__Group__3
+            // InternalBimmodel.g:3525:1: ( rule__Annotation__Group__2__Impl rule__Annotation__Group__3 )
+            // InternalBimmodel.g:3526:2: rule__Annotation__Group__2__Impl rule__Annotation__Group__3
             {
-            pushFollow(FOLLOW_13);
+            pushFollow(FOLLOW_8);
             rule__Annotation__Group__2__Impl();
 
             state._fsp--;
@@ -12832,23 +12917,23 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Annotation__Group__2__Impl"
-    // InternalBimmodel.g:3506:1: rule__Annotation__Group__2__Impl : ( ( rule__Annotation__AnnotationNameAssignment_2 ) ) ;
+    // InternalBimmodel.g:3533:1: rule__Annotation__Group__2__Impl : ( ( rule__Annotation__AnnotationNameAssignment_2 ) ) ;
     public final void rule__Annotation__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalBimmodel.g:3510:1: ( ( ( rule__Annotation__AnnotationNameAssignment_2 ) ) )
-            // InternalBimmodel.g:3511:1: ( ( rule__Annotation__AnnotationNameAssignment_2 ) )
+            // InternalBimmodel.g:3537:1: ( ( ( rule__Annotation__AnnotationNameAssignment_2 ) ) )
+            // InternalBimmodel.g:3538:1: ( ( rule__Annotation__AnnotationNameAssignment_2 ) )
             {
-            // InternalBimmodel.g:3511:1: ( ( rule__Annotation__AnnotationNameAssignment_2 ) )
-            // InternalBimmodel.g:3512:2: ( rule__Annotation__AnnotationNameAssignment_2 )
+            // InternalBimmodel.g:3538:1: ( ( rule__Annotation__AnnotationNameAssignment_2 ) )
+            // InternalBimmodel.g:3539:2: ( rule__Annotation__AnnotationNameAssignment_2 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAnnotationAccess().getAnnotationNameAssignment_2()); 
             }
-            // InternalBimmodel.g:3513:2: ( rule__Annotation__AnnotationNameAssignment_2 )
-            // InternalBimmodel.g:3513:3: rule__Annotation__AnnotationNameAssignment_2
+            // InternalBimmodel.g:3540:2: ( rule__Annotation__AnnotationNameAssignment_2 )
+            // InternalBimmodel.g:3540:3: rule__Annotation__AnnotationNameAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__Annotation__AnnotationNameAssignment_2();
@@ -12883,14 +12968,14 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Annotation__Group__3"
-    // InternalBimmodel.g:3521:1: rule__Annotation__Group__3 : rule__Annotation__Group__3__Impl ;
+    // InternalBimmodel.g:3548:1: rule__Annotation__Group__3 : rule__Annotation__Group__3__Impl ;
     public final void rule__Annotation__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalBimmodel.g:3525:1: ( rule__Annotation__Group__3__Impl )
-            // InternalBimmodel.g:3526:2: rule__Annotation__Group__3__Impl
+            // InternalBimmodel.g:3552:1: ( rule__Annotation__Group__3__Impl )
+            // InternalBimmodel.g:3553:2: rule__Annotation__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Annotation__Group__3__Impl();
@@ -12916,31 +13001,31 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Annotation__Group__3__Impl"
-    // InternalBimmodel.g:3532:1: rule__Annotation__Group__3__Impl : ( ( rule__Annotation__AnnodetailAssignment_3 )? ) ;
+    // InternalBimmodel.g:3559:1: rule__Annotation__Group__3__Impl : ( ( rule__Annotation__AnnodetailAssignment_3 )? ) ;
     public final void rule__Annotation__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalBimmodel.g:3536:1: ( ( ( rule__Annotation__AnnodetailAssignment_3 )? ) )
-            // InternalBimmodel.g:3537:1: ( ( rule__Annotation__AnnodetailAssignment_3 )? )
+            // InternalBimmodel.g:3563:1: ( ( ( rule__Annotation__AnnodetailAssignment_3 )? ) )
+            // InternalBimmodel.g:3564:1: ( ( rule__Annotation__AnnodetailAssignment_3 )? )
             {
-            // InternalBimmodel.g:3537:1: ( ( rule__Annotation__AnnodetailAssignment_3 )? )
-            // InternalBimmodel.g:3538:2: ( rule__Annotation__AnnodetailAssignment_3 )?
+            // InternalBimmodel.g:3564:1: ( ( rule__Annotation__AnnodetailAssignment_3 )? )
+            // InternalBimmodel.g:3565:2: ( rule__Annotation__AnnodetailAssignment_3 )?
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAnnotationAccess().getAnnodetailAssignment_3()); 
             }
-            // InternalBimmodel.g:3539:2: ( rule__Annotation__AnnodetailAssignment_3 )?
+            // InternalBimmodel.g:3566:2: ( rule__Annotation__AnnodetailAssignment_3 )?
             int alt44=2;
             int LA44_0 = input.LA(1);
 
-            if ( (LA44_0==57) ) {
+            if ( (LA44_0==14) ) {
                 alt44=1;
             }
             switch (alt44) {
                 case 1 :
-                    // InternalBimmodel.g:3539:3: rule__Annotation__AnnodetailAssignment_3
+                    // InternalBimmodel.g:3566:3: rule__Annotation__AnnodetailAssignment_3
                     {
                     pushFollow(FOLLOW_2);
                     rule__Annotation__AnnodetailAssignment_3();
@@ -12978,14 +13063,14 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__AnnotationDetail__Group__0"
-    // InternalBimmodel.g:3548:1: rule__AnnotationDetail__Group__0 : rule__AnnotationDetail__Group__0__Impl rule__AnnotationDetail__Group__1 ;
+    // InternalBimmodel.g:3575:1: rule__AnnotationDetail__Group__0 : rule__AnnotationDetail__Group__0__Impl rule__AnnotationDetail__Group__1 ;
     public final void rule__AnnotationDetail__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalBimmodel.g:3552:1: ( rule__AnnotationDetail__Group__0__Impl rule__AnnotationDetail__Group__1 )
-            // InternalBimmodel.g:3553:2: rule__AnnotationDetail__Group__0__Impl rule__AnnotationDetail__Group__1
+            // InternalBimmodel.g:3579:1: ( rule__AnnotationDetail__Group__0__Impl rule__AnnotationDetail__Group__1 )
+            // InternalBimmodel.g:3580:2: rule__AnnotationDetail__Group__0__Impl rule__AnnotationDetail__Group__1
             {
             pushFollow(FOLLOW_14);
             rule__AnnotationDetail__Group__0__Impl();
@@ -13016,24 +13101,24 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__AnnotationDetail__Group__0__Impl"
-    // InternalBimmodel.g:3560:1: rule__AnnotationDetail__Group__0__Impl : ( '(' ) ;
+    // InternalBimmodel.g:3587:1: rule__AnnotationDetail__Group__0__Impl : ( '=' ) ;
     public final void rule__AnnotationDetail__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalBimmodel.g:3564:1: ( ( '(' ) )
-            // InternalBimmodel.g:3565:1: ( '(' )
+            // InternalBimmodel.g:3591:1: ( ( '=' ) )
+            // InternalBimmodel.g:3592:1: ( '=' )
             {
-            // InternalBimmodel.g:3565:1: ( '(' )
-            // InternalBimmodel.g:3566:2: '('
+            // InternalBimmodel.g:3592:1: ( '=' )
+            // InternalBimmodel.g:3593:2: '='
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getAnnotationDetailAccess().getLeftParenthesisKeyword_0()); 
+               before(grammarAccess.getAnnotationDetailAccess().getEqualsSignKeyword_0()); 
             }
-            match(input,57,FOLLOW_2); if (state.failed) return ;
+            match(input,14,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getAnnotationDetailAccess().getLeftParenthesisKeyword_0()); 
+               after(grammarAccess.getAnnotationDetailAccess().getEqualsSignKeyword_0()); 
             }
 
             }
@@ -13057,14 +13142,14 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__AnnotationDetail__Group__1"
-    // InternalBimmodel.g:3575:1: rule__AnnotationDetail__Group__1 : rule__AnnotationDetail__Group__1__Impl rule__AnnotationDetail__Group__2 ;
+    // InternalBimmodel.g:3602:1: rule__AnnotationDetail__Group__1 : rule__AnnotationDetail__Group__1__Impl rule__AnnotationDetail__Group__2 ;
     public final void rule__AnnotationDetail__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalBimmodel.g:3579:1: ( rule__AnnotationDetail__Group__1__Impl rule__AnnotationDetail__Group__2 )
-            // InternalBimmodel.g:3580:2: rule__AnnotationDetail__Group__1__Impl rule__AnnotationDetail__Group__2
+            // InternalBimmodel.g:3606:1: ( rule__AnnotationDetail__Group__1__Impl rule__AnnotationDetail__Group__2 )
+            // InternalBimmodel.g:3607:2: rule__AnnotationDetail__Group__1__Impl rule__AnnotationDetail__Group__2
             {
             pushFollow(FOLLOW_14);
             rule__AnnotationDetail__Group__1__Impl();
@@ -13095,22 +13180,22 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__AnnotationDetail__Group__1__Impl"
-    // InternalBimmodel.g:3587:1: rule__AnnotationDetail__Group__1__Impl : ( ( rule__AnnotationDetail__Group_1__0 )* ) ;
+    // InternalBimmodel.g:3614:1: rule__AnnotationDetail__Group__1__Impl : ( ( rule__AnnotationDetail__Group_1__0 )* ) ;
     public final void rule__AnnotationDetail__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalBimmodel.g:3591:1: ( ( ( rule__AnnotationDetail__Group_1__0 )* ) )
-            // InternalBimmodel.g:3592:1: ( ( rule__AnnotationDetail__Group_1__0 )* )
+            // InternalBimmodel.g:3618:1: ( ( ( rule__AnnotationDetail__Group_1__0 )* ) )
+            // InternalBimmodel.g:3619:1: ( ( rule__AnnotationDetail__Group_1__0 )* )
             {
-            // InternalBimmodel.g:3592:1: ( ( rule__AnnotationDetail__Group_1__0 )* )
-            // InternalBimmodel.g:3593:2: ( rule__AnnotationDetail__Group_1__0 )*
+            // InternalBimmodel.g:3619:1: ( ( rule__AnnotationDetail__Group_1__0 )* )
+            // InternalBimmodel.g:3620:2: ( rule__AnnotationDetail__Group_1__0 )*
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAnnotationDetailAccess().getGroup_1()); 
             }
-            // InternalBimmodel.g:3594:2: ( rule__AnnotationDetail__Group_1__0 )*
+            // InternalBimmodel.g:3621:2: ( rule__AnnotationDetail__Group_1__0 )*
             loop45:
             do {
                 int alt45=2;
@@ -13119,7 +13204,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 if ( (LA45_0==RULE_STRING) ) {
                     int LA45_1 = input.LA(2);
 
-                    if ( (LA45_1==59) ) {
+                    if ( (LA45_1==55) ) {
                         alt45=1;
                     }
 
@@ -13129,7 +13214,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
 
                 switch (alt45) {
             	case 1 :
-            	    // InternalBimmodel.g:3594:3: rule__AnnotationDetail__Group_1__0
+            	    // InternalBimmodel.g:3621:3: rule__AnnotationDetail__Group_1__0
             	    {
             	    pushFollow(FOLLOW_3);
             	    rule__AnnotationDetail__Group_1__0();
@@ -13170,22 +13255,17 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__AnnotationDetail__Group__2"
-    // InternalBimmodel.g:3602:1: rule__AnnotationDetail__Group__2 : rule__AnnotationDetail__Group__2__Impl rule__AnnotationDetail__Group__3 ;
+    // InternalBimmodel.g:3629:1: rule__AnnotationDetail__Group__2 : rule__AnnotationDetail__Group__2__Impl ;
     public final void rule__AnnotationDetail__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalBimmodel.g:3606:1: ( rule__AnnotationDetail__Group__2__Impl rule__AnnotationDetail__Group__3 )
-            // InternalBimmodel.g:3607:2: rule__AnnotationDetail__Group__2__Impl rule__AnnotationDetail__Group__3
+            // InternalBimmodel.g:3633:1: ( rule__AnnotationDetail__Group__2__Impl )
+            // InternalBimmodel.g:3634:2: rule__AnnotationDetail__Group__2__Impl
             {
-            pushFollow(FOLLOW_15);
-            rule__AnnotationDetail__Group__2__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
             pushFollow(FOLLOW_2);
-            rule__AnnotationDetail__Group__3();
+            rule__AnnotationDetail__Group__2__Impl();
 
             state._fsp--;
             if (state.failed) return ;
@@ -13208,23 +13288,23 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__AnnotationDetail__Group__2__Impl"
-    // InternalBimmodel.g:3614:1: rule__AnnotationDetail__Group__2__Impl : ( ( rule__AnnotationDetail__AnnosAssignment_2 ) ) ;
+    // InternalBimmodel.g:3640:1: rule__AnnotationDetail__Group__2__Impl : ( ( rule__AnnotationDetail__AnnosAssignment_2 ) ) ;
     public final void rule__AnnotationDetail__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalBimmodel.g:3618:1: ( ( ( rule__AnnotationDetail__AnnosAssignment_2 ) ) )
-            // InternalBimmodel.g:3619:1: ( ( rule__AnnotationDetail__AnnosAssignment_2 ) )
+            // InternalBimmodel.g:3644:1: ( ( ( rule__AnnotationDetail__AnnosAssignment_2 ) ) )
+            // InternalBimmodel.g:3645:1: ( ( rule__AnnotationDetail__AnnosAssignment_2 ) )
             {
-            // InternalBimmodel.g:3619:1: ( ( rule__AnnotationDetail__AnnosAssignment_2 ) )
-            // InternalBimmodel.g:3620:2: ( rule__AnnotationDetail__AnnosAssignment_2 )
+            // InternalBimmodel.g:3645:1: ( ( rule__AnnotationDetail__AnnosAssignment_2 ) )
+            // InternalBimmodel.g:3646:2: ( rule__AnnotationDetail__AnnosAssignment_2 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAnnotationDetailAccess().getAnnosAssignment_2()); 
             }
-            // InternalBimmodel.g:3621:2: ( rule__AnnotationDetail__AnnosAssignment_2 )
-            // InternalBimmodel.g:3621:3: rule__AnnotationDetail__AnnosAssignment_2
+            // InternalBimmodel.g:3647:2: ( rule__AnnotationDetail__AnnosAssignment_2 )
+            // InternalBimmodel.g:3647:3: rule__AnnotationDetail__AnnosAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__AnnotationDetail__AnnosAssignment_2();
@@ -13258,80 +13338,6 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "rule__AnnotationDetail__Group__2__Impl"
 
 
-    // $ANTLR start "rule__AnnotationDetail__Group__3"
-    // InternalBimmodel.g:3629:1: rule__AnnotationDetail__Group__3 : rule__AnnotationDetail__Group__3__Impl ;
-    public final void rule__AnnotationDetail__Group__3() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalBimmodel.g:3633:1: ( rule__AnnotationDetail__Group__3__Impl )
-            // InternalBimmodel.g:3634:2: rule__AnnotationDetail__Group__3__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__AnnotationDetail__Group__3__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__AnnotationDetail__Group__3"
-
-
-    // $ANTLR start "rule__AnnotationDetail__Group__3__Impl"
-    // InternalBimmodel.g:3640:1: rule__AnnotationDetail__Group__3__Impl : ( ')' ) ;
-    public final void rule__AnnotationDetail__Group__3__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalBimmodel.g:3644:1: ( ( ')' ) )
-            // InternalBimmodel.g:3645:1: ( ')' )
-            {
-            // InternalBimmodel.g:3645:1: ( ')' )
-            // InternalBimmodel.g:3646:2: ')'
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getAnnotationDetailAccess().getRightParenthesisKeyword_3()); 
-            }
-            match(input,58,FOLLOW_2); if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getAnnotationDetailAccess().getRightParenthesisKeyword_3()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__AnnotationDetail__Group__3__Impl"
-
-
     // $ANTLR start "rule__AnnotationDetail__Group_1__0"
     // InternalBimmodel.g:3656:1: rule__AnnotationDetail__Group_1__0 : rule__AnnotationDetail__Group_1__0__Impl rule__AnnotationDetail__Group_1__1 ;
     public final void rule__AnnotationDetail__Group_1__0() throws RecognitionException {
@@ -13342,7 +13348,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:3660:1: ( rule__AnnotationDetail__Group_1__0__Impl rule__AnnotationDetail__Group_1__1 )
             // InternalBimmodel.g:3661:2: rule__AnnotationDetail__Group_1__0__Impl rule__AnnotationDetail__Group_1__1
             {
-            pushFollow(FOLLOW_16);
+            pushFollow(FOLLOW_10);
             rule__AnnotationDetail__Group_1__0__Impl();
 
             state._fsp--;
@@ -13455,24 +13461,24 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__AnnotationDetail__Group_1__1__Impl"
-    // InternalBimmodel.g:3694:1: rule__AnnotationDetail__Group_1__1__Impl : ( '|' ) ;
+    // InternalBimmodel.g:3694:1: rule__AnnotationDetail__Group_1__1__Impl : ( 'or' ) ;
     public final void rule__AnnotationDetail__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalBimmodel.g:3698:1: ( ( '|' ) )
-            // InternalBimmodel.g:3699:1: ( '|' )
+            // InternalBimmodel.g:3698:1: ( ( 'or' ) )
+            // InternalBimmodel.g:3699:1: ( 'or' )
             {
-            // InternalBimmodel.g:3699:1: ( '|' )
-            // InternalBimmodel.g:3700:2: '|'
+            // InternalBimmodel.g:3699:1: ( 'or' )
+            // InternalBimmodel.g:3700:2: 'or'
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getAnnotationDetailAccess().getVerticalLineKeyword_1_1()); 
+               before(grammarAccess.getAnnotationDetailAccess().getOrKeyword_1_1()); 
             }
-            match(input,59,FOLLOW_2); if (state.failed) return ;
+            match(input,55,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getAnnotationDetailAccess().getVerticalLineKeyword_1_1()); 
+               after(grammarAccess.getAnnotationDetailAccess().getOrKeyword_1_1()); 
             }
 
             }
@@ -13505,7 +13511,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:3714:1: ( rule__XAssignment__Group_0__0__Impl rule__XAssignment__Group_0__1 )
             // InternalBimmodel.g:3715:2: rule__XAssignment__Group_0__0__Impl rule__XAssignment__Group_0__1
             {
-            pushFollow(FOLLOW_17);
+            pushFollow(FOLLOW_15);
             rule__XAssignment__Group_0__0__Impl();
 
             state._fsp--;
@@ -13584,7 +13590,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:3741:1: ( rule__XAssignment__Group_0__1__Impl rule__XAssignment__Group_0__2 )
             // InternalBimmodel.g:3742:2: rule__XAssignment__Group_0__1__Impl rule__XAssignment__Group_0__2
             {
-            pushFollow(FOLLOW_18);
+            pushFollow(FOLLOW_8);
             rule__XAssignment__Group_0__1__Impl();
 
             state._fsp--;
@@ -13673,7 +13679,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:3768:1: ( rule__XAssignment__Group_0__2__Impl rule__XAssignment__Group_0__3 )
             // InternalBimmodel.g:3769:2: rule__XAssignment__Group_0__2__Impl rule__XAssignment__Group_0__3
             {
-            pushFollow(FOLLOW_19);
+            pushFollow(FOLLOW_16);
             rule__XAssignment__Group_0__2__Impl();
 
             state._fsp--;
@@ -13840,7 +13846,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:3822:1: ( rule__XAssignment__Group_1__0__Impl rule__XAssignment__Group_1__1 )
             // InternalBimmodel.g:3823:2: rule__XAssignment__Group_1__0__Impl rule__XAssignment__Group_1__1
             {
-            pushFollow(FOLLOW_20);
+            pushFollow(FOLLOW_17);
             rule__XAssignment__Group_1__0__Impl();
 
             state._fsp--;
@@ -14014,7 +14020,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:3876:1: ( rule__XAssignment__Group_1_1__0__Impl rule__XAssignment__Group_1_1__1 )
             // InternalBimmodel.g:3877:2: rule__XAssignment__Group_1_1__0__Impl rule__XAssignment__Group_1_1__1
             {
-            pushFollow(FOLLOW_19);
+            pushFollow(FOLLOW_16);
             rule__XAssignment__Group_1_1__0__Impl();
 
             state._fsp--;
@@ -14271,7 +14277,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:3957:1: ( rule__XAssignment__Group_1_1_0_0__0__Impl rule__XAssignment__Group_1_1_0_0__1 )
             // InternalBimmodel.g:3958:2: rule__XAssignment__Group_1_1_0_0__0__Impl rule__XAssignment__Group_1_1_0_0__1
             {
-            pushFollow(FOLLOW_20);
+            pushFollow(FOLLOW_17);
             rule__XAssignment__Group_1_1_0_0__0__Impl();
 
             state._fsp--;
@@ -14434,7 +14440,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:4011:1: ( rule__OpMultiAssign__Group_5__0__Impl rule__OpMultiAssign__Group_5__1 )
             // InternalBimmodel.g:4012:2: rule__OpMultiAssign__Group_5__0__Impl rule__OpMultiAssign__Group_5__1
             {
-            pushFollow(FOLLOW_21);
+            pushFollow(FOLLOW_18);
             rule__OpMultiAssign__Group_5__0__Impl();
 
             state._fsp--;
@@ -14513,7 +14519,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:4038:1: ( rule__OpMultiAssign__Group_5__1__Impl rule__OpMultiAssign__Group_5__2 )
             // InternalBimmodel.g:4039:2: rule__OpMultiAssign__Group_5__1__Impl rule__OpMultiAssign__Group_5__2
             {
-            pushFollow(FOLLOW_18);
+            pushFollow(FOLLOW_8);
             rule__OpMultiAssign__Group_5__1__Impl();
 
             state._fsp--;
@@ -14666,7 +14672,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:4092:1: ( rule__OpMultiAssign__Group_6__0__Impl rule__OpMultiAssign__Group_6__1 )
             // InternalBimmodel.g:4093:2: rule__OpMultiAssign__Group_6__0__Impl rule__OpMultiAssign__Group_6__1
             {
-            pushFollow(FOLLOW_22);
+            pushFollow(FOLLOW_19);
             rule__OpMultiAssign__Group_6__0__Impl();
 
             state._fsp--;
@@ -14745,7 +14751,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:4119:1: ( rule__OpMultiAssign__Group_6__1__Impl rule__OpMultiAssign__Group_6__2 )
             // InternalBimmodel.g:4120:2: rule__OpMultiAssign__Group_6__1__Impl rule__OpMultiAssign__Group_6__2
             {
-            pushFollow(FOLLOW_22);
+            pushFollow(FOLLOW_19);
             rule__OpMultiAssign__Group_6__1__Impl();
 
             state._fsp--;
@@ -14915,7 +14921,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:4173:1: ( rule__XOrExpression__Group__0__Impl rule__XOrExpression__Group__1 )
             // InternalBimmodel.g:4174:2: rule__XOrExpression__Group__0__Impl rule__XOrExpression__Group__1
             {
-            pushFollow(FOLLOW_23);
+            pushFollow(FOLLOW_20);
             rule__XOrExpression__Group__0__Impl();
 
             state._fsp--;
@@ -15058,7 +15064,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:4214:3: rule__XOrExpression__Group_1__0
             	    {
-            	    pushFollow(FOLLOW_24);
+            	    pushFollow(FOLLOW_21);
             	    rule__XOrExpression__Group_1__0();
 
             	    state._fsp--;
@@ -15106,7 +15112,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:4227:1: ( rule__XOrExpression__Group_1__0__Impl rule__XOrExpression__Group_1__1 )
             // InternalBimmodel.g:4228:2: rule__XOrExpression__Group_1__0__Impl rule__XOrExpression__Group_1__1
             {
-            pushFollow(FOLLOW_19);
+            pushFollow(FOLLOW_16);
             rule__XOrExpression__Group_1__0__Impl();
 
             state._fsp--;
@@ -15363,7 +15369,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:4308:1: ( rule__XOrExpression__Group_1_0_0__0__Impl rule__XOrExpression__Group_1_0_0__1 )
             // InternalBimmodel.g:4309:2: rule__XOrExpression__Group_1_0_0__0__Impl rule__XOrExpression__Group_1_0_0__1
             {
-            pushFollow(FOLLOW_23);
+            pushFollow(FOLLOW_20);
             rule__XOrExpression__Group_1_0_0__0__Impl();
 
             state._fsp--;
@@ -15526,7 +15532,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:4362:1: ( rule__XAndExpression__Group__0__Impl rule__XAndExpression__Group__1 )
             // InternalBimmodel.g:4363:2: rule__XAndExpression__Group__0__Impl rule__XAndExpression__Group__1
             {
-            pushFollow(FOLLOW_25);
+            pushFollow(FOLLOW_22);
             rule__XAndExpression__Group__0__Impl();
 
             state._fsp--;
@@ -15669,7 +15675,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:4403:3: rule__XAndExpression__Group_1__0
             	    {
-            	    pushFollow(FOLLOW_26);
+            	    pushFollow(FOLLOW_23);
             	    rule__XAndExpression__Group_1__0();
 
             	    state._fsp--;
@@ -15717,7 +15723,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:4416:1: ( rule__XAndExpression__Group_1__0__Impl rule__XAndExpression__Group_1__1 )
             // InternalBimmodel.g:4417:2: rule__XAndExpression__Group_1__0__Impl rule__XAndExpression__Group_1__1
             {
-            pushFollow(FOLLOW_19);
+            pushFollow(FOLLOW_16);
             rule__XAndExpression__Group_1__0__Impl();
 
             state._fsp--;
@@ -15974,7 +15980,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:4497:1: ( rule__XAndExpression__Group_1_0_0__0__Impl rule__XAndExpression__Group_1_0_0__1 )
             // InternalBimmodel.g:4498:2: rule__XAndExpression__Group_1_0_0__0__Impl rule__XAndExpression__Group_1_0_0__1
             {
-            pushFollow(FOLLOW_25);
+            pushFollow(FOLLOW_22);
             rule__XAndExpression__Group_1_0_0__0__Impl();
 
             state._fsp--;
@@ -16137,7 +16143,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:4551:1: ( rule__XEqualityExpression__Group__0__Impl rule__XEqualityExpression__Group__1 )
             // InternalBimmodel.g:4552:2: rule__XEqualityExpression__Group__0__Impl rule__XEqualityExpression__Group__1
             {
-            pushFollow(FOLLOW_27);
+            pushFollow(FOLLOW_24);
             rule__XEqualityExpression__Group__0__Impl();
 
             state._fsp--;
@@ -16315,7 +16321,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:4592:3: rule__XEqualityExpression__Group_1__0
             	    {
-            	    pushFollow(FOLLOW_28);
+            	    pushFollow(FOLLOW_25);
             	    rule__XEqualityExpression__Group_1__0();
 
             	    state._fsp--;
@@ -16363,7 +16369,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:4605:1: ( rule__XEqualityExpression__Group_1__0__Impl rule__XEqualityExpression__Group_1__1 )
             // InternalBimmodel.g:4606:2: rule__XEqualityExpression__Group_1__0__Impl rule__XEqualityExpression__Group_1__1
             {
-            pushFollow(FOLLOW_19);
+            pushFollow(FOLLOW_16);
             rule__XEqualityExpression__Group_1__0__Impl();
 
             state._fsp--;
@@ -16620,7 +16626,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:4686:1: ( rule__XEqualityExpression__Group_1_0_0__0__Impl rule__XEqualityExpression__Group_1_0_0__1 )
             // InternalBimmodel.g:4687:2: rule__XEqualityExpression__Group_1_0_0__0__Impl rule__XEqualityExpression__Group_1_0_0__1
             {
-            pushFollow(FOLLOW_27);
+            pushFollow(FOLLOW_24);
             rule__XEqualityExpression__Group_1_0_0__0__Impl();
 
             state._fsp--;
@@ -16783,7 +16789,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:4740:1: ( rule__XRelationalExpression__Group__0__Impl rule__XRelationalExpression__Group__1 )
             // InternalBimmodel.g:4741:2: rule__XRelationalExpression__Group__0__Impl rule__XRelationalExpression__Group__1
             {
-            pushFollow(FOLLOW_29);
+            pushFollow(FOLLOW_26);
             rule__XRelationalExpression__Group__0__Impl();
 
             state._fsp--;
@@ -16932,7 +16938,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
 
                     }
                     break;
-                case 60:
+                case 58:
                     {
                     int LA51_4 = input.LA(2);
 
@@ -16961,7 +16967,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:4781:3: rule__XRelationalExpression__Alternatives_1
             	    {
-            	    pushFollow(FOLLOW_30);
+            	    pushFollow(FOLLOW_27);
             	    rule__XRelationalExpression__Alternatives_1();
 
             	    state._fsp--;
@@ -17009,7 +17015,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:4794:1: ( rule__XRelationalExpression__Group_1_0__0__Impl rule__XRelationalExpression__Group_1_0__1 )
             // InternalBimmodel.g:4795:2: rule__XRelationalExpression__Group_1_0__0__Impl rule__XRelationalExpression__Group_1_0__1
             {
-            pushFollow(FOLLOW_31);
+            pushFollow(FOLLOW_28);
             rule__XRelationalExpression__Group_1_0__0__Impl();
 
             state._fsp--;
@@ -17266,7 +17272,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:4875:1: ( rule__XRelationalExpression__Group_1_0_0_0__0__Impl rule__XRelationalExpression__Group_1_0_0_0__1 )
             // InternalBimmodel.g:4876:2: rule__XRelationalExpression__Group_1_0_0_0__0__Impl rule__XRelationalExpression__Group_1_0_0_0__1
             {
-            pushFollow(FOLLOW_32);
+            pushFollow(FOLLOW_29);
             rule__XRelationalExpression__Group_1_0_0_0__0__Impl();
 
             state._fsp--;
@@ -17384,7 +17390,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXRelationalExpressionAccess().getInstanceofKeyword_1_0_0_0_1()); 
             }
-            match(input,60,FOLLOW_2); if (state.failed) return ;
+            match(input,58,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXRelationalExpressionAccess().getInstanceofKeyword_1_0_0_0_1()); 
             }
@@ -17419,7 +17425,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:4929:1: ( rule__XRelationalExpression__Group_1_1__0__Impl rule__XRelationalExpression__Group_1_1__1 )
             // InternalBimmodel.g:4930:2: rule__XRelationalExpression__Group_1_1__0__Impl rule__XRelationalExpression__Group_1_1__1
             {
-            pushFollow(FOLLOW_19);
+            pushFollow(FOLLOW_16);
             rule__XRelationalExpression__Group_1_1__0__Impl();
 
             state._fsp--;
@@ -17676,7 +17682,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:5010:1: ( rule__XRelationalExpression__Group_1_1_0_0__0__Impl rule__XRelationalExpression__Group_1_1_0_0__1 )
             // InternalBimmodel.g:5011:2: rule__XRelationalExpression__Group_1_1_0_0__0__Impl rule__XRelationalExpression__Group_1_1_0_0__1
             {
-            pushFollow(FOLLOW_29);
+            pushFollow(FOLLOW_26);
             rule__XRelationalExpression__Group_1_1_0_0__0__Impl();
 
             state._fsp--;
@@ -17839,7 +17845,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:5064:1: ( rule__OpCompare__Group_1__0__Impl rule__OpCompare__Group_1__1 )
             // InternalBimmodel.g:5065:2: rule__OpCompare__Group_1__0__Impl rule__OpCompare__Group_1__1
             {
-            pushFollow(FOLLOW_18);
+            pushFollow(FOLLOW_8);
             rule__OpCompare__Group_1__0__Impl();
 
             state._fsp--;
@@ -17992,7 +17998,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:5118:1: ( rule__XOtherOperatorExpression__Group__0__Impl rule__XOtherOperatorExpression__Group__1 )
             // InternalBimmodel.g:5119:2: rule__XOtherOperatorExpression__Group__0__Impl rule__XOtherOperatorExpression__Group__1
             {
-            pushFollow(FOLLOW_33);
+            pushFollow(FOLLOW_30);
             rule__XOtherOperatorExpression__Group__0__Impl();
 
             state._fsp--;
@@ -18123,7 +18129,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:5159:3: rule__XOtherOperatorExpression__Group_1__0
             	    {
-            	    pushFollow(FOLLOW_34);
+            	    pushFollow(FOLLOW_31);
             	    rule__XOtherOperatorExpression__Group_1__0();
 
             	    state._fsp--;
@@ -18171,7 +18177,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:5172:1: ( rule__XOtherOperatorExpression__Group_1__0__Impl rule__XOtherOperatorExpression__Group_1__1 )
             // InternalBimmodel.g:5173:2: rule__XOtherOperatorExpression__Group_1__0__Impl rule__XOtherOperatorExpression__Group_1__1
             {
-            pushFollow(FOLLOW_19);
+            pushFollow(FOLLOW_16);
             rule__XOtherOperatorExpression__Group_1__0__Impl();
 
             state._fsp--;
@@ -18428,7 +18434,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:5253:1: ( rule__XOtherOperatorExpression__Group_1_0_0__0__Impl rule__XOtherOperatorExpression__Group_1_0_0__1 )
             // InternalBimmodel.g:5254:2: rule__XOtherOperatorExpression__Group_1_0_0__0__Impl rule__XOtherOperatorExpression__Group_1_0_0__1
             {
-            pushFollow(FOLLOW_33);
+            pushFollow(FOLLOW_30);
             rule__XOtherOperatorExpression__Group_1_0_0__0__Impl();
 
             state._fsp--;
@@ -18591,7 +18597,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:5307:1: ( rule__OpOther__Group_2__0__Impl rule__OpOther__Group_2__1 )
             // InternalBimmodel.g:5308:2: rule__OpOther__Group_2__0__Impl rule__OpOther__Group_2__1
             {
-            pushFollow(FOLLOW_35);
+            pushFollow(FOLLOW_32);
             rule__OpOther__Group_2__0__Impl();
 
             state._fsp--;
@@ -18744,7 +18750,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:5361:1: ( rule__OpOther__Group_5__0__Impl rule__OpOther__Group_5__1 )
             // InternalBimmodel.g:5362:2: rule__OpOther__Group_5__0__Impl rule__OpOther__Group_5__1
             {
-            pushFollow(FOLLOW_36);
+            pushFollow(FOLLOW_33);
             rule__OpOther__Group_5__0__Impl();
 
             state._fsp--;
@@ -18991,7 +18997,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:5442:1: ( rule__OpOther__Group_5_1_0_0__0__Impl rule__OpOther__Group_5_1_0_0__1 )
             // InternalBimmodel.g:5443:2: rule__OpOther__Group_5_1_0_0__0__Impl rule__OpOther__Group_5_1_0_0__1
             {
-            pushFollow(FOLLOW_36);
+            pushFollow(FOLLOW_33);
             rule__OpOther__Group_5_1_0_0__0__Impl();
 
             state._fsp--;
@@ -19144,7 +19150,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:5496:1: ( rule__OpOther__Group_6__0__Impl rule__OpOther__Group_6__1 )
             // InternalBimmodel.g:5497:2: rule__OpOther__Group_6__0__Impl rule__OpOther__Group_6__1
             {
-            pushFollow(FOLLOW_37);
+            pushFollow(FOLLOW_34);
             rule__OpOther__Group_6__0__Impl();
 
             state._fsp--;
@@ -19391,7 +19397,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:5577:1: ( rule__OpOther__Group_6_1_0_0__0__Impl rule__OpOther__Group_6_1_0_0__1 )
             // InternalBimmodel.g:5578:2: rule__OpOther__Group_6_1_0_0__0__Impl rule__OpOther__Group_6_1_0_0__1
             {
-            pushFollow(FOLLOW_21);
+            pushFollow(FOLLOW_18);
             rule__OpOther__Group_6_1_0_0__0__Impl();
 
             state._fsp--;
@@ -19544,7 +19550,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:5631:1: ( rule__XAdditiveExpression__Group__0__Impl rule__XAdditiveExpression__Group__1 )
             // InternalBimmodel.g:5632:2: rule__XAdditiveExpression__Group__0__Impl rule__XAdditiveExpression__Group__1
             {
-            pushFollow(FOLLOW_38);
+            pushFollow(FOLLOW_35);
             rule__XAdditiveExpression__Group__0__Impl();
 
             state._fsp--;
@@ -19696,7 +19702,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:5672:3: rule__XAdditiveExpression__Group_1__0
             	    {
-            	    pushFollow(FOLLOW_39);
+            	    pushFollow(FOLLOW_36);
             	    rule__XAdditiveExpression__Group_1__0();
 
             	    state._fsp--;
@@ -19744,7 +19750,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:5685:1: ( rule__XAdditiveExpression__Group_1__0__Impl rule__XAdditiveExpression__Group_1__1 )
             // InternalBimmodel.g:5686:2: rule__XAdditiveExpression__Group_1__0__Impl rule__XAdditiveExpression__Group_1__1
             {
-            pushFollow(FOLLOW_19);
+            pushFollow(FOLLOW_16);
             rule__XAdditiveExpression__Group_1__0__Impl();
 
             state._fsp--;
@@ -20001,7 +20007,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:5766:1: ( rule__XAdditiveExpression__Group_1_0_0__0__Impl rule__XAdditiveExpression__Group_1_0_0__1 )
             // InternalBimmodel.g:5767:2: rule__XAdditiveExpression__Group_1_0_0__0__Impl rule__XAdditiveExpression__Group_1_0_0__1
             {
-            pushFollow(FOLLOW_38);
+            pushFollow(FOLLOW_35);
             rule__XAdditiveExpression__Group_1_0_0__0__Impl();
 
             state._fsp--;
@@ -20164,7 +20170,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:5820:1: ( rule__XMultiplicativeExpression__Group__0__Impl rule__XMultiplicativeExpression__Group__1 )
             // InternalBimmodel.g:5821:2: rule__XMultiplicativeExpression__Group__0__Impl rule__XMultiplicativeExpression__Group__1
             {
-            pushFollow(FOLLOW_40);
+            pushFollow(FOLLOW_37);
             rule__XMultiplicativeExpression__Group__0__Impl();
 
             state._fsp--;
@@ -20342,7 +20348,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:5861:3: rule__XMultiplicativeExpression__Group_1__0
             	    {
-            	    pushFollow(FOLLOW_41);
+            	    pushFollow(FOLLOW_38);
             	    rule__XMultiplicativeExpression__Group_1__0();
 
             	    state._fsp--;
@@ -20390,7 +20396,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:5874:1: ( rule__XMultiplicativeExpression__Group_1__0__Impl rule__XMultiplicativeExpression__Group_1__1 )
             // InternalBimmodel.g:5875:2: rule__XMultiplicativeExpression__Group_1__0__Impl rule__XMultiplicativeExpression__Group_1__1
             {
-            pushFollow(FOLLOW_19);
+            pushFollow(FOLLOW_16);
             rule__XMultiplicativeExpression__Group_1__0__Impl();
 
             state._fsp--;
@@ -20647,7 +20653,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:5955:1: ( rule__XMultiplicativeExpression__Group_1_0_0__0__Impl rule__XMultiplicativeExpression__Group_1_0_0__1 )
             // InternalBimmodel.g:5956:2: rule__XMultiplicativeExpression__Group_1_0_0__0__Impl rule__XMultiplicativeExpression__Group_1_0_0__1
             {
-            pushFollow(FOLLOW_40);
+            pushFollow(FOLLOW_37);
             rule__XMultiplicativeExpression__Group_1_0_0__0__Impl();
 
             state._fsp--;
@@ -20810,7 +20816,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:6009:1: ( rule__XUnaryOperation__Group_0__0__Impl rule__XUnaryOperation__Group_0__1 )
             // InternalBimmodel.g:6010:2: rule__XUnaryOperation__Group_0__0__Impl rule__XUnaryOperation__Group_0__1
             {
-            pushFollow(FOLLOW_42);
+            pushFollow(FOLLOW_39);
             rule__XUnaryOperation__Group_0__0__Impl();
 
             state._fsp--;
@@ -20889,7 +20895,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:6036:1: ( rule__XUnaryOperation__Group_0__1__Impl rule__XUnaryOperation__Group_0__2 )
             // InternalBimmodel.g:6037:2: rule__XUnaryOperation__Group_0__1__Impl rule__XUnaryOperation__Group_0__2
             {
-            pushFollow(FOLLOW_19);
+            pushFollow(FOLLOW_16);
             rule__XUnaryOperation__Group_0__1__Impl();
 
             state._fsp--;
@@ -21062,7 +21068,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:6090:1: ( rule__XCastedExpression__Group__0__Impl rule__XCastedExpression__Group__1 )
             // InternalBimmodel.g:6091:2: rule__XCastedExpression__Group__0__Impl rule__XCastedExpression__Group__1
             {
-            pushFollow(FOLLOW_43);
+            pushFollow(FOLLOW_40);
             rule__XCastedExpression__Group__0__Impl();
 
             state._fsp--;
@@ -21190,7 +21196,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 int alt55=2;
                 int LA55_0 = input.LA(1);
 
-                if ( (LA55_0==61) ) {
+                if ( (LA55_0==59) ) {
                     int LA55_2 = input.LA(2);
 
                     if ( (synpred98_InternalBimmodel()) ) {
@@ -21205,7 +21211,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:6131:3: rule__XCastedExpression__Group_1__0
             	    {
-            	    pushFollow(FOLLOW_44);
+            	    pushFollow(FOLLOW_41);
             	    rule__XCastedExpression__Group_1__0();
 
             	    state._fsp--;
@@ -21253,7 +21259,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:6144:1: ( rule__XCastedExpression__Group_1__0__Impl rule__XCastedExpression__Group_1__1 )
             // InternalBimmodel.g:6145:2: rule__XCastedExpression__Group_1__0__Impl rule__XCastedExpression__Group_1__1
             {
-            pushFollow(FOLLOW_31);
+            pushFollow(FOLLOW_28);
             rule__XCastedExpression__Group_1__0__Impl();
 
             state._fsp--;
@@ -21510,7 +21516,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:6225:1: ( rule__XCastedExpression__Group_1_0_0__0__Impl rule__XCastedExpression__Group_1_0_0__1 )
             // InternalBimmodel.g:6226:2: rule__XCastedExpression__Group_1_0_0__0__Impl rule__XCastedExpression__Group_1_0_0__1
             {
-            pushFollow(FOLLOW_43);
+            pushFollow(FOLLOW_40);
             rule__XCastedExpression__Group_1_0_0__0__Impl();
 
             state._fsp--;
@@ -21628,7 +21634,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXCastedExpressionAccess().getAsKeyword_1_0_0_1()); 
             }
-            match(input,61,FOLLOW_2); if (state.failed) return ;
+            match(input,59,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXCastedExpressionAccess().getAsKeyword_1_0_0_1()); 
             }
@@ -21663,7 +21669,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:6279:1: ( rule__XPostfixOperation__Group__0__Impl rule__XPostfixOperation__Group__1 )
             // InternalBimmodel.g:6280:2: rule__XPostfixOperation__Group__0__Impl rule__XPostfixOperation__Group__1
             {
-            pushFollow(FOLLOW_45);
+            pushFollow(FOLLOW_42);
             rule__XPostfixOperation__Group__0__Impl();
 
             state._fsp--;
@@ -21936,7 +21942,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:6360:1: ( rule__XPostfixOperation__Group_1_0__0__Impl rule__XPostfixOperation__Group_1_0__1 )
             // InternalBimmodel.g:6361:2: rule__XPostfixOperation__Group_1_0__0__Impl rule__XPostfixOperation__Group_1_0__1
             {
-            pushFollow(FOLLOW_45);
+            pushFollow(FOLLOW_42);
             rule__XPostfixOperation__Group_1_0__0__Impl();
 
             state._fsp--;
@@ -22099,7 +22105,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:6414:1: ( rule__XMemberFeatureCall__Group__0__Impl rule__XMemberFeatureCall__Group__1 )
             // InternalBimmodel.g:6415:2: rule__XMemberFeatureCall__Group__0__Impl rule__XMemberFeatureCall__Group__1
             {
-            pushFollow(FOLLOW_46);
+            pushFollow(FOLLOW_43);
             rule__XMemberFeatureCall__Group__0__Impl();
 
             state._fsp--;
@@ -22266,7 +22272,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:6455:3: rule__XMemberFeatureCall__Alternatives_1
             	    {
-            	    pushFollow(FOLLOW_47);
+            	    pushFollow(FOLLOW_44);
             	    rule__XMemberFeatureCall__Alternatives_1();
 
             	    state._fsp--;
@@ -22314,7 +22320,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:6468:1: ( rule__XMemberFeatureCall__Group_1_0__0__Impl rule__XMemberFeatureCall__Group_1_0__1 )
             // InternalBimmodel.g:6469:2: rule__XMemberFeatureCall__Group_1_0__0__Impl rule__XMemberFeatureCall__Group_1_0__1
             {
-            pushFollow(FOLLOW_19);
+            pushFollow(FOLLOW_16);
             rule__XMemberFeatureCall__Group_1_0__0__Impl();
 
             state._fsp--;
@@ -22571,7 +22577,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:6549:1: ( rule__XMemberFeatureCall__Group_1_0_0_0__0__Impl rule__XMemberFeatureCall__Group_1_0_0_0__1 )
             // InternalBimmodel.g:6550:2: rule__XMemberFeatureCall__Group_1_0_0_0__0__Impl rule__XMemberFeatureCall__Group_1_0_0_0__1
             {
-            pushFollow(FOLLOW_48);
+            pushFollow(FOLLOW_45);
             rule__XMemberFeatureCall__Group_1_0_0_0__0__Impl();
 
             state._fsp--;
@@ -22650,7 +22656,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:6576:1: ( rule__XMemberFeatureCall__Group_1_0_0_0__1__Impl rule__XMemberFeatureCall__Group_1_0_0_0__2 )
             // InternalBimmodel.g:6577:2: rule__XMemberFeatureCall__Group_1_0_0_0__1__Impl rule__XMemberFeatureCall__Group_1_0_0_0__2
             {
-            pushFollow(FOLLOW_17);
+            pushFollow(FOLLOW_15);
             rule__XMemberFeatureCall__Group_1_0_0_0__1__Impl();
 
             state._fsp--;
@@ -22739,7 +22745,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:6603:1: ( rule__XMemberFeatureCall__Group_1_0_0_0__2__Impl rule__XMemberFeatureCall__Group_1_0_0_0__3 )
             // InternalBimmodel.g:6604:2: rule__XMemberFeatureCall__Group_1_0_0_0__2__Impl rule__XMemberFeatureCall__Group_1_0_0_0__3
             {
-            pushFollow(FOLLOW_18);
+            pushFollow(FOLLOW_8);
             rule__XMemberFeatureCall__Group_1_0_0_0__2__Impl();
 
             state._fsp--;
@@ -22906,7 +22912,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:6657:1: ( rule__XMemberFeatureCall__Group_1_1__0__Impl rule__XMemberFeatureCall__Group_1_1__1 )
             // InternalBimmodel.g:6658:2: rule__XMemberFeatureCall__Group_1_1__0__Impl rule__XMemberFeatureCall__Group_1_1__1
             {
-            pushFollow(FOLLOW_49);
+            pushFollow(FOLLOW_46);
             rule__XMemberFeatureCall__Group_1_1__0__Impl();
 
             state._fsp--;
@@ -22995,7 +23001,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:6684:1: ( rule__XMemberFeatureCall__Group_1_1__1__Impl rule__XMemberFeatureCall__Group_1_1__2 )
             // InternalBimmodel.g:6685:2: rule__XMemberFeatureCall__Group_1_1__1__Impl rule__XMemberFeatureCall__Group_1_1__2
             {
-            pushFollow(FOLLOW_49);
+            pushFollow(FOLLOW_46);
             rule__XMemberFeatureCall__Group_1_1__1__Impl();
 
             state._fsp--;
@@ -23095,7 +23101,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:6711:1: ( rule__XMemberFeatureCall__Group_1_1__2__Impl rule__XMemberFeatureCall__Group_1_1__3 )
             // InternalBimmodel.g:6712:2: rule__XMemberFeatureCall__Group_1_1__2__Impl rule__XMemberFeatureCall__Group_1_1__3
             {
-            pushFollow(FOLLOW_50);
+            pushFollow(FOLLOW_47);
             rule__XMemberFeatureCall__Group_1_1__2__Impl();
 
             state._fsp--;
@@ -23184,7 +23190,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:6738:1: ( rule__XMemberFeatureCall__Group_1_1__3__Impl rule__XMemberFeatureCall__Group_1_1__4 )
             // InternalBimmodel.g:6739:2: rule__XMemberFeatureCall__Group_1_1__3__Impl rule__XMemberFeatureCall__Group_1_1__4
             {
-            pushFollow(FOLLOW_50);
+            pushFollow(FOLLOW_47);
             rule__XMemberFeatureCall__Group_1_1__3__Impl();
 
             state._fsp--;
@@ -23455,7 +23461,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:6819:1: ( rule__XMemberFeatureCall__Group_1_1_0_0__0__Impl rule__XMemberFeatureCall__Group_1_1_0_0__1 )
             // InternalBimmodel.g:6820:2: rule__XMemberFeatureCall__Group_1_1_0_0__0__Impl rule__XMemberFeatureCall__Group_1_1_0_0__1
             {
-            pushFollow(FOLLOW_46);
+            pushFollow(FOLLOW_43);
             rule__XMemberFeatureCall__Group_1_1_0_0__0__Impl();
 
             state._fsp--;
@@ -23618,7 +23624,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:6873:1: ( rule__XMemberFeatureCall__Group_1_1_1__0__Impl rule__XMemberFeatureCall__Group_1_1_1__1 )
             // InternalBimmodel.g:6874:2: rule__XMemberFeatureCall__Group_1_1_1__0__Impl rule__XMemberFeatureCall__Group_1_1_1__1
             {
-            pushFollow(FOLLOW_51);
+            pushFollow(FOLLOW_48);
             rule__XMemberFeatureCall__Group_1_1_1__0__Impl();
 
             state._fsp--;
@@ -23697,7 +23703,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:6900:1: ( rule__XMemberFeatureCall__Group_1_1_1__1__Impl rule__XMemberFeatureCall__Group_1_1_1__2 )
             // InternalBimmodel.g:6901:2: rule__XMemberFeatureCall__Group_1_1_1__1__Impl rule__XMemberFeatureCall__Group_1_1_1__2
             {
-            pushFollow(FOLLOW_52);
+            pushFollow(FOLLOW_49);
             rule__XMemberFeatureCall__Group_1_1_1__1__Impl();
 
             state._fsp--;
@@ -23786,7 +23792,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:6927:1: ( rule__XMemberFeatureCall__Group_1_1_1__2__Impl rule__XMemberFeatureCall__Group_1_1_1__3 )
             // InternalBimmodel.g:6928:2: rule__XMemberFeatureCall__Group_1_1_1__2__Impl rule__XMemberFeatureCall__Group_1_1_1__3
             {
-            pushFollow(FOLLOW_52);
+            pushFollow(FOLLOW_49);
             rule__XMemberFeatureCall__Group_1_1_1__2__Impl();
 
             state._fsp--;
@@ -23836,7 +23842,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 int alt61=2;
                 int LA61_0 = input.LA(1);
 
-                if ( (LA61_0==62) ) {
+                if ( (LA61_0==60) ) {
                     alt61=1;
                 }
 
@@ -23845,7 +23851,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:6942:3: rule__XMemberFeatureCall__Group_1_1_1_2__0
             	    {
-            	    pushFollow(FOLLOW_53);
+            	    pushFollow(FOLLOW_50);
             	    rule__XMemberFeatureCall__Group_1_1_1_2__0();
 
             	    state._fsp--;
@@ -23967,7 +23973,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:6981:1: ( rule__XMemberFeatureCall__Group_1_1_1_2__0__Impl rule__XMemberFeatureCall__Group_1_1_1_2__1 )
             // InternalBimmodel.g:6982:2: rule__XMemberFeatureCall__Group_1_1_1_2__0__Impl rule__XMemberFeatureCall__Group_1_1_1_2__1
             {
-            pushFollow(FOLLOW_51);
+            pushFollow(FOLLOW_48);
             rule__XMemberFeatureCall__Group_1_1_1_2__0__Impl();
 
             state._fsp--;
@@ -24011,7 +24017,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getCommaKeyword_1_1_1_2_0()); 
             }
-            match(input,62,FOLLOW_2); if (state.failed) return ;
+            match(input,60,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXMemberFeatureCallAccess().getCommaKeyword_1_1_1_2_0()); 
             }
@@ -24130,7 +24136,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:7035:1: ( rule__XMemberFeatureCall__Group_1_1_3__0__Impl rule__XMemberFeatureCall__Group_1_1_3__1 )
             // InternalBimmodel.g:7036:2: rule__XMemberFeatureCall__Group_1_1_3__0__Impl rule__XMemberFeatureCall__Group_1_1_3__1
             {
-            pushFollow(FOLLOW_54);
+            pushFollow(FOLLOW_51);
             rule__XMemberFeatureCall__Group_1_1_3__0__Impl();
 
             state._fsp--;
@@ -24219,7 +24225,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:7062:1: ( rule__XMemberFeatureCall__Group_1_1_3__1__Impl rule__XMemberFeatureCall__Group_1_1_3__2 )
             // InternalBimmodel.g:7063:2: rule__XMemberFeatureCall__Group_1_1_3__1__Impl rule__XMemberFeatureCall__Group_1_1_3__2
             {
-            pushFollow(FOLLOW_54);
+            pushFollow(FOLLOW_51);
             rule__XMemberFeatureCall__Group_1_1_3__1__Impl();
 
             state._fsp--;
@@ -24267,7 +24273,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             int alt62=2;
             int LA62_0 = input.LA(1);
 
-            if ( ((LA62_0>=RULE_STRING && LA62_0<=RULE_DECIMAL)||LA62_0==28||LA62_0==32||(LA62_0>=35 && LA62_0<=36)||LA62_0==41||(LA62_0>=46 && LA62_0<=52)||LA62_0==57||LA62_0==59||(LA62_0>=63 && LA62_0<=64)||LA62_0==67||LA62_0==69||(LA62_0>=72 && LA62_0<=80)||LA62_0==82||LA62_0==89) ) {
+            if ( ((LA62_0>=RULE_STRING && LA62_0<=RULE_DECIMAL)||LA62_0==28||LA62_0==32||(LA62_0>=35 && LA62_0<=36)||LA62_0==41||(LA62_0>=46 && LA62_0<=52)||(LA62_0>=62 && LA62_0<=63)||(LA62_0>=66 && LA62_0<=67)||LA62_0==69||(LA62_0>=72 && LA62_0<=80)||LA62_0==82||LA62_0==88||LA62_0==90) ) {
                 alt62=1;
             }
             switch (alt62) {
@@ -24358,7 +24364,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getRightParenthesisKeyword_1_1_3_2()); 
             }
-            match(input,58,FOLLOW_2); if (state.failed) return ;
+            match(input,61,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXMemberFeatureCallAccess().getRightParenthesisKeyword_1_1_3_2()); 
             }
@@ -24393,7 +24399,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:7116:1: ( rule__XMemberFeatureCall__Group_1_1_3_1_1__0__Impl rule__XMemberFeatureCall__Group_1_1_3_1_1__1 )
             // InternalBimmodel.g:7117:2: rule__XMemberFeatureCall__Group_1_1_3_1_1__0__Impl rule__XMemberFeatureCall__Group_1_1_3_1_1__1
             {
-            pushFollow(FOLLOW_55);
+            pushFollow(FOLLOW_52);
             rule__XMemberFeatureCall__Group_1_1_3_1_1__0__Impl();
 
             state._fsp--;
@@ -24527,7 +24533,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 int alt63=2;
                 int LA63_0 = input.LA(1);
 
-                if ( (LA63_0==62) ) {
+                if ( (LA63_0==60) ) {
                     alt63=1;
                 }
 
@@ -24536,7 +24542,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:7157:3: rule__XMemberFeatureCall__Group_1_1_3_1_1_1__0
             	    {
-            	    pushFollow(FOLLOW_53);
+            	    pushFollow(FOLLOW_50);
             	    rule__XMemberFeatureCall__Group_1_1_3_1_1_1__0();
 
             	    state._fsp--;
@@ -24584,7 +24590,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:7170:1: ( rule__XMemberFeatureCall__Group_1_1_3_1_1_1__0__Impl rule__XMemberFeatureCall__Group_1_1_3_1_1_1__1 )
             // InternalBimmodel.g:7171:2: rule__XMemberFeatureCall__Group_1_1_3_1_1_1__0__Impl rule__XMemberFeatureCall__Group_1_1_3_1_1_1__1
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XMemberFeatureCall__Group_1_1_3_1_1_1__0__Impl();
 
             state._fsp--;
@@ -24628,7 +24634,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getCommaKeyword_1_1_3_1_1_1_0()); 
             }
-            match(input,62,FOLLOW_2); if (state.failed) return ;
+            match(input,60,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXMemberFeatureCallAccess().getCommaKeyword_1_1_3_1_1_1_0()); 
             }
@@ -24747,7 +24753,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:7224:1: ( rule__XSetLiteral__Group__0__Impl rule__XSetLiteral__Group__1 )
             // InternalBimmodel.g:7225:2: rule__XSetLiteral__Group__0__Impl rule__XSetLiteral__Group__1
             {
-            pushFollow(FOLLOW_57);
+            pushFollow(FOLLOW_54);
             rule__XSetLiteral__Group__0__Impl();
 
             state._fsp--;
@@ -24870,7 +24876,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSetLiteralAccess().getNumberSignKeyword_1()); 
             }
-            match(input,63,FOLLOW_2); if (state.failed) return ;
+            match(input,62,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXSetLiteralAccess().getNumberSignKeyword_1()); 
             }
@@ -24905,7 +24911,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:7278:1: ( rule__XSetLiteral__Group__2__Impl rule__XSetLiteral__Group__3 )
             // InternalBimmodel.g:7279:2: rule__XSetLiteral__Group__2__Impl rule__XSetLiteral__Group__3
             {
-            pushFollow(FOLLOW_58);
+            pushFollow(FOLLOW_55);
             rule__XSetLiteral__Group__2__Impl();
 
             state._fsp--;
@@ -24984,7 +24990,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:7305:1: ( rule__XSetLiteral__Group__3__Impl rule__XSetLiteral__Group__4 )
             // InternalBimmodel.g:7306:2: rule__XSetLiteral__Group__3__Impl rule__XSetLiteral__Group__4
             {
-            pushFollow(FOLLOW_58);
+            pushFollow(FOLLOW_55);
             rule__XSetLiteral__Group__3__Impl();
 
             state._fsp--;
@@ -25032,7 +25038,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             int alt64=2;
             int LA64_0 = input.LA(1);
 
-            if ( ((LA64_0>=RULE_STRING && LA64_0<=RULE_DECIMAL)||LA64_0==28||(LA64_0>=35 && LA64_0<=36)||LA64_0==41||(LA64_0>=46 && LA64_0<=52)||LA64_0==57||(LA64_0>=63 && LA64_0<=64)||LA64_0==67||LA64_0==69||(LA64_0>=72 && LA64_0<=80)||LA64_0==82||LA64_0==89) ) {
+            if ( ((LA64_0>=RULE_STRING && LA64_0<=RULE_DECIMAL)||LA64_0==28||(LA64_0>=35 && LA64_0<=36)||LA64_0==41||(LA64_0>=46 && LA64_0<=52)||(LA64_0>=62 && LA64_0<=63)||(LA64_0>=66 && LA64_0<=67)||LA64_0==69||(LA64_0>=72 && LA64_0<=80)||LA64_0==82||LA64_0==90) ) {
                 alt64=1;
             }
             switch (alt64) {
@@ -25158,7 +25164,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:7359:1: ( rule__XSetLiteral__Group_3__0__Impl rule__XSetLiteral__Group_3__1 )
             // InternalBimmodel.g:7360:2: rule__XSetLiteral__Group_3__0__Impl rule__XSetLiteral__Group_3__1
             {
-            pushFollow(FOLLOW_55);
+            pushFollow(FOLLOW_52);
             rule__XSetLiteral__Group_3__0__Impl();
 
             state._fsp--;
@@ -25292,7 +25298,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 int alt65=2;
                 int LA65_0 = input.LA(1);
 
-                if ( (LA65_0==62) ) {
+                if ( (LA65_0==60) ) {
                     alt65=1;
                 }
 
@@ -25301,7 +25307,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:7400:3: rule__XSetLiteral__Group_3_1__0
             	    {
-            	    pushFollow(FOLLOW_53);
+            	    pushFollow(FOLLOW_50);
             	    rule__XSetLiteral__Group_3_1__0();
 
             	    state._fsp--;
@@ -25349,7 +25355,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:7413:1: ( rule__XSetLiteral__Group_3_1__0__Impl rule__XSetLiteral__Group_3_1__1 )
             // InternalBimmodel.g:7414:2: rule__XSetLiteral__Group_3_1__0__Impl rule__XSetLiteral__Group_3_1__1
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XSetLiteral__Group_3_1__0__Impl();
 
             state._fsp--;
@@ -25393,7 +25399,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSetLiteralAccess().getCommaKeyword_3_1_0()); 
             }
-            match(input,62,FOLLOW_2); if (state.failed) return ;
+            match(input,60,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXSetLiteralAccess().getCommaKeyword_3_1_0()); 
             }
@@ -25512,7 +25518,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:7467:1: ( rule__XListLiteral__Group__0__Impl rule__XListLiteral__Group__1 )
             // InternalBimmodel.g:7468:2: rule__XListLiteral__Group__0__Impl rule__XListLiteral__Group__1
             {
-            pushFollow(FOLLOW_57);
+            pushFollow(FOLLOW_54);
             rule__XListLiteral__Group__0__Impl();
 
             state._fsp--;
@@ -25591,7 +25597,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:7494:1: ( rule__XListLiteral__Group__1__Impl rule__XListLiteral__Group__2 )
             // InternalBimmodel.g:7495:2: rule__XListLiteral__Group__1__Impl rule__XListLiteral__Group__2
             {
-            pushFollow(FOLLOW_59);
+            pushFollow(FOLLOW_56);
             rule__XListLiteral__Group__1__Impl();
 
             state._fsp--;
@@ -25635,7 +25641,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXListLiteralAccess().getNumberSignKeyword_1()); 
             }
-            match(input,63,FOLLOW_2); if (state.failed) return ;
+            match(input,62,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXListLiteralAccess().getNumberSignKeyword_1()); 
             }
@@ -25670,7 +25676,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:7521:1: ( rule__XListLiteral__Group__2__Impl rule__XListLiteral__Group__3 )
             // InternalBimmodel.g:7522:2: rule__XListLiteral__Group__2__Impl rule__XListLiteral__Group__3
             {
-            pushFollow(FOLLOW_60);
+            pushFollow(FOLLOW_57);
             rule__XListLiteral__Group__2__Impl();
 
             state._fsp--;
@@ -25714,7 +25720,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXListLiteralAccess().getLeftSquareBracketKeyword_2()); 
             }
-            match(input,64,FOLLOW_2); if (state.failed) return ;
+            match(input,63,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXListLiteralAccess().getLeftSquareBracketKeyword_2()); 
             }
@@ -25749,7 +25755,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:7548:1: ( rule__XListLiteral__Group__3__Impl rule__XListLiteral__Group__4 )
             // InternalBimmodel.g:7549:2: rule__XListLiteral__Group__3__Impl rule__XListLiteral__Group__4
             {
-            pushFollow(FOLLOW_60);
+            pushFollow(FOLLOW_57);
             rule__XListLiteral__Group__3__Impl();
 
             state._fsp--;
@@ -25797,7 +25803,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             int alt66=2;
             int LA66_0 = input.LA(1);
 
-            if ( ((LA66_0>=RULE_STRING && LA66_0<=RULE_DECIMAL)||LA66_0==28||(LA66_0>=35 && LA66_0<=36)||LA66_0==41||(LA66_0>=46 && LA66_0<=52)||LA66_0==57||(LA66_0>=63 && LA66_0<=64)||LA66_0==67||LA66_0==69||(LA66_0>=72 && LA66_0<=80)||LA66_0==82||LA66_0==89) ) {
+            if ( ((LA66_0>=RULE_STRING && LA66_0<=RULE_DECIMAL)||LA66_0==28||(LA66_0>=35 && LA66_0<=36)||LA66_0==41||(LA66_0>=46 && LA66_0<=52)||(LA66_0>=62 && LA66_0<=63)||(LA66_0>=66 && LA66_0<=67)||LA66_0==69||(LA66_0>=72 && LA66_0<=80)||LA66_0==82||LA66_0==90) ) {
                 alt66=1;
             }
             switch (alt66) {
@@ -25888,7 +25894,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXListLiteralAccess().getRightSquareBracketKeyword_4()); 
             }
-            match(input,65,FOLLOW_2); if (state.failed) return ;
+            match(input,64,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXListLiteralAccess().getRightSquareBracketKeyword_4()); 
             }
@@ -25923,7 +25929,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:7602:1: ( rule__XListLiteral__Group_3__0__Impl rule__XListLiteral__Group_3__1 )
             // InternalBimmodel.g:7603:2: rule__XListLiteral__Group_3__0__Impl rule__XListLiteral__Group_3__1
             {
-            pushFollow(FOLLOW_55);
+            pushFollow(FOLLOW_52);
             rule__XListLiteral__Group_3__0__Impl();
 
             state._fsp--;
@@ -26057,7 +26063,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 int alt67=2;
                 int LA67_0 = input.LA(1);
 
-                if ( (LA67_0==62) ) {
+                if ( (LA67_0==60) ) {
                     alt67=1;
                 }
 
@@ -26066,7 +26072,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:7643:3: rule__XListLiteral__Group_3_1__0
             	    {
-            	    pushFollow(FOLLOW_53);
+            	    pushFollow(FOLLOW_50);
             	    rule__XListLiteral__Group_3_1__0();
 
             	    state._fsp--;
@@ -26114,7 +26120,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:7656:1: ( rule__XListLiteral__Group_3_1__0__Impl rule__XListLiteral__Group_3_1__1 )
             // InternalBimmodel.g:7657:2: rule__XListLiteral__Group_3_1__0__Impl rule__XListLiteral__Group_3_1__1
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XListLiteral__Group_3_1__0__Impl();
 
             state._fsp--;
@@ -26158,7 +26164,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXListLiteralAccess().getCommaKeyword_3_1_0()); 
             }
-            match(input,62,FOLLOW_2); if (state.failed) return ;
+            match(input,60,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXListLiteralAccess().getCommaKeyword_3_1_0()); 
             }
@@ -26277,7 +26283,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:7710:1: ( rule__XClosure__Group__0__Impl rule__XClosure__Group__1 )
             // InternalBimmodel.g:7711:2: rule__XClosure__Group__0__Impl rule__XClosure__Group__1
             {
-            pushFollow(FOLLOW_61);
+            pushFollow(FOLLOW_58);
             rule__XClosure__Group__0__Impl();
 
             state._fsp--;
@@ -26366,7 +26372,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:7737:1: ( rule__XClosure__Group__1__Impl rule__XClosure__Group__2 )
             // InternalBimmodel.g:7738:2: rule__XClosure__Group__1__Impl rule__XClosure__Group__2
             {
-            pushFollow(FOLLOW_61);
+            pushFollow(FOLLOW_58);
             rule__XClosure__Group__1__Impl();
 
             state._fsp--;
@@ -26462,7 +26468,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:7764:1: ( rule__XClosure__Group__2__Impl rule__XClosure__Group__3 )
             // InternalBimmodel.g:7765:2: rule__XClosure__Group__2__Impl rule__XClosure__Group__3
             {
-            pushFollow(FOLLOW_62);
+            pushFollow(FOLLOW_59);
             rule__XClosure__Group__2__Impl();
 
             state._fsp--;
@@ -26590,7 +26596,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXClosureAccess().getRightSquareBracketKeyword_3()); 
             }
-            match(input,65,FOLLOW_2); if (state.failed) return ;
+            match(input,64,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXClosureAccess().getRightSquareBracketKeyword_3()); 
             }
@@ -26709,7 +26715,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:7845:1: ( rule__XClosure__Group_0_0__0__Impl rule__XClosure__Group_0_0__1 )
             // InternalBimmodel.g:7846:2: rule__XClosure__Group_0_0__0__Impl rule__XClosure__Group_0_0__1
             {
-            pushFollow(FOLLOW_59);
+            pushFollow(FOLLOW_56);
             rule__XClosure__Group_0_0__0__Impl();
 
             state._fsp--;
@@ -26827,7 +26833,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXClosureAccess().getLeftSquareBracketKeyword_0_0_1()); 
             }
-            match(input,64,FOLLOW_2); if (state.failed) return ;
+            match(input,63,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXClosureAccess().getLeftSquareBracketKeyword_0_0_1()); 
             }
@@ -26946,7 +26952,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:7926:1: ( rule__XClosure__Group_1_0__0__Impl rule__XClosure__Group_1_0__1 )
             // InternalBimmodel.g:7927:2: rule__XClosure__Group_1_0__0__Impl rule__XClosure__Group_1_0__1
             {
-            pushFollow(FOLLOW_63);
+            pushFollow(FOLLOW_60);
             rule__XClosure__Group_1_0__0__Impl();
 
             state._fsp--;
@@ -26994,7 +27000,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             int alt69=2;
             int LA69_0 = input.LA(1);
 
-            if ( (LA69_0==RULE_ID||LA69_0==32||LA69_0==57) ) {
+            if ( (LA69_0==RULE_ID||LA69_0==32||LA69_0==66) ) {
                 alt69=1;
             }
             switch (alt69) {
@@ -27130,7 +27136,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:7980:1: ( rule__XClosure__Group_1_0_0__0__Impl rule__XClosure__Group_1_0_0__1 )
             // InternalBimmodel.g:7981:2: rule__XClosure__Group_1_0_0__0__Impl rule__XClosure__Group_1_0_0__1
             {
-            pushFollow(FOLLOW_55);
+            pushFollow(FOLLOW_52);
             rule__XClosure__Group_1_0_0__0__Impl();
 
             state._fsp--;
@@ -27264,7 +27270,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 int alt70=2;
                 int LA70_0 = input.LA(1);
 
-                if ( (LA70_0==62) ) {
+                if ( (LA70_0==60) ) {
                     alt70=1;
                 }
 
@@ -27273,7 +27279,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:8021:3: rule__XClosure__Group_1_0_0_1__0
             	    {
-            	    pushFollow(FOLLOW_53);
+            	    pushFollow(FOLLOW_50);
             	    rule__XClosure__Group_1_0_0_1__0();
 
             	    state._fsp--;
@@ -27321,7 +27327,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:8034:1: ( rule__XClosure__Group_1_0_0_1__0__Impl rule__XClosure__Group_1_0_0_1__1 )
             // InternalBimmodel.g:8035:2: rule__XClosure__Group_1_0_0_1__0__Impl rule__XClosure__Group_1_0_0_1__1
             {
-            pushFollow(FOLLOW_31);
+            pushFollow(FOLLOW_28);
             rule__XClosure__Group_1_0_0_1__0__Impl();
 
             state._fsp--;
@@ -27365,7 +27371,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXClosureAccess().getCommaKeyword_1_0_0_1_0()); 
             }
-            match(input,62,FOLLOW_2); if (state.failed) return ;
+            match(input,60,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXClosureAccess().getCommaKeyword_1_0_0_1_0()); 
             }
@@ -27484,7 +27490,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:8088:1: ( rule__XExpressionInClosure__Group__0__Impl rule__XExpressionInClosure__Group__1 )
             // InternalBimmodel.g:8089:2: rule__XExpressionInClosure__Group__0__Impl rule__XExpressionInClosure__Group__1
             {
-            pushFollow(FOLLOW_61);
+            pushFollow(FOLLOW_58);
             rule__XExpressionInClosure__Group__0__Impl();
 
             state._fsp--;
@@ -27608,7 +27614,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 int alt71=2;
                 int LA71_0 = input.LA(1);
 
-                if ( ((LA71_0>=RULE_STRING && LA71_0<=RULE_DECIMAL)||LA71_0==28||(LA71_0>=35 && LA71_0<=36)||LA71_0==41||(LA71_0>=45 && LA71_0<=52)||LA71_0==57||(LA71_0>=63 && LA71_0<=64)||LA71_0==67||LA71_0==69||(LA71_0>=72 && LA71_0<=80)||LA71_0==82||(LA71_0>=88 && LA71_0<=89)) ) {
+                if ( ((LA71_0>=RULE_STRING && LA71_0<=RULE_DECIMAL)||LA71_0==28||(LA71_0>=35 && LA71_0<=36)||LA71_0==41||(LA71_0>=45 && LA71_0<=52)||(LA71_0>=62 && LA71_0<=63)||(LA71_0>=66 && LA71_0<=67)||LA71_0==69||(LA71_0>=72 && LA71_0<=80)||LA71_0==82||(LA71_0>=89 && LA71_0<=90)) ) {
                     alt71=1;
                 }
 
@@ -27617,7 +27623,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:8129:3: rule__XExpressionInClosure__Group_1__0
             	    {
-            	    pushFollow(FOLLOW_64);
+            	    pushFollow(FOLLOW_61);
             	    rule__XExpressionInClosure__Group_1__0();
 
             	    state._fsp--;
@@ -27665,7 +27671,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:8142:1: ( rule__XExpressionInClosure__Group_1__0__Impl rule__XExpressionInClosure__Group_1__1 )
             // InternalBimmodel.g:8143:2: rule__XExpressionInClosure__Group_1__0__Impl rule__XExpressionInClosure__Group_1__1
             {
-            pushFollow(FOLLOW_65);
+            pushFollow(FOLLOW_62);
             rule__XExpressionInClosure__Group_1__0__Impl();
 
             state._fsp--;
@@ -27797,14 +27803,14 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             int alt72=2;
             int LA72_0 = input.LA(1);
 
-            if ( (LA72_0==66) ) {
+            if ( (LA72_0==65) ) {
                 alt72=1;
             }
             switch (alt72) {
                 case 1 :
                     // InternalBimmodel.g:8183:3: ';'
                     {
-                    match(input,66,FOLLOW_2); if (state.failed) return ;
+                    match(input,65,FOLLOW_2); if (state.failed) return ;
 
                     }
                     break;
@@ -27845,7 +27851,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:8196:1: ( rule__XShortClosure__Group__0__Impl rule__XShortClosure__Group__1 )
             // InternalBimmodel.g:8197:2: rule__XShortClosure__Group__0__Impl rule__XShortClosure__Group__1
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XShortClosure__Group__0__Impl();
 
             state._fsp--;
@@ -28102,7 +28108,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:8277:1: ( rule__XShortClosure__Group_0_0__0__Impl rule__XShortClosure__Group_0_0__1 )
             // InternalBimmodel.g:8278:2: rule__XShortClosure__Group_0_0__0__Impl rule__XShortClosure__Group_0_0__1
             {
-            pushFollow(FOLLOW_63);
+            pushFollow(FOLLOW_60);
             rule__XShortClosure__Group_0_0__0__Impl();
 
             state._fsp--;
@@ -28181,7 +28187,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:8304:1: ( rule__XShortClosure__Group_0_0__1__Impl rule__XShortClosure__Group_0_0__2 )
             // InternalBimmodel.g:8305:2: rule__XShortClosure__Group_0_0__1__Impl rule__XShortClosure__Group_0_0__2
             {
-            pushFollow(FOLLOW_63);
+            pushFollow(FOLLOW_60);
             rule__XShortClosure__Group_0_0__1__Impl();
 
             state._fsp--;
@@ -28229,7 +28235,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             int alt73=2;
             int LA73_0 = input.LA(1);
 
-            if ( (LA73_0==RULE_ID||LA73_0==32||LA73_0==57) ) {
+            if ( (LA73_0==RULE_ID||LA73_0==32||LA73_0==66) ) {
                 alt73=1;
             }
             switch (alt73) {
@@ -28365,7 +28371,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:8358:1: ( rule__XShortClosure__Group_0_0_1__0__Impl rule__XShortClosure__Group_0_0_1__1 )
             // InternalBimmodel.g:8359:2: rule__XShortClosure__Group_0_0_1__0__Impl rule__XShortClosure__Group_0_0_1__1
             {
-            pushFollow(FOLLOW_55);
+            pushFollow(FOLLOW_52);
             rule__XShortClosure__Group_0_0_1__0__Impl();
 
             state._fsp--;
@@ -28499,7 +28505,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 int alt74=2;
                 int LA74_0 = input.LA(1);
 
-                if ( (LA74_0==62) ) {
+                if ( (LA74_0==60) ) {
                     alt74=1;
                 }
 
@@ -28508,7 +28514,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:8399:3: rule__XShortClosure__Group_0_0_1_1__0
             	    {
-            	    pushFollow(FOLLOW_53);
+            	    pushFollow(FOLLOW_50);
             	    rule__XShortClosure__Group_0_0_1_1__0();
 
             	    state._fsp--;
@@ -28556,7 +28562,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:8412:1: ( rule__XShortClosure__Group_0_0_1_1__0__Impl rule__XShortClosure__Group_0_0_1_1__1 )
             // InternalBimmodel.g:8413:2: rule__XShortClosure__Group_0_0_1_1__0__Impl rule__XShortClosure__Group_0_0_1_1__1
             {
-            pushFollow(FOLLOW_31);
+            pushFollow(FOLLOW_28);
             rule__XShortClosure__Group_0_0_1_1__0__Impl();
 
             state._fsp--;
@@ -28600,7 +28606,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXShortClosureAccess().getCommaKeyword_0_0_1_1_0()); 
             }
-            match(input,62,FOLLOW_2); if (state.failed) return ;
+            match(input,60,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXShortClosureAccess().getCommaKeyword_0_0_1_1_0()); 
             }
@@ -28719,7 +28725,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:8466:1: ( rule__XParenthesizedExpression__Group__0__Impl rule__XParenthesizedExpression__Group__1 )
             // InternalBimmodel.g:8467:2: rule__XParenthesizedExpression__Group__0__Impl rule__XParenthesizedExpression__Group__1
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XParenthesizedExpression__Group__0__Impl();
 
             state._fsp--;
@@ -28763,7 +28769,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXParenthesizedExpressionAccess().getLeftParenthesisKeyword_0()); 
             }
-            match(input,57,FOLLOW_2); if (state.failed) return ;
+            match(input,66,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXParenthesizedExpressionAccess().getLeftParenthesisKeyword_0()); 
             }
@@ -28798,7 +28804,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:8493:1: ( rule__XParenthesizedExpression__Group__1__Impl rule__XParenthesizedExpression__Group__2 )
             // InternalBimmodel.g:8494:2: rule__XParenthesizedExpression__Group__1__Impl rule__XParenthesizedExpression__Group__2
             {
-            pushFollow(FOLLOW_15);
+            pushFollow(FOLLOW_63);
             rule__XParenthesizedExpression__Group__1__Impl();
 
             state._fsp--;
@@ -28920,7 +28926,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXParenthesizedExpressionAccess().getRightParenthesisKeyword_2()); 
             }
-            match(input,58,FOLLOW_2); if (state.failed) return ;
+            match(input,61,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXParenthesizedExpressionAccess().getRightParenthesisKeyword_2()); 
             }
@@ -28955,7 +28961,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:8547:1: ( rule__XIfExpression__Group__0__Impl rule__XIfExpression__Group__1 )
             // InternalBimmodel.g:8548:2: rule__XIfExpression__Group__0__Impl rule__XIfExpression__Group__1
             {
-            pushFollow(FOLLOW_66);
+            pushFollow(FOLLOW_64);
             rule__XIfExpression__Group__0__Impl();
 
             state._fsp--;
@@ -29034,7 +29040,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:8574:1: ( rule__XIfExpression__Group__1__Impl rule__XIfExpression__Group__2 )
             // InternalBimmodel.g:8575:2: rule__XIfExpression__Group__1__Impl rule__XIfExpression__Group__2
             {
-            pushFollow(FOLLOW_13);
+            pushFollow(FOLLOW_65);
             rule__XIfExpression__Group__1__Impl();
 
             state._fsp--;
@@ -29113,7 +29119,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:8601:1: ( rule__XIfExpression__Group__2__Impl rule__XIfExpression__Group__3 )
             // InternalBimmodel.g:8602:2: rule__XIfExpression__Group__2__Impl rule__XIfExpression__Group__3
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XIfExpression__Group__2__Impl();
 
             state._fsp--;
@@ -29157,7 +29163,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXIfExpressionAccess().getLeftParenthesisKeyword_2()); 
             }
-            match(input,57,FOLLOW_2); if (state.failed) return ;
+            match(input,66,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXIfExpressionAccess().getLeftParenthesisKeyword_2()); 
             }
@@ -29192,7 +29198,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:8628:1: ( rule__XIfExpression__Group__3__Impl rule__XIfExpression__Group__4 )
             // InternalBimmodel.g:8629:2: rule__XIfExpression__Group__3__Impl rule__XIfExpression__Group__4
             {
-            pushFollow(FOLLOW_15);
+            pushFollow(FOLLOW_63);
             rule__XIfExpression__Group__3__Impl();
 
             state._fsp--;
@@ -29281,7 +29287,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:8655:1: ( rule__XIfExpression__Group__4__Impl rule__XIfExpression__Group__5 )
             // InternalBimmodel.g:8656:2: rule__XIfExpression__Group__4__Impl rule__XIfExpression__Group__5
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XIfExpression__Group__4__Impl();
 
             state._fsp--;
@@ -29325,7 +29331,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXIfExpressionAccess().getRightParenthesisKeyword_4()); 
             }
-            match(input,58,FOLLOW_2); if (state.failed) return ;
+            match(input,61,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXIfExpressionAccess().getRightParenthesisKeyword_4()); 
             }
@@ -29360,7 +29366,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:8682:1: ( rule__XIfExpression__Group__5__Impl rule__XIfExpression__Group__6 )
             // InternalBimmodel.g:8683:2: rule__XIfExpression__Group__5__Impl rule__XIfExpression__Group__6
             {
-            pushFollow(FOLLOW_67);
+            pushFollow(FOLLOW_66);
             rule__XIfExpression__Group__5__Impl();
 
             state._fsp--;
@@ -29548,7 +29554,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:8736:1: ( rule__XIfExpression__Group_6__0__Impl rule__XIfExpression__Group_6__1 )
             // InternalBimmodel.g:8737:2: rule__XIfExpression__Group_6__0__Impl rule__XIfExpression__Group_6__1
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XIfExpression__Group_6__0__Impl();
 
             state._fsp--;
@@ -29717,7 +29723,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:8790:1: ( rule__XSwitchExpression__Group__0__Impl rule__XSwitchExpression__Group__1 )
             // InternalBimmodel.g:8791:2: rule__XSwitchExpression__Group__0__Impl rule__XSwitchExpression__Group__1
             {
-            pushFollow(FOLLOW_68);
+            pushFollow(FOLLOW_67);
             rule__XSwitchExpression__Group__0__Impl();
 
             state._fsp--;
@@ -29796,7 +29802,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:8817:1: ( rule__XSwitchExpression__Group__1__Impl rule__XSwitchExpression__Group__2 )
             // InternalBimmodel.g:8818:2: rule__XSwitchExpression__Group__1__Impl rule__XSwitchExpression__Group__2
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XSwitchExpression__Group__1__Impl();
 
             state._fsp--;
@@ -29964,7 +29970,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:8871:1: ( rule__XSwitchExpression__Group__3__Impl rule__XSwitchExpression__Group__4 )
             // InternalBimmodel.g:8872:2: rule__XSwitchExpression__Group__3__Impl rule__XSwitchExpression__Group__4
             {
-            pushFollow(FOLLOW_69);
+            pushFollow(FOLLOW_68);
             rule__XSwitchExpression__Group__3__Impl();
 
             state._fsp--;
@@ -30043,7 +30049,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:8898:1: ( rule__XSwitchExpression__Group__4__Impl rule__XSwitchExpression__Group__5 )
             // InternalBimmodel.g:8899:2: rule__XSwitchExpression__Group__4__Impl rule__XSwitchExpression__Group__5
             {
-            pushFollow(FOLLOW_69);
+            pushFollow(FOLLOW_68);
             rule__XSwitchExpression__Group__4__Impl();
 
             state._fsp--;
@@ -30093,7 +30099,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 int alt76=2;
                 int LA76_0 = input.LA(1);
 
-                if ( (LA76_0==RULE_ID||LA76_0==32||(LA76_0>=56 && LA76_0<=57)||LA76_0==62||LA76_0==71) ) {
+                if ( (LA76_0==RULE_ID||LA76_0==32||LA76_0==57||LA76_0==60||LA76_0==66||LA76_0==71) ) {
                     alt76=1;
                 }
 
@@ -30102,7 +30108,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:8913:3: rule__XSwitchExpression__CasesAssignment_4
             	    {
-            	    pushFollow(FOLLOW_70);
+            	    pushFollow(FOLLOW_69);
             	    rule__XSwitchExpression__CasesAssignment_4();
 
             	    state._fsp--;
@@ -30150,7 +30156,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:8925:1: ( rule__XSwitchExpression__Group__5__Impl rule__XSwitchExpression__Group__6 )
             // InternalBimmodel.g:8926:2: rule__XSwitchExpression__Group__5__Impl rule__XSwitchExpression__Group__6
             {
-            pushFollow(FOLLOW_69);
+            pushFollow(FOLLOW_68);
             rule__XSwitchExpression__Group__5__Impl();
 
             state._fsp--;
@@ -30324,7 +30330,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:8979:1: ( rule__XSwitchExpression__Group_2_0__0__Impl rule__XSwitchExpression__Group_2_0__1 )
             // InternalBimmodel.g:8980:2: rule__XSwitchExpression__Group_2_0__0__Impl rule__XSwitchExpression__Group_2_0__1
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XSwitchExpression__Group_2_0__0__Impl();
 
             state._fsp--;
@@ -30413,7 +30419,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9006:1: ( rule__XSwitchExpression__Group_2_0__1__Impl rule__XSwitchExpression__Group_2_0__2 )
             // InternalBimmodel.g:9007:2: rule__XSwitchExpression__Group_2_0__1__Impl rule__XSwitchExpression__Group_2_0__2
             {
-            pushFollow(FOLLOW_15);
+            pushFollow(FOLLOW_63);
             rule__XSwitchExpression__Group_2_0__1__Impl();
 
             state._fsp--;
@@ -30541,7 +30547,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSwitchExpressionAccess().getRightParenthesisKeyword_2_0_2()); 
             }
-            match(input,58,FOLLOW_2); if (state.failed) return ;
+            match(input,61,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXSwitchExpressionAccess().getRightParenthesisKeyword_2_0_2()); 
             }
@@ -30660,7 +30666,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9087:1: ( rule__XSwitchExpression__Group_2_0_0_0__0__Impl rule__XSwitchExpression__Group_2_0_0_0__1 )
             // InternalBimmodel.g:9088:2: rule__XSwitchExpression__Group_2_0_0_0__0__Impl rule__XSwitchExpression__Group_2_0_0_0__1
             {
-            pushFollow(FOLLOW_31);
+            pushFollow(FOLLOW_28);
             rule__XSwitchExpression__Group_2_0_0_0__0__Impl();
 
             state._fsp--;
@@ -30704,7 +30710,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSwitchExpressionAccess().getLeftParenthesisKeyword_2_0_0_0_0()); 
             }
-            match(input,57,FOLLOW_2); if (state.failed) return ;
+            match(input,66,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXSwitchExpressionAccess().getLeftParenthesisKeyword_2_0_0_0_0()); 
             }
@@ -30739,7 +30745,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9114:1: ( rule__XSwitchExpression__Group_2_0_0_0__1__Impl rule__XSwitchExpression__Group_2_0_0_0__2 )
             // InternalBimmodel.g:9115:2: rule__XSwitchExpression__Group_2_0_0_0__1__Impl rule__XSwitchExpression__Group_2_0_0_0__2
             {
-            pushFollow(FOLLOW_11);
+            pushFollow(FOLLOW_12);
             rule__XSwitchExpression__Group_2_0_0_0__1__Impl();
 
             state._fsp--;
@@ -30867,7 +30873,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSwitchExpressionAccess().getColonKeyword_2_0_0_0_2()); 
             }
-            match(input,56,FOLLOW_2); if (state.failed) return ;
+            match(input,57,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXSwitchExpressionAccess().getColonKeyword_2_0_0_0_2()); 
             }
@@ -30902,7 +30908,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9168:1: ( rule__XSwitchExpression__Group_2_1__0__Impl rule__XSwitchExpression__Group_2_1__1 )
             // InternalBimmodel.g:9169:2: rule__XSwitchExpression__Group_2_1__0__Impl rule__XSwitchExpression__Group_2_1__1
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XSwitchExpression__Group_2_1__0__Impl();
 
             state._fsp--;
@@ -31166,7 +31172,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9249:1: ( rule__XSwitchExpression__Group_2_1_0_0__0__Impl rule__XSwitchExpression__Group_2_1_0_0__1 )
             // InternalBimmodel.g:9250:2: rule__XSwitchExpression__Group_2_1_0_0__0__Impl rule__XSwitchExpression__Group_2_1_0_0__1
             {
-            pushFollow(FOLLOW_11);
+            pushFollow(FOLLOW_12);
             rule__XSwitchExpression__Group_2_1_0_0__0__Impl();
 
             state._fsp--;
@@ -31294,7 +31300,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSwitchExpressionAccess().getColonKeyword_2_1_0_0_1()); 
             }
-            match(input,56,FOLLOW_2); if (state.failed) return ;
+            match(input,57,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXSwitchExpressionAccess().getColonKeyword_2_1_0_0_1()); 
             }
@@ -31329,7 +31335,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9303:1: ( rule__XSwitchExpression__Group_5__0__Impl rule__XSwitchExpression__Group_5__1 )
             // InternalBimmodel.g:9304:2: rule__XSwitchExpression__Group_5__0__Impl rule__XSwitchExpression__Group_5__1
             {
-            pushFollow(FOLLOW_11);
+            pushFollow(FOLLOW_12);
             rule__XSwitchExpression__Group_5__0__Impl();
 
             state._fsp--;
@@ -31408,7 +31414,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9330:1: ( rule__XSwitchExpression__Group_5__1__Impl rule__XSwitchExpression__Group_5__2 )
             // InternalBimmodel.g:9331:2: rule__XSwitchExpression__Group_5__1__Impl rule__XSwitchExpression__Group_5__2
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XSwitchExpression__Group_5__1__Impl();
 
             state._fsp--;
@@ -31452,7 +31458,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSwitchExpressionAccess().getColonKeyword_5_1()); 
             }
-            match(input,56,FOLLOW_2); if (state.failed) return ;
+            match(input,57,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXSwitchExpressionAccess().getColonKeyword_5_1()); 
             }
@@ -31571,7 +31577,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9384:1: ( rule__XCasePart__Group__0__Impl rule__XCasePart__Group__1 )
             // InternalBimmodel.g:9385:2: rule__XCasePart__Group__0__Impl rule__XCasePart__Group__1
             {
-            pushFollow(FOLLOW_71);
+            pushFollow(FOLLOW_70);
             rule__XCasePart__Group__0__Impl();
 
             state._fsp--;
@@ -31650,7 +31656,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9411:1: ( rule__XCasePart__Group__1__Impl rule__XCasePart__Group__2 )
             // InternalBimmodel.g:9412:2: rule__XCasePart__Group__1__Impl rule__XCasePart__Group__2
             {
-            pushFollow(FOLLOW_71);
+            pushFollow(FOLLOW_70);
             rule__XCasePart__Group__1__Impl();
 
             state._fsp--;
@@ -31698,7 +31704,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             int alt79=2;
             int LA79_0 = input.LA(1);
 
-            if ( (LA79_0==RULE_ID||LA79_0==32||LA79_0==57) ) {
+            if ( (LA79_0==RULE_ID||LA79_0==32||LA79_0==66) ) {
                 alt79=1;
             }
             switch (alt79) {
@@ -31750,7 +31756,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9438:1: ( rule__XCasePart__Group__2__Impl rule__XCasePart__Group__3 )
             // InternalBimmodel.g:9439:2: rule__XCasePart__Group__2__Impl rule__XCasePart__Group__3
             {
-            pushFollow(FOLLOW_71);
+            pushFollow(FOLLOW_70);
             rule__XCasePart__Group__2__Impl();
 
             state._fsp--;
@@ -31934,7 +31940,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9492:1: ( rule__XCasePart__Group_2__0__Impl rule__XCasePart__Group_2__1 )
             // InternalBimmodel.g:9493:2: rule__XCasePart__Group_2__0__Impl rule__XCasePart__Group_2__1
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XCasePart__Group_2__0__Impl();
 
             state._fsp--;
@@ -32097,7 +32103,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9546:1: ( rule__XCasePart__Group_3_0__0__Impl rule__XCasePart__Group_3_0__1 )
             // InternalBimmodel.g:9547:2: rule__XCasePart__Group_3_0__0__Impl rule__XCasePart__Group_3_0__1
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XCasePart__Group_3_0__0__Impl();
 
             state._fsp--;
@@ -32141,7 +32147,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXCasePartAccess().getColonKeyword_3_0_0()); 
             }
-            match(input,56,FOLLOW_2); if (state.failed) return ;
+            match(input,57,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXCasePartAccess().getColonKeyword_3_0_0()); 
             }
@@ -32260,7 +32266,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9600:1: ( rule__XForLoopExpression__Group__0__Impl rule__XForLoopExpression__Group__1 )
             // InternalBimmodel.g:9601:2: rule__XForLoopExpression__Group__0__Impl rule__XForLoopExpression__Group__1
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XForLoopExpression__Group__0__Impl();
 
             state._fsp--;
@@ -32349,7 +32355,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9627:1: ( rule__XForLoopExpression__Group__1__Impl rule__XForLoopExpression__Group__2 )
             // InternalBimmodel.g:9628:2: rule__XForLoopExpression__Group__1__Impl rule__XForLoopExpression__Group__2
             {
-            pushFollow(FOLLOW_15);
+            pushFollow(FOLLOW_63);
             rule__XForLoopExpression__Group__1__Impl();
 
             state._fsp--;
@@ -32438,7 +32444,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9654:1: ( rule__XForLoopExpression__Group__2__Impl rule__XForLoopExpression__Group__3 )
             // InternalBimmodel.g:9655:2: rule__XForLoopExpression__Group__2__Impl rule__XForLoopExpression__Group__3
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XForLoopExpression__Group__2__Impl();
 
             state._fsp--;
@@ -32482,7 +32488,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXForLoopExpressionAccess().getRightParenthesisKeyword_2()); 
             }
-            match(input,58,FOLLOW_2); if (state.failed) return ;
+            match(input,61,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXForLoopExpressionAccess().getRightParenthesisKeyword_2()); 
             }
@@ -32685,7 +32691,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9735:1: ( rule__XForLoopExpression__Group_0_0__0__Impl rule__XForLoopExpression__Group_0_0__1 )
             // InternalBimmodel.g:9736:2: rule__XForLoopExpression__Group_0_0__0__Impl rule__XForLoopExpression__Group_0_0__1
             {
-            pushFollow(FOLLOW_72);
+            pushFollow(FOLLOW_71);
             rule__XForLoopExpression__Group_0_0__0__Impl();
 
             state._fsp--;
@@ -32764,7 +32770,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9762:1: ( rule__XForLoopExpression__Group_0_0__1__Impl rule__XForLoopExpression__Group_0_0__2 )
             // InternalBimmodel.g:9763:2: rule__XForLoopExpression__Group_0_0__1__Impl rule__XForLoopExpression__Group_0_0__2
             {
-            pushFollow(FOLLOW_13);
+            pushFollow(FOLLOW_65);
             rule__XForLoopExpression__Group_0_0__1__Impl();
 
             state._fsp--;
@@ -32843,7 +32849,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9789:1: ( rule__XForLoopExpression__Group_0_0__2__Impl rule__XForLoopExpression__Group_0_0__3 )
             // InternalBimmodel.g:9790:2: rule__XForLoopExpression__Group_0_0__2__Impl rule__XForLoopExpression__Group_0_0__3
             {
-            pushFollow(FOLLOW_31);
+            pushFollow(FOLLOW_28);
             rule__XForLoopExpression__Group_0_0__2__Impl();
 
             state._fsp--;
@@ -32887,7 +32893,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXForLoopExpressionAccess().getLeftParenthesisKeyword_0_0_2()); 
             }
-            match(input,57,FOLLOW_2); if (state.failed) return ;
+            match(input,66,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXForLoopExpressionAccess().getLeftParenthesisKeyword_0_0_2()); 
             }
@@ -32922,7 +32928,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9816:1: ( rule__XForLoopExpression__Group_0_0__3__Impl rule__XForLoopExpression__Group_0_0__4 )
             // InternalBimmodel.g:9817:2: rule__XForLoopExpression__Group_0_0__3__Impl rule__XForLoopExpression__Group_0_0__4
             {
-            pushFollow(FOLLOW_11);
+            pushFollow(FOLLOW_12);
             rule__XForLoopExpression__Group_0_0__3__Impl();
 
             state._fsp--;
@@ -33050,7 +33056,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXForLoopExpressionAccess().getColonKeyword_0_0_4()); 
             }
-            match(input,56,FOLLOW_2); if (state.failed) return ;
+            match(input,57,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXForLoopExpressionAccess().getColonKeyword_0_0_4()); 
             }
@@ -33085,7 +33091,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9870:1: ( rule__XBasicForLoopExpression__Group__0__Impl rule__XBasicForLoopExpression__Group__1 )
             // InternalBimmodel.g:9871:2: rule__XBasicForLoopExpression__Group__0__Impl rule__XBasicForLoopExpression__Group__1
             {
-            pushFollow(FOLLOW_72);
+            pushFollow(FOLLOW_71);
             rule__XBasicForLoopExpression__Group__0__Impl();
 
             state._fsp--;
@@ -33164,7 +33170,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9897:1: ( rule__XBasicForLoopExpression__Group__1__Impl rule__XBasicForLoopExpression__Group__2 )
             // InternalBimmodel.g:9898:2: rule__XBasicForLoopExpression__Group__1__Impl rule__XBasicForLoopExpression__Group__2
             {
-            pushFollow(FOLLOW_13);
+            pushFollow(FOLLOW_65);
             rule__XBasicForLoopExpression__Group__1__Impl();
 
             state._fsp--;
@@ -33243,7 +33249,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9924:1: ( rule__XBasicForLoopExpression__Group__2__Impl rule__XBasicForLoopExpression__Group__3 )
             // InternalBimmodel.g:9925:2: rule__XBasicForLoopExpression__Group__2__Impl rule__XBasicForLoopExpression__Group__3
             {
-            pushFollow(FOLLOW_73);
+            pushFollow(FOLLOW_72);
             rule__XBasicForLoopExpression__Group__2__Impl();
 
             state._fsp--;
@@ -33287,7 +33293,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXBasicForLoopExpressionAccess().getLeftParenthesisKeyword_2()); 
             }
-            match(input,57,FOLLOW_2); if (state.failed) return ;
+            match(input,66,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXBasicForLoopExpressionAccess().getLeftParenthesisKeyword_2()); 
             }
@@ -33322,7 +33328,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9951:1: ( rule__XBasicForLoopExpression__Group__3__Impl rule__XBasicForLoopExpression__Group__4 )
             // InternalBimmodel.g:9952:2: rule__XBasicForLoopExpression__Group__3__Impl rule__XBasicForLoopExpression__Group__4
             {
-            pushFollow(FOLLOW_73);
+            pushFollow(FOLLOW_72);
             rule__XBasicForLoopExpression__Group__3__Impl();
 
             state._fsp--;
@@ -33370,7 +33376,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             int alt81=2;
             int LA81_0 = input.LA(1);
 
-            if ( ((LA81_0>=RULE_STRING && LA81_0<=RULE_DECIMAL)||LA81_0==28||(LA81_0>=35 && LA81_0<=36)||LA81_0==41||(LA81_0>=45 && LA81_0<=52)||LA81_0==57||(LA81_0>=63 && LA81_0<=64)||LA81_0==67||LA81_0==69||(LA81_0>=72 && LA81_0<=80)||LA81_0==82||(LA81_0>=88 && LA81_0<=89)) ) {
+            if ( ((LA81_0>=RULE_STRING && LA81_0<=RULE_DECIMAL)||LA81_0==28||(LA81_0>=35 && LA81_0<=36)||LA81_0==41||(LA81_0>=45 && LA81_0<=52)||(LA81_0>=62 && LA81_0<=63)||(LA81_0>=66 && LA81_0<=67)||LA81_0==69||(LA81_0>=72 && LA81_0<=80)||LA81_0==82||(LA81_0>=89 && LA81_0<=90)) ) {
                 alt81=1;
             }
             switch (alt81) {
@@ -33422,7 +33428,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:9978:1: ( rule__XBasicForLoopExpression__Group__4__Impl rule__XBasicForLoopExpression__Group__5 )
             // InternalBimmodel.g:9979:2: rule__XBasicForLoopExpression__Group__4__Impl rule__XBasicForLoopExpression__Group__5
             {
-            pushFollow(FOLLOW_74);
+            pushFollow(FOLLOW_73);
             rule__XBasicForLoopExpression__Group__4__Impl();
 
             state._fsp--;
@@ -33466,7 +33472,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXBasicForLoopExpressionAccess().getSemicolonKeyword_4()); 
             }
-            match(input,66,FOLLOW_2); if (state.failed) return ;
+            match(input,65,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXBasicForLoopExpressionAccess().getSemicolonKeyword_4()); 
             }
@@ -33501,7 +33507,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10005:1: ( rule__XBasicForLoopExpression__Group__5__Impl rule__XBasicForLoopExpression__Group__6 )
             // InternalBimmodel.g:10006:2: rule__XBasicForLoopExpression__Group__5__Impl rule__XBasicForLoopExpression__Group__6
             {
-            pushFollow(FOLLOW_74);
+            pushFollow(FOLLOW_73);
             rule__XBasicForLoopExpression__Group__5__Impl();
 
             state._fsp--;
@@ -33549,7 +33555,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             int alt82=2;
             int LA82_0 = input.LA(1);
 
-            if ( ((LA82_0>=RULE_STRING && LA82_0<=RULE_DECIMAL)||LA82_0==28||(LA82_0>=35 && LA82_0<=36)||LA82_0==41||(LA82_0>=46 && LA82_0<=52)||LA82_0==57||(LA82_0>=63 && LA82_0<=64)||LA82_0==67||LA82_0==69||(LA82_0>=72 && LA82_0<=80)||LA82_0==82||LA82_0==89) ) {
+            if ( ((LA82_0>=RULE_STRING && LA82_0<=RULE_DECIMAL)||LA82_0==28||(LA82_0>=35 && LA82_0<=36)||LA82_0==41||(LA82_0>=46 && LA82_0<=52)||(LA82_0>=62 && LA82_0<=63)||(LA82_0>=66 && LA82_0<=67)||LA82_0==69||(LA82_0>=72 && LA82_0<=80)||LA82_0==82||LA82_0==90) ) {
                 alt82=1;
             }
             switch (alt82) {
@@ -33601,7 +33607,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10032:1: ( rule__XBasicForLoopExpression__Group__6__Impl rule__XBasicForLoopExpression__Group__7 )
             // InternalBimmodel.g:10033:2: rule__XBasicForLoopExpression__Group__6__Impl rule__XBasicForLoopExpression__Group__7
             {
-            pushFollow(FOLLOW_54);
+            pushFollow(FOLLOW_51);
             rule__XBasicForLoopExpression__Group__6__Impl();
 
             state._fsp--;
@@ -33645,7 +33651,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXBasicForLoopExpressionAccess().getSemicolonKeyword_6()); 
             }
-            match(input,66,FOLLOW_2); if (state.failed) return ;
+            match(input,65,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXBasicForLoopExpressionAccess().getSemicolonKeyword_6()); 
             }
@@ -33680,7 +33686,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10059:1: ( rule__XBasicForLoopExpression__Group__7__Impl rule__XBasicForLoopExpression__Group__8 )
             // InternalBimmodel.g:10060:2: rule__XBasicForLoopExpression__Group__7__Impl rule__XBasicForLoopExpression__Group__8
             {
-            pushFollow(FOLLOW_54);
+            pushFollow(FOLLOW_51);
             rule__XBasicForLoopExpression__Group__7__Impl();
 
             state._fsp--;
@@ -33728,7 +33734,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             int alt83=2;
             int LA83_0 = input.LA(1);
 
-            if ( ((LA83_0>=RULE_STRING && LA83_0<=RULE_DECIMAL)||LA83_0==28||(LA83_0>=35 && LA83_0<=36)||LA83_0==41||(LA83_0>=46 && LA83_0<=52)||LA83_0==57||(LA83_0>=63 && LA83_0<=64)||LA83_0==67||LA83_0==69||(LA83_0>=72 && LA83_0<=80)||LA83_0==82||LA83_0==89) ) {
+            if ( ((LA83_0>=RULE_STRING && LA83_0<=RULE_DECIMAL)||LA83_0==28||(LA83_0>=35 && LA83_0<=36)||LA83_0==41||(LA83_0>=46 && LA83_0<=52)||(LA83_0>=62 && LA83_0<=63)||(LA83_0>=66 && LA83_0<=67)||LA83_0==69||(LA83_0>=72 && LA83_0<=80)||LA83_0==82||LA83_0==90) ) {
                 alt83=1;
             }
             switch (alt83) {
@@ -33780,7 +33786,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10086:1: ( rule__XBasicForLoopExpression__Group__8__Impl rule__XBasicForLoopExpression__Group__9 )
             // InternalBimmodel.g:10087:2: rule__XBasicForLoopExpression__Group__8__Impl rule__XBasicForLoopExpression__Group__9
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XBasicForLoopExpression__Group__8__Impl();
 
             state._fsp--;
@@ -33824,7 +33830,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXBasicForLoopExpressionAccess().getRightParenthesisKeyword_8()); 
             }
-            match(input,58,FOLLOW_2); if (state.failed) return ;
+            match(input,61,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXBasicForLoopExpressionAccess().getRightParenthesisKeyword_8()); 
             }
@@ -33943,7 +33949,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10140:1: ( rule__XBasicForLoopExpression__Group_3__0__Impl rule__XBasicForLoopExpression__Group_3__1 )
             // InternalBimmodel.g:10141:2: rule__XBasicForLoopExpression__Group_3__0__Impl rule__XBasicForLoopExpression__Group_3__1
             {
-            pushFollow(FOLLOW_55);
+            pushFollow(FOLLOW_52);
             rule__XBasicForLoopExpression__Group_3__0__Impl();
 
             state._fsp--;
@@ -34077,7 +34083,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 int alt84=2;
                 int LA84_0 = input.LA(1);
 
-                if ( (LA84_0==62) ) {
+                if ( (LA84_0==60) ) {
                     alt84=1;
                 }
 
@@ -34086,7 +34092,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:10181:3: rule__XBasicForLoopExpression__Group_3_1__0
             	    {
-            	    pushFollow(FOLLOW_53);
+            	    pushFollow(FOLLOW_50);
             	    rule__XBasicForLoopExpression__Group_3_1__0();
 
             	    state._fsp--;
@@ -34134,7 +34140,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10194:1: ( rule__XBasicForLoopExpression__Group_3_1__0__Impl rule__XBasicForLoopExpression__Group_3_1__1 )
             // InternalBimmodel.g:10195:2: rule__XBasicForLoopExpression__Group_3_1__0__Impl rule__XBasicForLoopExpression__Group_3_1__1
             {
-            pushFollow(FOLLOW_61);
+            pushFollow(FOLLOW_58);
             rule__XBasicForLoopExpression__Group_3_1__0__Impl();
 
             state._fsp--;
@@ -34178,7 +34184,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXBasicForLoopExpressionAccess().getCommaKeyword_3_1_0()); 
             }
-            match(input,62,FOLLOW_2); if (state.failed) return ;
+            match(input,60,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXBasicForLoopExpressionAccess().getCommaKeyword_3_1_0()); 
             }
@@ -34297,7 +34303,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10248:1: ( rule__XBasicForLoopExpression__Group_7__0__Impl rule__XBasicForLoopExpression__Group_7__1 )
             // InternalBimmodel.g:10249:2: rule__XBasicForLoopExpression__Group_7__0__Impl rule__XBasicForLoopExpression__Group_7__1
             {
-            pushFollow(FOLLOW_55);
+            pushFollow(FOLLOW_52);
             rule__XBasicForLoopExpression__Group_7__0__Impl();
 
             state._fsp--;
@@ -34431,7 +34437,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 int alt85=2;
                 int LA85_0 = input.LA(1);
 
-                if ( (LA85_0==62) ) {
+                if ( (LA85_0==60) ) {
                     alt85=1;
                 }
 
@@ -34440,7 +34446,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:10289:3: rule__XBasicForLoopExpression__Group_7_1__0
             	    {
-            	    pushFollow(FOLLOW_53);
+            	    pushFollow(FOLLOW_50);
             	    rule__XBasicForLoopExpression__Group_7_1__0();
 
             	    state._fsp--;
@@ -34488,7 +34494,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10302:1: ( rule__XBasicForLoopExpression__Group_7_1__0__Impl rule__XBasicForLoopExpression__Group_7_1__1 )
             // InternalBimmodel.g:10303:2: rule__XBasicForLoopExpression__Group_7_1__0__Impl rule__XBasicForLoopExpression__Group_7_1__1
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XBasicForLoopExpression__Group_7_1__0__Impl();
 
             state._fsp--;
@@ -34532,7 +34538,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXBasicForLoopExpressionAccess().getCommaKeyword_7_1_0()); 
             }
-            match(input,62,FOLLOW_2); if (state.failed) return ;
+            match(input,60,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXBasicForLoopExpressionAccess().getCommaKeyword_7_1_0()); 
             }
@@ -34651,7 +34657,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10356:1: ( rule__XWhileExpression__Group__0__Impl rule__XWhileExpression__Group__1 )
             // InternalBimmodel.g:10357:2: rule__XWhileExpression__Group__0__Impl rule__XWhileExpression__Group__1
             {
-            pushFollow(FOLLOW_75);
+            pushFollow(FOLLOW_74);
             rule__XWhileExpression__Group__0__Impl();
 
             state._fsp--;
@@ -34730,7 +34736,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10383:1: ( rule__XWhileExpression__Group__1__Impl rule__XWhileExpression__Group__2 )
             // InternalBimmodel.g:10384:2: rule__XWhileExpression__Group__1__Impl rule__XWhileExpression__Group__2
             {
-            pushFollow(FOLLOW_13);
+            pushFollow(FOLLOW_65);
             rule__XWhileExpression__Group__1__Impl();
 
             state._fsp--;
@@ -34809,7 +34815,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10410:1: ( rule__XWhileExpression__Group__2__Impl rule__XWhileExpression__Group__3 )
             // InternalBimmodel.g:10411:2: rule__XWhileExpression__Group__2__Impl rule__XWhileExpression__Group__3
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XWhileExpression__Group__2__Impl();
 
             state._fsp--;
@@ -34853,7 +34859,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXWhileExpressionAccess().getLeftParenthesisKeyword_2()); 
             }
-            match(input,57,FOLLOW_2); if (state.failed) return ;
+            match(input,66,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXWhileExpressionAccess().getLeftParenthesisKeyword_2()); 
             }
@@ -34888,7 +34894,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10437:1: ( rule__XWhileExpression__Group__3__Impl rule__XWhileExpression__Group__4 )
             // InternalBimmodel.g:10438:2: rule__XWhileExpression__Group__3__Impl rule__XWhileExpression__Group__4
             {
-            pushFollow(FOLLOW_15);
+            pushFollow(FOLLOW_63);
             rule__XWhileExpression__Group__3__Impl();
 
             state._fsp--;
@@ -34977,7 +34983,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10464:1: ( rule__XWhileExpression__Group__4__Impl rule__XWhileExpression__Group__5 )
             // InternalBimmodel.g:10465:2: rule__XWhileExpression__Group__4__Impl rule__XWhileExpression__Group__5
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XWhileExpression__Group__4__Impl();
 
             state._fsp--;
@@ -35021,7 +35027,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXWhileExpressionAccess().getRightParenthesisKeyword_4()); 
             }
-            match(input,58,FOLLOW_2); if (state.failed) return ;
+            match(input,61,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXWhileExpressionAccess().getRightParenthesisKeyword_4()); 
             }
@@ -35140,7 +35146,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10518:1: ( rule__XDoWhileExpression__Group__0__Impl rule__XDoWhileExpression__Group__1 )
             // InternalBimmodel.g:10519:2: rule__XDoWhileExpression__Group__0__Impl rule__XDoWhileExpression__Group__1
             {
-            pushFollow(FOLLOW_76);
+            pushFollow(FOLLOW_75);
             rule__XDoWhileExpression__Group__0__Impl();
 
             state._fsp--;
@@ -35219,7 +35225,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10545:1: ( rule__XDoWhileExpression__Group__1__Impl rule__XDoWhileExpression__Group__2 )
             // InternalBimmodel.g:10546:2: rule__XDoWhileExpression__Group__1__Impl rule__XDoWhileExpression__Group__2
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XDoWhileExpression__Group__1__Impl();
 
             state._fsp--;
@@ -35298,7 +35304,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10572:1: ( rule__XDoWhileExpression__Group__2__Impl rule__XDoWhileExpression__Group__3 )
             // InternalBimmodel.g:10573:2: rule__XDoWhileExpression__Group__2__Impl rule__XDoWhileExpression__Group__3
             {
-            pushFollow(FOLLOW_75);
+            pushFollow(FOLLOW_74);
             rule__XDoWhileExpression__Group__2__Impl();
 
             state._fsp--;
@@ -35387,7 +35393,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10599:1: ( rule__XDoWhileExpression__Group__3__Impl rule__XDoWhileExpression__Group__4 )
             // InternalBimmodel.g:10600:2: rule__XDoWhileExpression__Group__3__Impl rule__XDoWhileExpression__Group__4
             {
-            pushFollow(FOLLOW_13);
+            pushFollow(FOLLOW_65);
             rule__XDoWhileExpression__Group__3__Impl();
 
             state._fsp--;
@@ -35466,7 +35472,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10626:1: ( rule__XDoWhileExpression__Group__4__Impl rule__XDoWhileExpression__Group__5 )
             // InternalBimmodel.g:10627:2: rule__XDoWhileExpression__Group__4__Impl rule__XDoWhileExpression__Group__5
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XDoWhileExpression__Group__4__Impl();
 
             state._fsp--;
@@ -35510,7 +35516,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXDoWhileExpressionAccess().getLeftParenthesisKeyword_4()); 
             }
-            match(input,57,FOLLOW_2); if (state.failed) return ;
+            match(input,66,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXDoWhileExpressionAccess().getLeftParenthesisKeyword_4()); 
             }
@@ -35545,7 +35551,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10653:1: ( rule__XDoWhileExpression__Group__5__Impl rule__XDoWhileExpression__Group__6 )
             // InternalBimmodel.g:10654:2: rule__XDoWhileExpression__Group__5__Impl rule__XDoWhileExpression__Group__6
             {
-            pushFollow(FOLLOW_15);
+            pushFollow(FOLLOW_63);
             rule__XDoWhileExpression__Group__5__Impl();
 
             state._fsp--;
@@ -35673,7 +35679,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXDoWhileExpressionAccess().getRightParenthesisKeyword_6()); 
             }
-            match(input,58,FOLLOW_2); if (state.failed) return ;
+            match(input,61,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXDoWhileExpressionAccess().getRightParenthesisKeyword_6()); 
             }
@@ -35787,7 +35793,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10734:1: ( rule__XBlockExpression__Group__1__Impl rule__XBlockExpression__Group__2 )
             // InternalBimmodel.g:10735:2: rule__XBlockExpression__Group__1__Impl rule__XBlockExpression__Group__2
             {
-            pushFollow(FOLLOW_77);
+            pushFollow(FOLLOW_76);
             rule__XBlockExpression__Group__1__Impl();
 
             state._fsp--;
@@ -35866,7 +35872,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10761:1: ( rule__XBlockExpression__Group__2__Impl rule__XBlockExpression__Group__3 )
             // InternalBimmodel.g:10762:2: rule__XBlockExpression__Group__2__Impl rule__XBlockExpression__Group__3
             {
-            pushFollow(FOLLOW_77);
+            pushFollow(FOLLOW_76);
             rule__XBlockExpression__Group__2__Impl();
 
             state._fsp--;
@@ -35916,7 +35922,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 int alt86=2;
                 int LA86_0 = input.LA(1);
 
-                if ( ((LA86_0>=RULE_STRING && LA86_0<=RULE_DECIMAL)||LA86_0==28||(LA86_0>=35 && LA86_0<=36)||LA86_0==41||(LA86_0>=45 && LA86_0<=52)||LA86_0==57||(LA86_0>=63 && LA86_0<=64)||LA86_0==67||LA86_0==69||(LA86_0>=72 && LA86_0<=80)||LA86_0==82||(LA86_0>=88 && LA86_0<=89)) ) {
+                if ( ((LA86_0>=RULE_STRING && LA86_0<=RULE_DECIMAL)||LA86_0==28||(LA86_0>=35 && LA86_0<=36)||LA86_0==41||(LA86_0>=45 && LA86_0<=52)||(LA86_0>=62 && LA86_0<=63)||(LA86_0>=66 && LA86_0<=67)||LA86_0==69||(LA86_0>=72 && LA86_0<=80)||LA86_0==82||(LA86_0>=89 && LA86_0<=90)) ) {
                     alt86=1;
                 }
 
@@ -35925,7 +35931,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:10776:3: rule__XBlockExpression__Group_2__0
             	    {
-            	    pushFollow(FOLLOW_64);
+            	    pushFollow(FOLLOW_61);
             	    rule__XBlockExpression__Group_2__0();
 
             	    state._fsp--;
@@ -36047,7 +36053,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10815:1: ( rule__XBlockExpression__Group_2__0__Impl rule__XBlockExpression__Group_2__1 )
             // InternalBimmodel.g:10816:2: rule__XBlockExpression__Group_2__0__Impl rule__XBlockExpression__Group_2__1
             {
-            pushFollow(FOLLOW_65);
+            pushFollow(FOLLOW_62);
             rule__XBlockExpression__Group_2__0__Impl();
 
             state._fsp--;
@@ -36179,14 +36185,14 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             int alt87=2;
             int LA87_0 = input.LA(1);
 
-            if ( (LA87_0==66) ) {
+            if ( (LA87_0==65) ) {
                 alt87=1;
             }
             switch (alt87) {
                 case 1 :
                     // InternalBimmodel.g:10856:3: ';'
                     {
-                    match(input,66,FOLLOW_2); if (state.failed) return ;
+                    match(input,65,FOLLOW_2); if (state.failed) return ;
 
                     }
                     break;
@@ -36227,7 +36233,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10869:1: ( rule__XVariableDeclaration__Group__0__Impl rule__XVariableDeclaration__Group__1 )
             // InternalBimmodel.g:10870:2: rule__XVariableDeclaration__Group__0__Impl rule__XVariableDeclaration__Group__1
             {
-            pushFollow(FOLLOW_78);
+            pushFollow(FOLLOW_77);
             rule__XVariableDeclaration__Group__0__Impl();
 
             state._fsp--;
@@ -36306,7 +36312,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10896:1: ( rule__XVariableDeclaration__Group__1__Impl rule__XVariableDeclaration__Group__2 )
             // InternalBimmodel.g:10897:2: rule__XVariableDeclaration__Group__1__Impl rule__XVariableDeclaration__Group__2
             {
-            pushFollow(FOLLOW_31);
+            pushFollow(FOLLOW_28);
             rule__XVariableDeclaration__Group__1__Impl();
 
             state._fsp--;
@@ -36395,7 +36401,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:10923:1: ( rule__XVariableDeclaration__Group__2__Impl rule__XVariableDeclaration__Group__3 )
             // InternalBimmodel.g:10924:2: rule__XVariableDeclaration__Group__2__Impl rule__XVariableDeclaration__Group__3
             {
-            pushFollow(FOLLOW_18);
+            pushFollow(FOLLOW_8);
             rule__XVariableDeclaration__Group__2__Impl();
 
             state._fsp--;
@@ -36663,7 +36669,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11004:1: ( rule__XVariableDeclaration__Group_2_0_0__0__Impl rule__XVariableDeclaration__Group_2_0_0__1 )
             // InternalBimmodel.g:11005:2: rule__XVariableDeclaration__Group_2_0_0__0__Impl rule__XVariableDeclaration__Group_2_0_0__1
             {
-            pushFollow(FOLLOW_12);
+            pushFollow(FOLLOW_13);
             rule__XVariableDeclaration__Group_2_0_0__0__Impl();
 
             state._fsp--;
@@ -36836,7 +36842,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11058:1: ( rule__XVariableDeclaration__Group_3__0__Impl rule__XVariableDeclaration__Group_3__1 )
             // InternalBimmodel.g:11059:2: rule__XVariableDeclaration__Group_3__0__Impl rule__XVariableDeclaration__Group_3__1
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XVariableDeclaration__Group_3__0__Impl();
 
             state._fsp--;
@@ -36999,7 +37005,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11112:1: ( rule__JvmFormalParameter__Group__0__Impl rule__JvmFormalParameter__Group__1 )
             // InternalBimmodel.g:11113:2: rule__JvmFormalParameter__Group__0__Impl rule__JvmFormalParameter__Group__1
             {
-            pushFollow(FOLLOW_31);
+            pushFollow(FOLLOW_28);
             rule__JvmFormalParameter__Group__0__Impl();
 
             state._fsp--;
@@ -37050,11 +37056,11 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( (LA89_0==RULE_ID) ) {
                 int LA89_1 = input.LA(2);
 
-                if ( (LA89_1==RULE_ID||LA89_1==28||LA89_1==44||LA89_1==64) ) {
+                if ( (LA89_1==RULE_ID||LA89_1==28||LA89_1==44||LA89_1==63) ) {
                     alt89=1;
                 }
             }
-            else if ( (LA89_0==32||LA89_0==57) ) {
+            else if ( (LA89_0==32||LA89_0==66) ) {
                 alt89=1;
             }
             switch (alt89) {
@@ -37190,7 +37196,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11166:1: ( rule__FullJvmFormalParameter__Group__0__Impl rule__FullJvmFormalParameter__Group__1 )
             // InternalBimmodel.g:11167:2: rule__FullJvmFormalParameter__Group__0__Impl rule__FullJvmFormalParameter__Group__1
             {
-            pushFollow(FOLLOW_12);
+            pushFollow(FOLLOW_13);
             rule__FullJvmFormalParameter__Group__0__Impl();
 
             state._fsp--;
@@ -37363,7 +37369,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11220:1: ( rule__XFeatureCall__Group__0__Impl rule__XFeatureCall__Group__1 )
             // InternalBimmodel.g:11221:2: rule__XFeatureCall__Group__0__Impl rule__XFeatureCall__Group__1
             {
-            pushFollow(FOLLOW_49);
+            pushFollow(FOLLOW_46);
             rule__XFeatureCall__Group__0__Impl();
 
             state._fsp--;
@@ -37442,7 +37448,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11247:1: ( rule__XFeatureCall__Group__1__Impl rule__XFeatureCall__Group__2 )
             // InternalBimmodel.g:11248:2: rule__XFeatureCall__Group__1__Impl rule__XFeatureCall__Group__2
             {
-            pushFollow(FOLLOW_49);
+            pushFollow(FOLLOW_46);
             rule__XFeatureCall__Group__1__Impl();
 
             state._fsp--;
@@ -37542,7 +37548,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11274:1: ( rule__XFeatureCall__Group__2__Impl rule__XFeatureCall__Group__3 )
             // InternalBimmodel.g:11275:2: rule__XFeatureCall__Group__2__Impl rule__XFeatureCall__Group__3
             {
-            pushFollow(FOLLOW_50);
+            pushFollow(FOLLOW_47);
             rule__XFeatureCall__Group__2__Impl();
 
             state._fsp--;
@@ -37631,7 +37637,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11301:1: ( rule__XFeatureCall__Group__3__Impl rule__XFeatureCall__Group__4 )
             // InternalBimmodel.g:11302:2: rule__XFeatureCall__Group__3__Impl rule__XFeatureCall__Group__4
             {
-            pushFollow(FOLLOW_50);
+            pushFollow(FOLLOW_47);
             rule__XFeatureCall__Group__3__Impl();
 
             state._fsp--;
@@ -37818,7 +37824,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11355:1: ( rule__XFeatureCall__Group_1__0__Impl rule__XFeatureCall__Group_1__1 )
             // InternalBimmodel.g:11356:2: rule__XFeatureCall__Group_1__0__Impl rule__XFeatureCall__Group_1__1
             {
-            pushFollow(FOLLOW_51);
+            pushFollow(FOLLOW_48);
             rule__XFeatureCall__Group_1__0__Impl();
 
             state._fsp--;
@@ -37897,7 +37903,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11382:1: ( rule__XFeatureCall__Group_1__1__Impl rule__XFeatureCall__Group_1__2 )
             // InternalBimmodel.g:11383:2: rule__XFeatureCall__Group_1__1__Impl rule__XFeatureCall__Group_1__2
             {
-            pushFollow(FOLLOW_52);
+            pushFollow(FOLLOW_49);
             rule__XFeatureCall__Group_1__1__Impl();
 
             state._fsp--;
@@ -37986,7 +37992,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11409:1: ( rule__XFeatureCall__Group_1__2__Impl rule__XFeatureCall__Group_1__3 )
             // InternalBimmodel.g:11410:2: rule__XFeatureCall__Group_1__2__Impl rule__XFeatureCall__Group_1__3
             {
-            pushFollow(FOLLOW_52);
+            pushFollow(FOLLOW_49);
             rule__XFeatureCall__Group_1__2__Impl();
 
             state._fsp--;
@@ -38036,7 +38042,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 int alt93=2;
                 int LA93_0 = input.LA(1);
 
-                if ( (LA93_0==62) ) {
+                if ( (LA93_0==60) ) {
                     alt93=1;
                 }
 
@@ -38045,7 +38051,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:11424:3: rule__XFeatureCall__Group_1_2__0
             	    {
-            	    pushFollow(FOLLOW_53);
+            	    pushFollow(FOLLOW_50);
             	    rule__XFeatureCall__Group_1_2__0();
 
             	    state._fsp--;
@@ -38167,7 +38173,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11463:1: ( rule__XFeatureCall__Group_1_2__0__Impl rule__XFeatureCall__Group_1_2__1 )
             // InternalBimmodel.g:11464:2: rule__XFeatureCall__Group_1_2__0__Impl rule__XFeatureCall__Group_1_2__1
             {
-            pushFollow(FOLLOW_51);
+            pushFollow(FOLLOW_48);
             rule__XFeatureCall__Group_1_2__0__Impl();
 
             state._fsp--;
@@ -38211,7 +38217,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getCommaKeyword_1_2_0()); 
             }
-            match(input,62,FOLLOW_2); if (state.failed) return ;
+            match(input,60,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXFeatureCallAccess().getCommaKeyword_1_2_0()); 
             }
@@ -38330,7 +38336,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11517:1: ( rule__XFeatureCall__Group_3__0__Impl rule__XFeatureCall__Group_3__1 )
             // InternalBimmodel.g:11518:2: rule__XFeatureCall__Group_3__0__Impl rule__XFeatureCall__Group_3__1
             {
-            pushFollow(FOLLOW_54);
+            pushFollow(FOLLOW_51);
             rule__XFeatureCall__Group_3__0__Impl();
 
             state._fsp--;
@@ -38419,7 +38425,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11544:1: ( rule__XFeatureCall__Group_3__1__Impl rule__XFeatureCall__Group_3__2 )
             // InternalBimmodel.g:11545:2: rule__XFeatureCall__Group_3__1__Impl rule__XFeatureCall__Group_3__2
             {
-            pushFollow(FOLLOW_54);
+            pushFollow(FOLLOW_51);
             rule__XFeatureCall__Group_3__1__Impl();
 
             state._fsp--;
@@ -38467,7 +38473,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             int alt94=2;
             int LA94_0 = input.LA(1);
 
-            if ( ((LA94_0>=RULE_STRING && LA94_0<=RULE_DECIMAL)||LA94_0==28||LA94_0==32||(LA94_0>=35 && LA94_0<=36)||LA94_0==41||(LA94_0>=46 && LA94_0<=52)||LA94_0==57||LA94_0==59||(LA94_0>=63 && LA94_0<=64)||LA94_0==67||LA94_0==69||(LA94_0>=72 && LA94_0<=80)||LA94_0==82||LA94_0==89) ) {
+            if ( ((LA94_0>=RULE_STRING && LA94_0<=RULE_DECIMAL)||LA94_0==28||LA94_0==32||(LA94_0>=35 && LA94_0<=36)||LA94_0==41||(LA94_0>=46 && LA94_0<=52)||(LA94_0>=62 && LA94_0<=63)||(LA94_0>=66 && LA94_0<=67)||LA94_0==69||(LA94_0>=72 && LA94_0<=80)||LA94_0==82||LA94_0==88||LA94_0==90) ) {
                 alt94=1;
             }
             switch (alt94) {
@@ -38558,7 +38564,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getRightParenthesisKeyword_3_2()); 
             }
-            match(input,58,FOLLOW_2); if (state.failed) return ;
+            match(input,61,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXFeatureCallAccess().getRightParenthesisKeyword_3_2()); 
             }
@@ -38593,7 +38599,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11598:1: ( rule__XFeatureCall__Group_3_1_1__0__Impl rule__XFeatureCall__Group_3_1_1__1 )
             // InternalBimmodel.g:11599:2: rule__XFeatureCall__Group_3_1_1__0__Impl rule__XFeatureCall__Group_3_1_1__1
             {
-            pushFollow(FOLLOW_55);
+            pushFollow(FOLLOW_52);
             rule__XFeatureCall__Group_3_1_1__0__Impl();
 
             state._fsp--;
@@ -38727,7 +38733,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 int alt95=2;
                 int LA95_0 = input.LA(1);
 
-                if ( (LA95_0==62) ) {
+                if ( (LA95_0==60) ) {
                     alt95=1;
                 }
 
@@ -38736,7 +38742,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:11639:3: rule__XFeatureCall__Group_3_1_1_1__0
             	    {
-            	    pushFollow(FOLLOW_53);
+            	    pushFollow(FOLLOW_50);
             	    rule__XFeatureCall__Group_3_1_1_1__0();
 
             	    state._fsp--;
@@ -38784,7 +38790,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11652:1: ( rule__XFeatureCall__Group_3_1_1_1__0__Impl rule__XFeatureCall__Group_3_1_1_1__1 )
             // InternalBimmodel.g:11653:2: rule__XFeatureCall__Group_3_1_1_1__0__Impl rule__XFeatureCall__Group_3_1_1_1__1
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XFeatureCall__Group_3_1_1_1__0__Impl();
 
             state._fsp--;
@@ -38828,7 +38834,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getCommaKeyword_3_1_1_1_0()); 
             }
-            match(input,62,FOLLOW_2); if (state.failed) return ;
+            match(input,60,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXFeatureCallAccess().getCommaKeyword_3_1_1_1_0()); 
             }
@@ -38947,7 +38953,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11706:1: ( rule__XConstructorCall__Group__0__Impl rule__XConstructorCall__Group__1 )
             // InternalBimmodel.g:11707:2: rule__XConstructorCall__Group__0__Impl rule__XConstructorCall__Group__1
             {
-            pushFollow(FOLLOW_79);
+            pushFollow(FOLLOW_78);
             rule__XConstructorCall__Group__0__Impl();
 
             state._fsp--;
@@ -39026,7 +39032,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11733:1: ( rule__XConstructorCall__Group__1__Impl rule__XConstructorCall__Group__2 )
             // InternalBimmodel.g:11734:2: rule__XConstructorCall__Group__1__Impl rule__XConstructorCall__Group__2
             {
-            pushFollow(FOLLOW_12);
+            pushFollow(FOLLOW_13);
             rule__XConstructorCall__Group__1__Impl();
 
             state._fsp--;
@@ -39105,7 +39111,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11760:1: ( rule__XConstructorCall__Group__2__Impl rule__XConstructorCall__Group__3 )
             // InternalBimmodel.g:11761:2: rule__XConstructorCall__Group__2__Impl rule__XConstructorCall__Group__3
             {
-            pushFollow(FOLLOW_80);
+            pushFollow(FOLLOW_79);
             rule__XConstructorCall__Group__2__Impl();
 
             state._fsp--;
@@ -39194,7 +39200,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11787:1: ( rule__XConstructorCall__Group__3__Impl rule__XConstructorCall__Group__4 )
             // InternalBimmodel.g:11788:2: rule__XConstructorCall__Group__3__Impl rule__XConstructorCall__Group__4
             {
-            pushFollow(FOLLOW_80);
+            pushFollow(FOLLOW_79);
             rule__XConstructorCall__Group__3__Impl();
 
             state._fsp--;
@@ -39290,7 +39296,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11814:1: ( rule__XConstructorCall__Group__4__Impl rule__XConstructorCall__Group__5 )
             // InternalBimmodel.g:11815:2: rule__XConstructorCall__Group__4__Impl rule__XConstructorCall__Group__5
             {
-            pushFollow(FOLLOW_80);
+            pushFollow(FOLLOW_79);
             rule__XConstructorCall__Group__4__Impl();
 
             state._fsp--;
@@ -39477,7 +39483,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11868:1: ( rule__XConstructorCall__Group_3__0__Impl rule__XConstructorCall__Group_3__1 )
             // InternalBimmodel.g:11869:2: rule__XConstructorCall__Group_3__0__Impl rule__XConstructorCall__Group_3__1
             {
-            pushFollow(FOLLOW_51);
+            pushFollow(FOLLOW_48);
             rule__XConstructorCall__Group_3__0__Impl();
 
             state._fsp--;
@@ -39562,7 +39568,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11895:1: ( rule__XConstructorCall__Group_3__1__Impl rule__XConstructorCall__Group_3__2 )
             // InternalBimmodel.g:11896:2: rule__XConstructorCall__Group_3__1__Impl rule__XConstructorCall__Group_3__2
             {
-            pushFollow(FOLLOW_52);
+            pushFollow(FOLLOW_49);
             rule__XConstructorCall__Group_3__1__Impl();
 
             state._fsp--;
@@ -39651,7 +39657,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11922:1: ( rule__XConstructorCall__Group_3__2__Impl rule__XConstructorCall__Group_3__3 )
             // InternalBimmodel.g:11923:2: rule__XConstructorCall__Group_3__2__Impl rule__XConstructorCall__Group_3__3
             {
-            pushFollow(FOLLOW_52);
+            pushFollow(FOLLOW_49);
             rule__XConstructorCall__Group_3__2__Impl();
 
             state._fsp--;
@@ -39701,7 +39707,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 int alt99=2;
                 int LA99_0 = input.LA(1);
 
-                if ( (LA99_0==62) ) {
+                if ( (LA99_0==60) ) {
                     alt99=1;
                 }
 
@@ -39710,7 +39716,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:11937:3: rule__XConstructorCall__Group_3_2__0
             	    {
-            	    pushFollow(FOLLOW_53);
+            	    pushFollow(FOLLOW_50);
             	    rule__XConstructorCall__Group_3_2__0();
 
             	    state._fsp--;
@@ -39832,7 +39838,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:11976:1: ( rule__XConstructorCall__Group_3_2__0__Impl rule__XConstructorCall__Group_3_2__1 )
             // InternalBimmodel.g:11977:2: rule__XConstructorCall__Group_3_2__0__Impl rule__XConstructorCall__Group_3_2__1
             {
-            pushFollow(FOLLOW_51);
+            pushFollow(FOLLOW_48);
             rule__XConstructorCall__Group_3_2__0__Impl();
 
             state._fsp--;
@@ -39876,7 +39882,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXConstructorCallAccess().getCommaKeyword_3_2_0()); 
             }
-            match(input,62,FOLLOW_2); if (state.failed) return ;
+            match(input,60,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXConstructorCallAccess().getCommaKeyword_3_2_0()); 
             }
@@ -39995,7 +40001,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:12030:1: ( rule__XConstructorCall__Group_4__0__Impl rule__XConstructorCall__Group_4__1 )
             // InternalBimmodel.g:12031:2: rule__XConstructorCall__Group_4__0__Impl rule__XConstructorCall__Group_4__1
             {
-            pushFollow(FOLLOW_54);
+            pushFollow(FOLLOW_51);
             rule__XConstructorCall__Group_4__0__Impl();
 
             state._fsp--;
@@ -40084,7 +40090,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:12057:1: ( rule__XConstructorCall__Group_4__1__Impl rule__XConstructorCall__Group_4__2 )
             // InternalBimmodel.g:12058:2: rule__XConstructorCall__Group_4__1__Impl rule__XConstructorCall__Group_4__2
             {
-            pushFollow(FOLLOW_54);
+            pushFollow(FOLLOW_51);
             rule__XConstructorCall__Group_4__1__Impl();
 
             state._fsp--;
@@ -40132,7 +40138,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             int alt100=2;
             int LA100_0 = input.LA(1);
 
-            if ( ((LA100_0>=RULE_STRING && LA100_0<=RULE_DECIMAL)||LA100_0==28||LA100_0==32||(LA100_0>=35 && LA100_0<=36)||LA100_0==41||(LA100_0>=46 && LA100_0<=52)||LA100_0==57||LA100_0==59||(LA100_0>=63 && LA100_0<=64)||LA100_0==67||LA100_0==69||(LA100_0>=72 && LA100_0<=80)||LA100_0==82||LA100_0==89) ) {
+            if ( ((LA100_0>=RULE_STRING && LA100_0<=RULE_DECIMAL)||LA100_0==28||LA100_0==32||(LA100_0>=35 && LA100_0<=36)||LA100_0==41||(LA100_0>=46 && LA100_0<=52)||(LA100_0>=62 && LA100_0<=63)||(LA100_0>=66 && LA100_0<=67)||LA100_0==69||(LA100_0>=72 && LA100_0<=80)||LA100_0==82||LA100_0==88||LA100_0==90) ) {
                 alt100=1;
             }
             switch (alt100) {
@@ -40223,7 +40229,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXConstructorCallAccess().getRightParenthesisKeyword_4_2()); 
             }
-            match(input,58,FOLLOW_2); if (state.failed) return ;
+            match(input,61,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXConstructorCallAccess().getRightParenthesisKeyword_4_2()); 
             }
@@ -40258,7 +40264,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:12111:1: ( rule__XConstructorCall__Group_4_1_1__0__Impl rule__XConstructorCall__Group_4_1_1__1 )
             // InternalBimmodel.g:12112:2: rule__XConstructorCall__Group_4_1_1__0__Impl rule__XConstructorCall__Group_4_1_1__1
             {
-            pushFollow(FOLLOW_55);
+            pushFollow(FOLLOW_52);
             rule__XConstructorCall__Group_4_1_1__0__Impl();
 
             state._fsp--;
@@ -40392,7 +40398,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 int alt101=2;
                 int LA101_0 = input.LA(1);
 
-                if ( (LA101_0==62) ) {
+                if ( (LA101_0==60) ) {
                     alt101=1;
                 }
 
@@ -40401,7 +40407,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:12152:3: rule__XConstructorCall__Group_4_1_1_1__0
             	    {
-            	    pushFollow(FOLLOW_53);
+            	    pushFollow(FOLLOW_50);
             	    rule__XConstructorCall__Group_4_1_1_1__0();
 
             	    state._fsp--;
@@ -40449,7 +40455,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:12165:1: ( rule__XConstructorCall__Group_4_1_1_1__0__Impl rule__XConstructorCall__Group_4_1_1_1__1 )
             // InternalBimmodel.g:12166:2: rule__XConstructorCall__Group_4_1_1_1__0__Impl rule__XConstructorCall__Group_4_1_1_1__1
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XConstructorCall__Group_4_1_1_1__0__Impl();
 
             state._fsp--;
@@ -40493,7 +40499,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXConstructorCallAccess().getCommaKeyword_4_1_1_1_0()); 
             }
-            match(input,62,FOLLOW_2); if (state.failed) return ;
+            match(input,60,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXConstructorCallAccess().getCommaKeyword_4_1_1_1_0()); 
             }
@@ -40612,7 +40618,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:12219:1: ( rule__XBooleanLiteral__Group__0__Impl rule__XBooleanLiteral__Group__1 )
             // InternalBimmodel.g:12220:2: rule__XBooleanLiteral__Group__0__Impl rule__XBooleanLiteral__Group__1
             {
-            pushFollow(FOLLOW_81);
+            pushFollow(FOLLOW_80);
             rule__XBooleanLiteral__Group__0__Impl();
 
             state._fsp--;
@@ -40775,7 +40781,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:12273:1: ( rule__XNullLiteral__Group__0__Impl rule__XNullLiteral__Group__1 )
             // InternalBimmodel.g:12274:2: rule__XNullLiteral__Group__0__Impl rule__XNullLiteral__Group__1
             {
-            pushFollow(FOLLOW_82);
+            pushFollow(FOLLOW_81);
             rule__XNullLiteral__Group__0__Impl();
 
             state._fsp--;
@@ -40928,7 +40934,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:12327:1: ( rule__XNumberLiteral__Group__0__Impl rule__XNumberLiteral__Group__1 )
             // InternalBimmodel.g:12328:2: rule__XNumberLiteral__Group__0__Impl rule__XNumberLiteral__Group__1
             {
-            pushFollow(FOLLOW_83);
+            pushFollow(FOLLOW_82);
             rule__XNumberLiteral__Group__0__Impl();
 
             state._fsp--;
@@ -41254,7 +41260,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:12435:1: ( rule__XTypeLiteral__Group__0__Impl rule__XTypeLiteral__Group__1 )
             // InternalBimmodel.g:12436:2: rule__XTypeLiteral__Group__0__Impl rule__XTypeLiteral__Group__1
             {
-            pushFollow(FOLLOW_84);
+            pushFollow(FOLLOW_83);
             rule__XTypeLiteral__Group__0__Impl();
 
             state._fsp--;
@@ -41333,7 +41339,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:12462:1: ( rule__XTypeLiteral__Group__1__Impl rule__XTypeLiteral__Group__2 )
             // InternalBimmodel.g:12463:2: rule__XTypeLiteral__Group__1__Impl rule__XTypeLiteral__Group__2
             {
-            pushFollow(FOLLOW_13);
+            pushFollow(FOLLOW_65);
             rule__XTypeLiteral__Group__1__Impl();
 
             state._fsp--;
@@ -41412,7 +41418,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:12489:1: ( rule__XTypeLiteral__Group__2__Impl rule__XTypeLiteral__Group__3 )
             // InternalBimmodel.g:12490:2: rule__XTypeLiteral__Group__2__Impl rule__XTypeLiteral__Group__3
             {
-            pushFollow(FOLLOW_12);
+            pushFollow(FOLLOW_13);
             rule__XTypeLiteral__Group__2__Impl();
 
             state._fsp--;
@@ -41456,7 +41462,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXTypeLiteralAccess().getLeftParenthesisKeyword_2()); 
             }
-            match(input,57,FOLLOW_2); if (state.failed) return ;
+            match(input,66,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXTypeLiteralAccess().getLeftParenthesisKeyword_2()); 
             }
@@ -41491,7 +41497,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:12516:1: ( rule__XTypeLiteral__Group__3__Impl rule__XTypeLiteral__Group__4 )
             // InternalBimmodel.g:12517:2: rule__XTypeLiteral__Group__3__Impl rule__XTypeLiteral__Group__4
             {
-            pushFollow(FOLLOW_85);
+            pushFollow(FOLLOW_84);
             rule__XTypeLiteral__Group__3__Impl();
 
             state._fsp--;
@@ -41580,7 +41586,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:12543:1: ( rule__XTypeLiteral__Group__4__Impl rule__XTypeLiteral__Group__5 )
             // InternalBimmodel.g:12544:2: rule__XTypeLiteral__Group__4__Impl rule__XTypeLiteral__Group__5
             {
-            pushFollow(FOLLOW_85);
+            pushFollow(FOLLOW_84);
             rule__XTypeLiteral__Group__4__Impl();
 
             state._fsp--;
@@ -41630,7 +41636,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 int alt102=2;
                 int LA102_0 = input.LA(1);
 
-                if ( (LA102_0==64) ) {
+                if ( (LA102_0==63) ) {
                     alt102=1;
                 }
 
@@ -41639,7 +41645,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:12558:3: rule__XTypeLiteral__ArrayDimensionsAssignment_4
             	    {
-            	    pushFollow(FOLLOW_86);
+            	    pushFollow(FOLLOW_85);
             	    rule__XTypeLiteral__ArrayDimensionsAssignment_4();
 
             	    state._fsp--;
@@ -41726,7 +41732,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXTypeLiteralAccess().getRightParenthesisKeyword_5()); 
             }
-            match(input,58,FOLLOW_2); if (state.failed) return ;
+            match(input,61,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXTypeLiteralAccess().getRightParenthesisKeyword_5()); 
             }
@@ -41761,7 +41767,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:12597:1: ( rule__XThrowExpression__Group__0__Impl rule__XThrowExpression__Group__1 )
             // InternalBimmodel.g:12598:2: rule__XThrowExpression__Group__0__Impl rule__XThrowExpression__Group__1
             {
-            pushFollow(FOLLOW_87);
+            pushFollow(FOLLOW_86);
             rule__XThrowExpression__Group__0__Impl();
 
             state._fsp--;
@@ -41840,7 +41846,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:12624:1: ( rule__XThrowExpression__Group__1__Impl rule__XThrowExpression__Group__2 )
             // InternalBimmodel.g:12625:2: rule__XThrowExpression__Group__1__Impl rule__XThrowExpression__Group__2
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XThrowExpression__Group__1__Impl();
 
             state._fsp--;
@@ -42003,7 +42009,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:12678:1: ( rule__XReturnExpression__Group__0__Impl rule__XReturnExpression__Group__1 )
             // InternalBimmodel.g:12679:2: rule__XReturnExpression__Group__0__Impl rule__XReturnExpression__Group__1
             {
-            pushFollow(FOLLOW_88);
+            pushFollow(FOLLOW_87);
             rule__XReturnExpression__Group__0__Impl();
 
             state._fsp--;
@@ -42082,7 +42088,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:12705:1: ( rule__XReturnExpression__Group__1__Impl rule__XReturnExpression__Group__2 )
             // InternalBimmodel.g:12706:2: rule__XReturnExpression__Group__1__Impl rule__XReturnExpression__Group__2
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XReturnExpression__Group__1__Impl();
 
             state._fsp--;
@@ -42252,7 +42258,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:12759:1: ( rule__XTryCatchFinallyExpression__Group__0__Impl rule__XTryCatchFinallyExpression__Group__1 )
             // InternalBimmodel.g:12760:2: rule__XTryCatchFinallyExpression__Group__0__Impl rule__XTryCatchFinallyExpression__Group__1
             {
-            pushFollow(FOLLOW_89);
+            pushFollow(FOLLOW_88);
             rule__XTryCatchFinallyExpression__Group__0__Impl();
 
             state._fsp--;
@@ -42331,7 +42337,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:12786:1: ( rule__XTryCatchFinallyExpression__Group__1__Impl rule__XTryCatchFinallyExpression__Group__2 )
             // InternalBimmodel.g:12787:2: rule__XTryCatchFinallyExpression__Group__1__Impl rule__XTryCatchFinallyExpression__Group__2
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XTryCatchFinallyExpression__Group__1__Impl();
 
             state._fsp--;
@@ -42410,7 +42416,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:12813:1: ( rule__XTryCatchFinallyExpression__Group__2__Impl rule__XTryCatchFinallyExpression__Group__3 )
             // InternalBimmodel.g:12814:2: rule__XTryCatchFinallyExpression__Group__2__Impl rule__XTryCatchFinallyExpression__Group__3
             {
-            pushFollow(FOLLOW_90);
+            pushFollow(FOLLOW_89);
             rule__XTryCatchFinallyExpression__Group__2__Impl();
 
             state._fsp--;
@@ -42583,7 +42589,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:12867:1: ( rule__XTryCatchFinallyExpression__Group_3_0__0__Impl rule__XTryCatchFinallyExpression__Group_3_0__1 )
             // InternalBimmodel.g:12868:2: rule__XTryCatchFinallyExpression__Group_3_0__0__Impl rule__XTryCatchFinallyExpression__Group_3_0__1
             {
-            pushFollow(FOLLOW_91);
+            pushFollow(FOLLOW_90);
             rule__XTryCatchFinallyExpression__Group_3_0__0__Impl();
 
             state._fsp--;
@@ -42633,7 +42639,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:12883:3: ( rule__XTryCatchFinallyExpression__CatchClausesAssignment_3_0_0 )
             // InternalBimmodel.g:12883:4: rule__XTryCatchFinallyExpression__CatchClausesAssignment_3_0_0
             {
-            pushFollow(FOLLOW_92);
+            pushFollow(FOLLOW_91);
             rule__XTryCatchFinallyExpression__CatchClausesAssignment_3_0_0();
 
             state._fsp--;
@@ -42674,7 +42680,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:12888:4: rule__XTryCatchFinallyExpression__CatchClausesAssignment_3_0_0
             	    {
-            	    pushFollow(FOLLOW_92);
+            	    pushFollow(FOLLOW_91);
             	    rule__XTryCatchFinallyExpression__CatchClausesAssignment_3_0_0();
 
             	    state._fsp--;
@@ -42824,7 +42830,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:12928:1: ( rule__XTryCatchFinallyExpression__Group_3_0_1__0__Impl rule__XTryCatchFinallyExpression__Group_3_0_1__1 )
             // InternalBimmodel.g:12929:2: rule__XTryCatchFinallyExpression__Group_3_0_1__0__Impl rule__XTryCatchFinallyExpression__Group_3_0_1__1
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XTryCatchFinallyExpression__Group_3_0_1__0__Impl();
 
             state._fsp--;
@@ -42993,7 +42999,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:12982:1: ( rule__XTryCatchFinallyExpression__Group_3_1__0__Impl rule__XTryCatchFinallyExpression__Group_3_1__1 )
             // InternalBimmodel.g:12983:2: rule__XTryCatchFinallyExpression__Group_3_1__0__Impl rule__XTryCatchFinallyExpression__Group_3_1__1
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XTryCatchFinallyExpression__Group_3_1__0__Impl();
 
             state._fsp--;
@@ -43156,7 +43162,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:13036:1: ( rule__XSynchronizedExpression__Group__0__Impl rule__XSynchronizedExpression__Group__1 )
             // InternalBimmodel.g:13037:2: rule__XSynchronizedExpression__Group__0__Impl rule__XSynchronizedExpression__Group__1
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XSynchronizedExpression__Group__0__Impl();
 
             state._fsp--;
@@ -43245,7 +43251,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:13063:1: ( rule__XSynchronizedExpression__Group__1__Impl rule__XSynchronizedExpression__Group__2 )
             // InternalBimmodel.g:13064:2: rule__XSynchronizedExpression__Group__1__Impl rule__XSynchronizedExpression__Group__2
             {
-            pushFollow(FOLLOW_15);
+            pushFollow(FOLLOW_63);
             rule__XSynchronizedExpression__Group__1__Impl();
 
             state._fsp--;
@@ -43334,7 +43340,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:13090:1: ( rule__XSynchronizedExpression__Group__2__Impl rule__XSynchronizedExpression__Group__3 )
             // InternalBimmodel.g:13091:2: rule__XSynchronizedExpression__Group__2__Impl rule__XSynchronizedExpression__Group__3
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XSynchronizedExpression__Group__2__Impl();
 
             state._fsp--;
@@ -43378,7 +43384,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSynchronizedExpressionAccess().getRightParenthesisKeyword_2()); 
             }
-            match(input,58,FOLLOW_2); if (state.failed) return ;
+            match(input,61,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXSynchronizedExpressionAccess().getRightParenthesisKeyword_2()); 
             }
@@ -43581,7 +43587,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:13171:1: ( rule__XSynchronizedExpression__Group_0_0__0__Impl rule__XSynchronizedExpression__Group_0_0__1 )
             // InternalBimmodel.g:13172:2: rule__XSynchronizedExpression__Group_0_0__0__Impl rule__XSynchronizedExpression__Group_0_0__1
             {
-            pushFollow(FOLLOW_93);
+            pushFollow(FOLLOW_92);
             rule__XSynchronizedExpression__Group_0_0__0__Impl();
 
             state._fsp--;
@@ -43660,7 +43666,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:13198:1: ( rule__XSynchronizedExpression__Group_0_0__1__Impl rule__XSynchronizedExpression__Group_0_0__2 )
             // InternalBimmodel.g:13199:2: rule__XSynchronizedExpression__Group_0_0__1__Impl rule__XSynchronizedExpression__Group_0_0__2
             {
-            pushFollow(FOLLOW_13);
+            pushFollow(FOLLOW_65);
             rule__XSynchronizedExpression__Group_0_0__1__Impl();
 
             state._fsp--;
@@ -43778,7 +43784,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSynchronizedExpressionAccess().getLeftParenthesisKeyword_0_0_2()); 
             }
-            match(input,57,FOLLOW_2); if (state.failed) return ;
+            match(input,66,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXSynchronizedExpressionAccess().getLeftParenthesisKeyword_0_0_2()); 
             }
@@ -43813,7 +43819,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:13252:1: ( rule__XCatchClause__Group__0__Impl rule__XCatchClause__Group__1 )
             // InternalBimmodel.g:13253:2: rule__XCatchClause__Group__0__Impl rule__XCatchClause__Group__1
             {
-            pushFollow(FOLLOW_13);
+            pushFollow(FOLLOW_65);
             rule__XCatchClause__Group__0__Impl();
 
             state._fsp--;
@@ -43898,7 +43904,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:13279:1: ( rule__XCatchClause__Group__1__Impl rule__XCatchClause__Group__2 )
             // InternalBimmodel.g:13280:2: rule__XCatchClause__Group__1__Impl rule__XCatchClause__Group__2
             {
-            pushFollow(FOLLOW_31);
+            pushFollow(FOLLOW_28);
             rule__XCatchClause__Group__1__Impl();
 
             state._fsp--;
@@ -43942,7 +43948,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXCatchClauseAccess().getLeftParenthesisKeyword_1()); 
             }
-            match(input,57,FOLLOW_2); if (state.failed) return ;
+            match(input,66,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXCatchClauseAccess().getLeftParenthesisKeyword_1()); 
             }
@@ -43977,7 +43983,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:13306:1: ( rule__XCatchClause__Group__2__Impl rule__XCatchClause__Group__3 )
             // InternalBimmodel.g:13307:2: rule__XCatchClause__Group__2__Impl rule__XCatchClause__Group__3
             {
-            pushFollow(FOLLOW_15);
+            pushFollow(FOLLOW_63);
             rule__XCatchClause__Group__2__Impl();
 
             state._fsp--;
@@ -44066,7 +44072,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:13333:1: ( rule__XCatchClause__Group__3__Impl rule__XCatchClause__Group__4 )
             // InternalBimmodel.g:13334:2: rule__XCatchClause__Group__3__Impl rule__XCatchClause__Group__4
             {
-            pushFollow(FOLLOW_56);
+            pushFollow(FOLLOW_53);
             rule__XCatchClause__Group__3__Impl();
 
             state._fsp--;
@@ -44110,7 +44116,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXCatchClauseAccess().getRightParenthesisKeyword_3()); 
             }
-            match(input,58,FOLLOW_2); if (state.failed) return ;
+            match(input,61,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXCatchClauseAccess().getRightParenthesisKeyword_3()); 
             }
@@ -44229,7 +44235,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:13387:1: ( rule__QualifiedName__Group__0__Impl rule__QualifiedName__Group__1 )
             // InternalBimmodel.g:13388:2: rule__QualifiedName__Group__0__Impl rule__QualifiedName__Group__1
             {
-            pushFollow(FOLLOW_94);
+            pushFollow(FOLLOW_93);
             rule__QualifiedName__Group__0__Impl();
 
             state._fsp--;
@@ -44378,7 +44384,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:13428:3: rule__QualifiedName__Group_1__0
             	    {
-            	    pushFollow(FOLLOW_95);
+            	    pushFollow(FOLLOW_94);
             	    rule__QualifiedName__Group_1__0();
 
             	    state._fsp--;
@@ -44426,7 +44432,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:13441:1: ( rule__QualifiedName__Group_1__0__Impl rule__QualifiedName__Group_1__1 )
             // InternalBimmodel.g:13442:2: rule__QualifiedName__Group_1__0__Impl rule__QualifiedName__Group_1__1
             {
-            pushFollow(FOLLOW_12);
+            pushFollow(FOLLOW_13);
             rule__QualifiedName__Group_1__0__Impl();
 
             state._fsp--;
@@ -44589,7 +44595,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:13495:1: ( rule__Number__Group_1__0__Impl rule__Number__Group_1__1 )
             // InternalBimmodel.g:13496:2: rule__Number__Group_1__0__Impl rule__Number__Group_1__1
             {
-            pushFollow(FOLLOW_94);
+            pushFollow(FOLLOW_93);
             rule__Number__Group_1__0__Impl();
 
             state._fsp--;
@@ -44777,7 +44783,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:13549:1: ( rule__Number__Group_1_1__0__Impl rule__Number__Group_1_1__1 )
             // InternalBimmodel.g:13550:2: rule__Number__Group_1_1__0__Impl rule__Number__Group_1_1__1
             {
-            pushFollow(FOLLOW_96);
+            pushFollow(FOLLOW_95);
             rule__Number__Group_1_1__0__Impl();
 
             state._fsp--;
@@ -44940,7 +44946,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:13603:1: ( rule__JvmTypeReference__Group_0__0__Impl rule__JvmTypeReference__Group_0__1 )
             // InternalBimmodel.g:13604:2: rule__JvmTypeReference__Group_0__0__Impl rule__JvmTypeReference__Group_0__1
             {
-            pushFollow(FOLLOW_59);
+            pushFollow(FOLLOW_56);
             rule__JvmTypeReference__Group_0__0__Impl();
 
             state._fsp--;
@@ -45068,10 +45074,10 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 int alt108=2;
                 int LA108_0 = input.LA(1);
 
-                if ( (LA108_0==64) ) {
+                if ( (LA108_0==63) ) {
                     int LA108_2 = input.LA(2);
 
-                    if ( (LA108_2==65) ) {
+                    if ( (LA108_2==64) ) {
                         int LA108_3 = input.LA(3);
 
                         if ( (synpred151_InternalBimmodel()) ) {
@@ -45089,7 +45095,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:13644:3: rule__JvmTypeReference__Group_0_1__0
             	    {
-            	    pushFollow(FOLLOW_86);
+            	    pushFollow(FOLLOW_85);
             	    rule__JvmTypeReference__Group_0_1__0();
 
             	    state._fsp--;
@@ -45221,7 +45227,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:13684:1: ( rule__JvmTypeReference__Group_0_1_0__0__Impl rule__JvmTypeReference__Group_0_1_0__1 )
             // InternalBimmodel.g:13685:2: rule__JvmTypeReference__Group_0_1_0__0__Impl rule__JvmTypeReference__Group_0_1_0__1
             {
-            pushFollow(FOLLOW_59);
+            pushFollow(FOLLOW_56);
             rule__JvmTypeReference__Group_0_1_0__0__Impl();
 
             state._fsp--;
@@ -45378,7 +45384,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:13738:1: ( rule__ArrayBrackets__Group__0__Impl rule__ArrayBrackets__Group__1 )
             // InternalBimmodel.g:13739:2: rule__ArrayBrackets__Group__0__Impl rule__ArrayBrackets__Group__1
             {
-            pushFollow(FOLLOW_62);
+            pushFollow(FOLLOW_59);
             rule__ArrayBrackets__Group__0__Impl();
 
             state._fsp--;
@@ -45422,7 +45428,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getArrayBracketsAccess().getLeftSquareBracketKeyword_0()); 
             }
-            match(input,64,FOLLOW_2); if (state.failed) return ;
+            match(input,63,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getArrayBracketsAccess().getLeftSquareBracketKeyword_0()); 
             }
@@ -45496,7 +45502,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getArrayBracketsAccess().getRightSquareBracketKeyword_1()); 
             }
-            match(input,65,FOLLOW_2); if (state.failed) return ;
+            match(input,64,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getArrayBracketsAccess().getRightSquareBracketKeyword_1()); 
             }
@@ -45531,7 +45537,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:13792:1: ( rule__XFunctionTypeRef__Group__0__Impl rule__XFunctionTypeRef__Group__1 )
             // InternalBimmodel.g:13793:2: rule__XFunctionTypeRef__Group__0__Impl rule__XFunctionTypeRef__Group__1
             {
-            pushFollow(FOLLOW_31);
+            pushFollow(FOLLOW_28);
             rule__XFunctionTypeRef__Group__0__Impl();
 
             state._fsp--;
@@ -45579,7 +45585,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             int alt109=2;
             int LA109_0 = input.LA(1);
 
-            if ( (LA109_0==57) ) {
+            if ( (LA109_0==66) ) {
                 alt109=1;
             }
             switch (alt109) {
@@ -45631,7 +45637,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:13819:1: ( rule__XFunctionTypeRef__Group__1__Impl rule__XFunctionTypeRef__Group__2 )
             // InternalBimmodel.g:13820:2: rule__XFunctionTypeRef__Group__1__Impl rule__XFunctionTypeRef__Group__2
             {
-            pushFollow(FOLLOW_31);
+            pushFollow(FOLLOW_28);
             rule__XFunctionTypeRef__Group__1__Impl();
 
             state._fsp--;
@@ -45794,7 +45800,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:13873:1: ( rule__XFunctionTypeRef__Group_0__0__Impl rule__XFunctionTypeRef__Group_0__1 )
             // InternalBimmodel.g:13874:2: rule__XFunctionTypeRef__Group_0__0__Impl rule__XFunctionTypeRef__Group_0__1
             {
-            pushFollow(FOLLOW_97);
+            pushFollow(FOLLOW_96);
             rule__XFunctionTypeRef__Group_0__0__Impl();
 
             state._fsp--;
@@ -45838,7 +45844,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFunctionTypeRefAccess().getLeftParenthesisKeyword_0_0()); 
             }
-            match(input,57,FOLLOW_2); if (state.failed) return ;
+            match(input,66,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXFunctionTypeRefAccess().getLeftParenthesisKeyword_0_0()); 
             }
@@ -45873,7 +45879,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:13900:1: ( rule__XFunctionTypeRef__Group_0__1__Impl rule__XFunctionTypeRef__Group_0__2 )
             // InternalBimmodel.g:13901:2: rule__XFunctionTypeRef__Group_0__1__Impl rule__XFunctionTypeRef__Group_0__2
             {
-            pushFollow(FOLLOW_97);
+            pushFollow(FOLLOW_96);
             rule__XFunctionTypeRef__Group_0__1__Impl();
 
             state._fsp--;
@@ -45921,7 +45927,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             int alt110=2;
             int LA110_0 = input.LA(1);
 
-            if ( (LA110_0==RULE_ID||LA110_0==32||LA110_0==57) ) {
+            if ( (LA110_0==RULE_ID||LA110_0==32||LA110_0==66) ) {
                 alt110=1;
             }
             switch (alt110) {
@@ -46012,7 +46018,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFunctionTypeRefAccess().getRightParenthesisKeyword_0_2()); 
             }
-            match(input,58,FOLLOW_2); if (state.failed) return ;
+            match(input,61,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXFunctionTypeRefAccess().getRightParenthesisKeyword_0_2()); 
             }
@@ -46047,7 +46053,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:13954:1: ( rule__XFunctionTypeRef__Group_0_1__0__Impl rule__XFunctionTypeRef__Group_0_1__1 )
             // InternalBimmodel.g:13955:2: rule__XFunctionTypeRef__Group_0_1__0__Impl rule__XFunctionTypeRef__Group_0_1__1
             {
-            pushFollow(FOLLOW_55);
+            pushFollow(FOLLOW_52);
             rule__XFunctionTypeRef__Group_0_1__0__Impl();
 
             state._fsp--;
@@ -46181,7 +46187,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 int alt111=2;
                 int LA111_0 = input.LA(1);
 
-                if ( (LA111_0==62) ) {
+                if ( (LA111_0==60) ) {
                     alt111=1;
                 }
 
@@ -46190,7 +46196,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:13995:3: rule__XFunctionTypeRef__Group_0_1_1__0
             	    {
-            	    pushFollow(FOLLOW_53);
+            	    pushFollow(FOLLOW_50);
             	    rule__XFunctionTypeRef__Group_0_1_1__0();
 
             	    state._fsp--;
@@ -46238,7 +46244,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:14008:1: ( rule__XFunctionTypeRef__Group_0_1_1__0__Impl rule__XFunctionTypeRef__Group_0_1_1__1 )
             // InternalBimmodel.g:14009:2: rule__XFunctionTypeRef__Group_0_1_1__0__Impl rule__XFunctionTypeRef__Group_0_1_1__1
             {
-            pushFollow(FOLLOW_31);
+            pushFollow(FOLLOW_28);
             rule__XFunctionTypeRef__Group_0_1_1__0__Impl();
 
             state._fsp--;
@@ -46282,7 +46288,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFunctionTypeRefAccess().getCommaKeyword_0_1_1_0()); 
             }
-            match(input,62,FOLLOW_2); if (state.failed) return ;
+            match(input,60,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXFunctionTypeRefAccess().getCommaKeyword_0_1_1_0()); 
             }
@@ -46401,7 +46407,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:14062:1: ( rule__JvmParameterizedTypeReference__Group__0__Impl rule__JvmParameterizedTypeReference__Group__1 )
             // InternalBimmodel.g:14063:2: rule__JvmParameterizedTypeReference__Group__0__Impl rule__JvmParameterizedTypeReference__Group__1
             {
-            pushFollow(FOLLOW_21);
+            pushFollow(FOLLOW_18);
             rule__JvmParameterizedTypeReference__Group__0__Impl();
 
             state._fsp--;
@@ -46581,7 +46587,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:14116:1: ( rule__JvmParameterizedTypeReference__Group_1__0__Impl rule__JvmParameterizedTypeReference__Group_1__1 )
             // InternalBimmodel.g:14117:2: rule__JvmParameterizedTypeReference__Group_1__0__Impl rule__JvmParameterizedTypeReference__Group_1__1
             {
-            pushFollow(FOLLOW_51);
+            pushFollow(FOLLOW_48);
             rule__JvmParameterizedTypeReference__Group_1__0__Impl();
 
             state._fsp--;
@@ -46666,7 +46672,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:14143:1: ( rule__JvmParameterizedTypeReference__Group_1__1__Impl rule__JvmParameterizedTypeReference__Group_1__2 )
             // InternalBimmodel.g:14144:2: rule__JvmParameterizedTypeReference__Group_1__1__Impl rule__JvmParameterizedTypeReference__Group_1__2
             {
-            pushFollow(FOLLOW_52);
+            pushFollow(FOLLOW_49);
             rule__JvmParameterizedTypeReference__Group_1__1__Impl();
 
             state._fsp--;
@@ -46755,7 +46761,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:14170:1: ( rule__JvmParameterizedTypeReference__Group_1__2__Impl rule__JvmParameterizedTypeReference__Group_1__3 )
             // InternalBimmodel.g:14171:2: rule__JvmParameterizedTypeReference__Group_1__2__Impl rule__JvmParameterizedTypeReference__Group_1__3
             {
-            pushFollow(FOLLOW_52);
+            pushFollow(FOLLOW_49);
             rule__JvmParameterizedTypeReference__Group_1__2__Impl();
 
             state._fsp--;
@@ -46805,7 +46811,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 int alt113=2;
                 int LA113_0 = input.LA(1);
 
-                if ( (LA113_0==62) ) {
+                if ( (LA113_0==60) ) {
                     alt113=1;
                 }
 
@@ -46814,7 +46820,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:14185:3: rule__JvmParameterizedTypeReference__Group_1_2__0
             	    {
-            	    pushFollow(FOLLOW_53);
+            	    pushFollow(FOLLOW_50);
             	    rule__JvmParameterizedTypeReference__Group_1_2__0();
 
             	    state._fsp--;
@@ -46862,7 +46868,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:14197:1: ( rule__JvmParameterizedTypeReference__Group_1__3__Impl rule__JvmParameterizedTypeReference__Group_1__4 )
             // InternalBimmodel.g:14198:2: rule__JvmParameterizedTypeReference__Group_1__3__Impl rule__JvmParameterizedTypeReference__Group_1__4
             {
-            pushFollow(FOLLOW_94);
+            pushFollow(FOLLOW_93);
             rule__JvmParameterizedTypeReference__Group_1__3__Impl();
 
             state._fsp--;
@@ -47007,7 +47013,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:14238:3: rule__JvmParameterizedTypeReference__Group_1_4__0
             	    {
-            	    pushFollow(FOLLOW_95);
+            	    pushFollow(FOLLOW_94);
             	    rule__JvmParameterizedTypeReference__Group_1_4__0();
 
             	    state._fsp--;
@@ -47055,7 +47061,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:14251:1: ( rule__JvmParameterizedTypeReference__Group_1_2__0__Impl rule__JvmParameterizedTypeReference__Group_1_2__1 )
             // InternalBimmodel.g:14252:2: rule__JvmParameterizedTypeReference__Group_1_2__0__Impl rule__JvmParameterizedTypeReference__Group_1_2__1
             {
-            pushFollow(FOLLOW_51);
+            pushFollow(FOLLOW_48);
             rule__JvmParameterizedTypeReference__Group_1_2__0__Impl();
 
             state._fsp--;
@@ -47099,7 +47105,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmParameterizedTypeReferenceAccess().getCommaKeyword_1_2_0()); 
             }
-            match(input,62,FOLLOW_2); if (state.failed) return ;
+            match(input,60,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getJvmParameterizedTypeReferenceAccess().getCommaKeyword_1_2_0()); 
             }
@@ -47218,7 +47224,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:14305:1: ( rule__JvmParameterizedTypeReference__Group_1_4__0__Impl rule__JvmParameterizedTypeReference__Group_1_4__1 )
             // InternalBimmodel.g:14306:2: rule__JvmParameterizedTypeReference__Group_1_4__0__Impl rule__JvmParameterizedTypeReference__Group_1_4__1
             {
-            pushFollow(FOLLOW_12);
+            pushFollow(FOLLOW_13);
             rule__JvmParameterizedTypeReference__Group_1_4__0__Impl();
 
             state._fsp--;
@@ -47307,7 +47313,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:14332:1: ( rule__JvmParameterizedTypeReference__Group_1_4__1__Impl rule__JvmParameterizedTypeReference__Group_1_4__2 )
             // InternalBimmodel.g:14333:2: rule__JvmParameterizedTypeReference__Group_1_4__1__Impl rule__JvmParameterizedTypeReference__Group_1_4__2
             {
-            pushFollow(FOLLOW_21);
+            pushFollow(FOLLOW_18);
             rule__JvmParameterizedTypeReference__Group_1_4__1__Impl();
 
             state._fsp--;
@@ -47571,7 +47577,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:14413:1: ( rule__JvmParameterizedTypeReference__Group_1_4_0_0__0__Impl rule__JvmParameterizedTypeReference__Group_1_4_0_0__1 )
             // InternalBimmodel.g:14414:2: rule__JvmParameterizedTypeReference__Group_1_4_0_0__0__Impl rule__JvmParameterizedTypeReference__Group_1_4_0_0__1
             {
-            pushFollow(FOLLOW_94);
+            pushFollow(FOLLOW_93);
             rule__JvmParameterizedTypeReference__Group_1_4_0_0__0__Impl();
 
             state._fsp--;
@@ -47724,7 +47730,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:14467:1: ( rule__JvmParameterizedTypeReference__Group_1_4_2__0__Impl rule__JvmParameterizedTypeReference__Group_1_4_2__1 )
             // InternalBimmodel.g:14468:2: rule__JvmParameterizedTypeReference__Group_1_4_2__0__Impl rule__JvmParameterizedTypeReference__Group_1_4_2__1
             {
-            pushFollow(FOLLOW_51);
+            pushFollow(FOLLOW_48);
             rule__JvmParameterizedTypeReference__Group_1_4_2__0__Impl();
 
             state._fsp--;
@@ -47809,7 +47815,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:14494:1: ( rule__JvmParameterizedTypeReference__Group_1_4_2__1__Impl rule__JvmParameterizedTypeReference__Group_1_4_2__2 )
             // InternalBimmodel.g:14495:2: rule__JvmParameterizedTypeReference__Group_1_4_2__1__Impl rule__JvmParameterizedTypeReference__Group_1_4_2__2
             {
-            pushFollow(FOLLOW_52);
+            pushFollow(FOLLOW_49);
             rule__JvmParameterizedTypeReference__Group_1_4_2__1__Impl();
 
             state._fsp--;
@@ -47898,7 +47904,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:14521:1: ( rule__JvmParameterizedTypeReference__Group_1_4_2__2__Impl rule__JvmParameterizedTypeReference__Group_1_4_2__3 )
             // InternalBimmodel.g:14522:2: rule__JvmParameterizedTypeReference__Group_1_4_2__2__Impl rule__JvmParameterizedTypeReference__Group_1_4_2__3
             {
-            pushFollow(FOLLOW_52);
+            pushFollow(FOLLOW_49);
             rule__JvmParameterizedTypeReference__Group_1_4_2__2__Impl();
 
             state._fsp--;
@@ -47948,7 +47954,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                 int alt116=2;
                 int LA116_0 = input.LA(1);
 
-                if ( (LA116_0==62) ) {
+                if ( (LA116_0==60) ) {
                     alt116=1;
                 }
 
@@ -47957,7 +47963,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:14536:3: rule__JvmParameterizedTypeReference__Group_1_4_2_2__0
             	    {
-            	    pushFollow(FOLLOW_53);
+            	    pushFollow(FOLLOW_50);
             	    rule__JvmParameterizedTypeReference__Group_1_4_2_2__0();
 
             	    state._fsp--;
@@ -48079,7 +48085,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:14575:1: ( rule__JvmParameterizedTypeReference__Group_1_4_2_2__0__Impl rule__JvmParameterizedTypeReference__Group_1_4_2_2__1 )
             // InternalBimmodel.g:14576:2: rule__JvmParameterizedTypeReference__Group_1_4_2_2__0__Impl rule__JvmParameterizedTypeReference__Group_1_4_2_2__1
             {
-            pushFollow(FOLLOW_51);
+            pushFollow(FOLLOW_48);
             rule__JvmParameterizedTypeReference__Group_1_4_2_2__0__Impl();
 
             state._fsp--;
@@ -48123,7 +48129,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmParameterizedTypeReferenceAccess().getCommaKeyword_1_4_2_2_0()); 
             }
-            match(input,62,FOLLOW_2); if (state.failed) return ;
+            match(input,60,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getJvmParameterizedTypeReferenceAccess().getCommaKeyword_1_4_2_2_0()); 
             }
@@ -48242,7 +48248,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:14629:1: ( rule__JvmWildcardTypeReference__Group__0__Impl rule__JvmWildcardTypeReference__Group__1 )
             // InternalBimmodel.g:14630:2: rule__JvmWildcardTypeReference__Group__0__Impl rule__JvmWildcardTypeReference__Group__1
             {
-            pushFollow(FOLLOW_51);
+            pushFollow(FOLLOW_48);
             rule__JvmWildcardTypeReference__Group__0__Impl();
 
             state._fsp--;
@@ -48321,7 +48327,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:14656:1: ( rule__JvmWildcardTypeReference__Group__1__Impl rule__JvmWildcardTypeReference__Group__2 )
             // InternalBimmodel.g:14657:2: rule__JvmWildcardTypeReference__Group__1__Impl rule__JvmWildcardTypeReference__Group__2
             {
-            pushFollow(FOLLOW_98);
+            pushFollow(FOLLOW_97);
             rule__JvmWildcardTypeReference__Group__1__Impl();
 
             state._fsp--;
@@ -48495,7 +48501,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:14710:1: ( rule__JvmWildcardTypeReference__Group_2_0__0__Impl rule__JvmWildcardTypeReference__Group_2_0__1 )
             // InternalBimmodel.g:14711:2: rule__JvmWildcardTypeReference__Group_2_0__0__Impl rule__JvmWildcardTypeReference__Group_2_0__1
             {
-            pushFollow(FOLLOW_99);
+            pushFollow(FOLLOW_98);
             rule__JvmWildcardTypeReference__Group_2_0__0__Impl();
 
             state._fsp--;
@@ -48638,7 +48644,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:14751:3: rule__JvmWildcardTypeReference__ConstraintsAssignment_2_0_1
             	    {
-            	    pushFollow(FOLLOW_100);
+            	    pushFollow(FOLLOW_99);
             	    rule__JvmWildcardTypeReference__ConstraintsAssignment_2_0_1();
 
             	    state._fsp--;
@@ -48686,7 +48692,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:14764:1: ( rule__JvmWildcardTypeReference__Group_2_1__0__Impl rule__JvmWildcardTypeReference__Group_2_1__1 )
             // InternalBimmodel.g:14765:2: rule__JvmWildcardTypeReference__Group_2_1__0__Impl rule__JvmWildcardTypeReference__Group_2_1__1
             {
-            pushFollow(FOLLOW_99);
+            pushFollow(FOLLOW_98);
             rule__JvmWildcardTypeReference__Group_2_1__0__Impl();
 
             state._fsp--;
@@ -48829,7 +48835,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             	case 1 :
             	    // InternalBimmodel.g:14805:3: rule__JvmWildcardTypeReference__ConstraintsAssignment_2_1_1
             	    {
-            	    pushFollow(FOLLOW_100);
+            	    pushFollow(FOLLOW_99);
             	    rule__JvmWildcardTypeReference__ConstraintsAssignment_2_1_1();
 
             	    state._fsp--;
@@ -48877,7 +48883,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:14818:1: ( rule__JvmUpperBound__Group__0__Impl rule__JvmUpperBound__Group__1 )
             // InternalBimmodel.g:14819:2: rule__JvmUpperBound__Group__0__Impl rule__JvmUpperBound__Group__1
             {
-            pushFollow(FOLLOW_31);
+            pushFollow(FOLLOW_28);
             rule__JvmUpperBound__Group__0__Impl();
 
             state._fsp--;
@@ -49040,7 +49046,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:14872:1: ( rule__JvmUpperBoundAnded__Group__0__Impl rule__JvmUpperBoundAnded__Group__1 )
             // InternalBimmodel.g:14873:2: rule__JvmUpperBoundAnded__Group__0__Impl rule__JvmUpperBoundAnded__Group__1
             {
-            pushFollow(FOLLOW_31);
+            pushFollow(FOLLOW_28);
             rule__JvmUpperBoundAnded__Group__0__Impl();
 
             state._fsp--;
@@ -49203,7 +49209,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:14926:1: ( rule__JvmLowerBound__Group__0__Impl rule__JvmLowerBound__Group__1 )
             // InternalBimmodel.g:14927:2: rule__JvmLowerBound__Group__0__Impl rule__JvmLowerBound__Group__1
             {
-            pushFollow(FOLLOW_31);
+            pushFollow(FOLLOW_28);
             rule__JvmLowerBound__Group__0__Impl();
 
             state._fsp--;
@@ -49366,7 +49372,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:14980:1: ( rule__JvmLowerBoundAnded__Group__0__Impl rule__JvmLowerBoundAnded__Group__1 )
             // InternalBimmodel.g:14981:2: rule__JvmLowerBoundAnded__Group__0__Impl rule__JvmLowerBoundAnded__Group__1
             {
-            pushFollow(FOLLOW_31);
+            pushFollow(FOLLOW_28);
             rule__JvmLowerBoundAnded__Group__0__Impl();
 
             state._fsp--;
@@ -49529,7 +49535,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:15034:1: ( rule__QualifiedNameWithWildcard__Group__0__Impl rule__QualifiedNameWithWildcard__Group__1 )
             // InternalBimmodel.g:15035:2: rule__QualifiedNameWithWildcard__Group__0__Impl rule__QualifiedNameWithWildcard__Group__1
             {
-            pushFollow(FOLLOW_94);
+            pushFollow(FOLLOW_93);
             rule__QualifiedNameWithWildcard__Group__0__Impl();
 
             state._fsp--;
@@ -49612,7 +49618,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:15061:1: ( rule__QualifiedNameWithWildcard__Group__1__Impl rule__QualifiedNameWithWildcard__Group__2 )
             // InternalBimmodel.g:15062:2: rule__QualifiedNameWithWildcard__Group__1__Impl rule__QualifiedNameWithWildcard__Group__2
             {
-            pushFollow(FOLLOW_101);
+            pushFollow(FOLLOW_100);
             rule__QualifiedNameWithWildcard__Group__1__Impl();
 
             state._fsp--;
@@ -49765,7 +49771,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:15115:1: ( rule__XImportDeclaration__Group__0__Impl rule__XImportDeclaration__Group__1 )
             // InternalBimmodel.g:15116:2: rule__XImportDeclaration__Group__0__Impl rule__XImportDeclaration__Group__1
             {
-            pushFollow(FOLLOW_102);
+            pushFollow(FOLLOW_101);
             rule__XImportDeclaration__Group__0__Impl();
 
             state._fsp--;
@@ -49844,7 +49850,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:15142:1: ( rule__XImportDeclaration__Group__1__Impl rule__XImportDeclaration__Group__2 )
             // InternalBimmodel.g:15143:2: rule__XImportDeclaration__Group__1__Impl rule__XImportDeclaration__Group__2
             {
-            pushFollow(FOLLOW_65);
+            pushFollow(FOLLOW_62);
             rule__XImportDeclaration__Group__1__Impl();
 
             state._fsp--;
@@ -49976,14 +49982,14 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             int alt120=2;
             int LA120_0 = input.LA(1);
 
-            if ( (LA120_0==66) ) {
+            if ( (LA120_0==65) ) {
                 alt120=1;
             }
             switch (alt120) {
                 case 1 :
                     // InternalBimmodel.g:15183:3: ';'
                     {
-                    match(input,66,FOLLOW_2); if (state.failed) return ;
+                    match(input,65,FOLLOW_2); if (state.failed) return ;
 
                     }
                     break;
@@ -50024,7 +50030,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:15196:1: ( rule__XImportDeclaration__Group_1_0__0__Impl rule__XImportDeclaration__Group_1_0__1 )
             // InternalBimmodel.g:15197:2: rule__XImportDeclaration__Group_1_0__0__Impl rule__XImportDeclaration__Group_1_0__1
             {
-            pushFollow(FOLLOW_103);
+            pushFollow(FOLLOW_102);
             rule__XImportDeclaration__Group_1_0__0__Impl();
 
             state._fsp--;
@@ -50113,7 +50119,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:15223:1: ( rule__XImportDeclaration__Group_1_0__1__Impl rule__XImportDeclaration__Group_1_0__2 )
             // InternalBimmodel.g:15224:2: rule__XImportDeclaration__Group_1_0__1__Impl rule__XImportDeclaration__Group_1_0__2
             {
-            pushFollow(FOLLOW_103);
+            pushFollow(FOLLOW_102);
             rule__XImportDeclaration__Group_1_0__1__Impl();
 
             state._fsp--;
@@ -50213,7 +50219,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:15250:1: ( rule__XImportDeclaration__Group_1_0__2__Impl rule__XImportDeclaration__Group_1_0__3 )
             // InternalBimmodel.g:15251:2: rule__XImportDeclaration__Group_1_0__2__Impl rule__XImportDeclaration__Group_1_0__3
             {
-            pushFollow(FOLLOW_104);
+            pushFollow(FOLLOW_103);
             rule__XImportDeclaration__Group_1_0__2__Impl();
 
             state._fsp--;
@@ -50386,7 +50392,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:15304:1: ( rule__QualifiedNameInStaticImport__Group__0__Impl rule__QualifiedNameInStaticImport__Group__1 )
             // InternalBimmodel.g:15305:2: rule__QualifiedNameInStaticImport__Group__0__Impl rule__QualifiedNameInStaticImport__Group__1
             {
-            pushFollow(FOLLOW_94);
+            pushFollow(FOLLOW_93);
             rule__QualifiedNameInStaticImport__Group__0__Impl();
 
             state._fsp--;
@@ -50754,9 +50760,9 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "rule__Aliass__AliassAssignment_2"
 
 
-    // $ANTLR start "rule__Aliass__AliassAssignment_3"
-    // InternalBimmodel.g:15429:1: rule__Aliass__AliassAssignment_3 : ( RULE_IFCNAME ) ;
-    public final void rule__Aliass__AliassAssignment_3() throws RecognitionException {
+    // $ANTLR start "rule__Aliass__AliassAssignment_3_1"
+    // InternalBimmodel.g:15429:1: rule__Aliass__AliassAssignment_3_1 : ( RULE_IFCNAME ) ;
+    public final void rule__Aliass__AliassAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
@@ -50768,11 +50774,11 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             // InternalBimmodel.g:15435:3: RULE_IFCNAME
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getAliassAccess().getAliassIFCNAMETerminalRuleCall_3_0()); 
+               before(grammarAccess.getAliassAccess().getAliassIFCNAMETerminalRuleCall_3_1_0()); 
             }
             match(input,RULE_IFCNAME,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getAliassAccess().getAliassIFCNAMETerminalRuleCall_3_0()); 
+               after(grammarAccess.getAliassAccess().getAliassIFCNAMETerminalRuleCall_3_1_0()); 
             }
 
             }
@@ -50792,7 +50798,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__Aliass__AliassAssignment_3"
+    // $ANTLR end "rule__Aliass__AliassAssignment_3_1"
 
 
     // $ANTLR start "rule__Annotation__AnnotationNameAssignment_2"
@@ -52560,7 +52566,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getExplicitOperationCallLeftParenthesisKeyword_1_1_3_0_0()); 
             }
-            match(input,57,FOLLOW_2); if (state.failed) return ;
+            match(input,66,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXMemberFeatureCallAccess().getExplicitOperationCallLeftParenthesisKeyword_1_1_3_0_0()); 
             }
@@ -53063,7 +53069,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXClosureAccess().getExplicitSyntaxVerticalLineKeyword_1_0_1_0()); 
             }
-            match(input,59,FOLLOW_2); if (state.failed) return ;
+            match(input,88,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXClosureAccess().getExplicitSyntaxVerticalLineKeyword_1_0_1_0()); 
             }
@@ -53296,7 +53302,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXShortClosureAccess().getExplicitSyntaxVerticalLineKeyword_0_0_2_0()); 
             }
-            match(input,59,FOLLOW_2); if (state.failed) return ;
+            match(input,88,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXShortClosureAccess().getExplicitSyntaxVerticalLineKeyword_0_0_2_0()); 
             }
@@ -53934,7 +53940,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXCasePartAccess().getFallThroughCommaKeyword_3_1_0()); 
             }
-            match(input,62,FOLLOW_2); if (state.failed) return ;
+            match(input,60,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXCasePartAccess().getFallThroughCommaKeyword_3_1_0()); 
             }
@@ -54617,7 +54623,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXVariableDeclarationAccess().getWriteableVarKeyword_1_0_0()); 
             }
-            match(input,88,FOLLOW_2); if (state.failed) return ;
+            match(input,89,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXVariableDeclarationAccess().getWriteableVarKeyword_1_0_0()); 
             }
@@ -55177,7 +55183,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getExplicitOperationCallLeftParenthesisKeyword_3_0_0()); 
             }
-            match(input,57,FOLLOW_2); if (state.failed) return ;
+            match(input,66,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXFeatureCallAccess().getExplicitOperationCallLeftParenthesisKeyword_3_0_0()); 
             }
@@ -55557,7 +55563,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXConstructorCallAccess().getExplicitConstructorCallLeftParenthesisKeyword_4_0_0()); 
             }
-            match(input,57,FOLLOW_2); if (state.failed) return ;
+            match(input,66,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXConstructorCallAccess().getExplicitConstructorCallLeftParenthesisKeyword_4_0_0()); 
             }
@@ -55790,7 +55796,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXBooleanLiteralAccess().getIsTrueTrueKeyword_1_1_0()); 
             }
-            match(input,89,FOLLOW_2); if (state.failed) return ;
+            match(input,90,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXBooleanLiteralAccess().getIsTrueTrueKeyword_1_1_0()); 
             }
@@ -58903,7 +58909,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
     static final String dfa_7s = "\12\uffff";
     static final String dfa_8s = "\4\uffff\5\3\1\uffff";
     static final String dfa_9s = "\1\54\2\5\1\uffff\5\4\1\uffff";
-    static final String dfa_10s = "\1\127\2\62\1\uffff\5\131\1\uffff";
+    static final String dfa_10s = "\1\127\2\62\1\uffff\5\132\1\uffff";
     static final String dfa_11s = "\3\uffff\1\2\5\uffff\1\1";
     static final String dfa_12s = "\12\uffff}>";
     static final String[] dfa_13s = {
@@ -58911,11 +58917,11 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
             "\1\4\26\uffff\1\3\21\uffff\1\5\1\6\1\7\1\10\1\3",
             "\1\4\26\uffff\1\3\21\uffff\1\5\1\6\1\7\1\10\1\3",
             "",
-            "\5\3\5\uffff\1\11\47\3\2\uffff\3\3\1\uffff\30\3\2\uffff\4\3",
-            "\5\3\5\uffff\1\11\47\3\2\uffff\3\3\1\uffff\30\3\2\uffff\4\3",
-            "\5\3\5\uffff\1\11\47\3\2\uffff\3\3\1\uffff\30\3\2\uffff\4\3",
-            "\5\3\5\uffff\1\11\47\3\2\uffff\3\3\1\uffff\30\3\2\uffff\4\3",
-            "\5\3\5\uffff\1\11\47\3\2\uffff\3\3\1\uffff\30\3\2\uffff\4\3",
+            "\5\3\5\uffff\1\11\47\3\3\uffff\33\3\2\uffff\2\3\1\uffff\2\3",
+            "\5\3\5\uffff\1\11\47\3\3\uffff\33\3\2\uffff\2\3\1\uffff\2\3",
+            "\5\3\5\uffff\1\11\47\3\3\uffff\33\3\2\uffff\2\3\1\uffff\2\3",
+            "\5\3\5\uffff\1\11\47\3\3\uffff\33\3\2\uffff\2\3\1\uffff\2\3",
+            "\5\3\5\uffff\1\11\47\3\3\uffff\33\3\2\uffff\2\3\1\uffff\2\3",
             ""
     };
 
@@ -58946,11 +58952,11 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
     }
     static final String dfa_14s = "\43\uffff";
     static final String dfa_15s = "\1\4\2\0\40\uffff";
-    static final String dfa_16s = "\1\131\2\0\40\uffff";
+    static final String dfa_16s = "\1\132\2\0\40\uffff";
     static final String dfa_17s = "\3\uffff\1\1\1\uffff\1\2\35\uffff";
     static final String dfa_18s = "\1\uffff\1\0\1\1\40\uffff}>";
     static final String[] dfa_19s = {
-            "\1\5\1\1\3\5\23\uffff\1\5\3\uffff\1\3\2\uffff\2\5\4\uffff\1\5\4\uffff\7\5\4\uffff\1\2\1\uffff\1\3\3\uffff\2\5\2\uffff\1\5\1\uffff\1\5\2\uffff\11\5\1\uffff\1\5\6\uffff\1\5",
+            "\1\5\1\1\3\5\23\uffff\1\5\3\uffff\1\3\2\uffff\2\5\4\uffff\1\5\4\uffff\7\5\11\uffff\2\5\2\uffff\1\2\1\5\1\uffff\1\5\2\uffff\11\5\1\uffff\1\5\5\uffff\1\3\1\uffff\1\5",
             "\1\uffff",
             "\1\uffff",
             "",
@@ -59054,11 +59060,11 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
     }
     static final String dfa_20s = "\40\uffff";
     static final String dfa_21s = "\1\4\26\uffff\1\0\10\uffff";
-    static final String dfa_22s = "\1\131\26\uffff\1\0\10\uffff";
+    static final String dfa_22s = "\1\132\26\uffff\1\0\10\uffff";
     static final String dfa_23s = "\1\uffff\1\1\1\2\1\3\1\4\1\5\6\uffff\1\6\11\uffff\1\7\1\uffff\1\12\1\13\1\14\1\15\1\16\1\17\1\10\1\11";
     static final String dfa_24s = "\27\uffff\1\0\10\uffff}>";
     static final String[] dfa_25s = {
-            "\1\14\1\5\3\14\23\uffff\1\5\21\uffff\5\5\1\14\1\2\4\uffff\1\35\5\uffff\2\14\2\uffff\1\26\1\uffff\1\3\2\uffff\1\27\1\30\1\31\1\1\2\14\1\32\1\33\1\34\1\uffff\1\4\6\uffff\1\14",
+            "\1\14\1\5\3\14\23\uffff\1\5\21\uffff\5\5\1\14\1\2\11\uffff\2\14\2\uffff\1\35\1\26\1\uffff\1\3\2\uffff\1\27\1\30\1\31\1\1\2\14\1\32\1\33\1\34\1\uffff\1\4\7\uffff\1\14",
             "",
             "",
             "",
@@ -59143,11 +59149,11 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
         }
     }
     static final String dfa_26s = "\1\4\1\0\41\uffff";
-    static final String dfa_27s = "\1\131\1\0\41\uffff";
+    static final String dfa_27s = "\1\132\1\0\41\uffff";
     static final String dfa_28s = "\2\uffff\1\2\37\uffff\1\1";
     static final String dfa_29s = "\1\uffff\1\0\41\uffff}>";
     static final String[] dfa_30s = {
-            "\5\2\23\uffff\1\2\3\uffff\1\2\2\uffff\2\2\4\uffff\1\2\4\uffff\7\2\4\uffff\1\1\5\uffff\2\2\2\uffff\1\2\1\uffff\1\2\2\uffff\11\2\1\uffff\1\2\6\uffff\1\2",
+            "\5\2\23\uffff\1\2\3\uffff\1\2\2\uffff\2\2\4\uffff\1\2\4\uffff\7\2\11\uffff\2\2\2\uffff\1\1\1\2\1\uffff\1\2\2\uffff\11\2\1\uffff\1\2\7\uffff\1\2",
             "\1\uffff",
             "",
             "",
@@ -59353,16 +59359,16 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
     static final String dfa_31s = "\7\uffff";
     static final String dfa_32s = "\2\uffff\1\4\2\uffff\1\4\1\uffff";
     static final String dfa_33s = "\1\5\1\uffff\1\54\1\5\1\uffff\1\54\1\uffff";
-    static final String dfa_34s = "\1\57\1\uffff\1\102\1\45\1\uffff\1\102\1\uffff";
+    static final String dfa_34s = "\1\57\1\uffff\1\101\1\45\1\uffff\1\101\1\uffff";
     static final String dfa_35s = "\1\uffff\1\1\2\uffff\1\2\1\uffff\1\3";
     static final String dfa_36s = "\7\uffff}>";
     static final String[] dfa_37s = {
             "\1\2\51\uffff\1\1",
             "",
-            "\1\3\25\uffff\1\4",
+            "\1\3\24\uffff\1\4",
             "\1\5\37\uffff\1\6",
             "",
-            "\1\3\25\uffff\1\4",
+            "\1\3\24\uffff\1\4",
             ""
     };
 
@@ -59393,11 +59399,11 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
     }
     static final String dfa_38s = "\1\10\11\uffff";
     static final String dfa_39s = "\1\4\7\0\2\uffff";
-    static final String dfa_40s = "\1\131\7\0\2\uffff";
+    static final String dfa_40s = "\1\132\7\0\2\uffff";
     static final String dfa_41s = "\10\uffff\1\2\1\1";
-    static final String dfa_42s = "\1\uffff\1\5\1\4\1\1\1\0\1\6\1\2\1\3\2\uffff}>";
+    static final String dfa_42s = "\1\uffff\1\2\1\1\1\0\1\5\1\3\1\6\1\4\2\uffff}>";
     static final String[] dfa_43s = {
-            "\5\10\6\uffff\2\10\1\1\1\2\1\3\1\4\1\5\5\10\1\7\1\6\31\10\2\uffff\3\10\1\uffff\30\10\2\uffff\4\10",
+            "\5\10\6\uffff\2\10\1\1\1\2\1\3\1\4\1\5\5\10\1\7\1\6\31\10\3\uffff\33\10\2\uffff\2\10\1\uffff\2\10",
             "\1\uffff",
             "\1\uffff",
             "\1\uffff",
@@ -59436,21 +59442,6 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA46_4 = input.LA(1);
-
-                         
-                        int index46_4 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred89_InternalBimmodel()) ) {s = 9;}
-
-                        else if ( (true) ) {s = 8;}
-
-                         
-                        input.seek(index46_4);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
                         int LA46_3 = input.LA(1);
 
                          
@@ -59465,37 +59456,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                         input.seek(index46_3);
                         if ( s>=0 ) return s;
                         break;
-                    case 2 : 
-                        int LA46_6 = input.LA(1);
-
-                         
-                        int index46_6 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred89_InternalBimmodel()) ) {s = 9;}
-
-                        else if ( (true) ) {s = 8;}
-
-                         
-                        input.seek(index46_6);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 3 : 
-                        int LA46_7 = input.LA(1);
-
-                         
-                        int index46_7 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred89_InternalBimmodel()) ) {s = 9;}
-
-                        else if ( (true) ) {s = 8;}
-
-                         
-                        input.seek(index46_7);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
+                    case 1 : 
                         int LA46_2 = input.LA(1);
 
                          
@@ -59510,7 +59471,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                         input.seek(index46_2);
                         if ( s>=0 ) return s;
                         break;
-                    case 5 : 
+                    case 2 : 
                         int LA46_1 = input.LA(1);
 
                          
@@ -59525,7 +59486,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                         input.seek(index46_1);
                         if ( s>=0 ) return s;
                         break;
-                    case 6 : 
+                    case 3 : 
                         int LA46_5 = input.LA(1);
 
                          
@@ -59540,6 +59501,51 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                         input.seek(index46_5);
                         if ( s>=0 ) return s;
                         break;
+                    case 4 : 
+                        int LA46_7 = input.LA(1);
+
+                         
+                        int index46_7 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred89_InternalBimmodel()) ) {s = 9;}
+
+                        else if ( (true) ) {s = 8;}
+
+                         
+                        input.seek(index46_7);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 5 : 
+                        int LA46_4 = input.LA(1);
+
+                         
+                        int index46_4 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred89_InternalBimmodel()) ) {s = 9;}
+
+                        else if ( (true) ) {s = 8;}
+
+                         
+                        input.seek(index46_4);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 6 : 
+                        int LA46_6 = input.LA(1);
+
+                         
+                        int index46_6 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred89_InternalBimmodel()) ) {s = 9;}
+
+                        else if ( (true) ) {s = 8;}
+
+                         
+                        input.seek(index46_6);
+                        if ( s>=0 ) return s;
+                        break;
             }
             if (state.backtracking>0) {state.failed=true; return -1;}
             NoViableAltException nvae =
@@ -59550,11 +59556,11 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
     }
     static final String dfa_44s = "\1\1\12\uffff";
     static final String dfa_45s = "\1\4\1\uffff\10\0\1\uffff";
-    static final String dfa_46s = "\1\131\1\uffff\10\0\1\uffff";
+    static final String dfa_46s = "\1\132\1\uffff\10\0\1\uffff";
     static final String dfa_47s = "\1\uffff\1\2\10\uffff\1\1";
-    static final String dfa_48s = "\2\uffff\1\1\1\4\1\5\1\2\1\0\1\6\1\7\1\3\1\uffff}>";
+    static final String dfa_48s = "\2\uffff\1\5\1\7\1\6\1\3\1\1\1\2\1\0\1\4\1\uffff}>";
     static final String[] dfa_49s = {
-            "\5\1\6\uffff\14\1\1\3\1\2\1\4\1\5\1\6\1\7\1\10\1\11\23\1\2\uffff\3\1\1\uffff\30\1\2\uffff\4\1",
+            "\5\1\6\uffff\14\1\1\3\1\2\1\4\1\5\1\6\1\7\1\10\1\11\23\1\3\uffff\33\1\2\uffff\2\1\1\uffff\2\1",
             "",
             "\1\uffff",
             "\1\uffff",
@@ -59594,111 +59600,6 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA52_6 = input.LA(1);
-
-                         
-                        int index52_6 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred95_InternalBimmodel()) ) {s = 10;}
-
-                        else if ( (true) ) {s = 1;}
-
-                         
-                        input.seek(index52_6);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
-                        int LA52_2 = input.LA(1);
-
-                         
-                        int index52_2 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred95_InternalBimmodel()) ) {s = 10;}
-
-                        else if ( (true) ) {s = 1;}
-
-                         
-                        input.seek(index52_2);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 2 : 
-                        int LA52_5 = input.LA(1);
-
-                         
-                        int index52_5 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred95_InternalBimmodel()) ) {s = 10;}
-
-                        else if ( (true) ) {s = 1;}
-
-                         
-                        input.seek(index52_5);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 3 : 
-                        int LA52_9 = input.LA(1);
-
-                         
-                        int index52_9 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred95_InternalBimmodel()) ) {s = 10;}
-
-                        else if ( (true) ) {s = 1;}
-
-                         
-                        input.seek(index52_9);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
-                        int LA52_3 = input.LA(1);
-
-                         
-                        int index52_3 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred95_InternalBimmodel()) ) {s = 10;}
-
-                        else if ( (true) ) {s = 1;}
-
-                         
-                        input.seek(index52_3);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 5 : 
-                        int LA52_4 = input.LA(1);
-
-                         
-                        int index52_4 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred95_InternalBimmodel()) ) {s = 10;}
-
-                        else if ( (true) ) {s = 1;}
-
-                         
-                        input.seek(index52_4);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 6 : 
-                        int LA52_7 = input.LA(1);
-
-                         
-                        int index52_7 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred95_InternalBimmodel()) ) {s = 10;}
-
-                        else if ( (true) ) {s = 1;}
-
-                         
-                        input.seek(index52_7);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 7 : 
                         int LA52_8 = input.LA(1);
 
                          
@@ -59713,6 +59614,111 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
                         input.seek(index52_8);
                         if ( s>=0 ) return s;
                         break;
+                    case 1 : 
+                        int LA52_6 = input.LA(1);
+
+                         
+                        int index52_6 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred95_InternalBimmodel()) ) {s = 10;}
+
+                        else if ( (true) ) {s = 1;}
+
+                         
+                        input.seek(index52_6);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 2 : 
+                        int LA52_7 = input.LA(1);
+
+                         
+                        int index52_7 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred95_InternalBimmodel()) ) {s = 10;}
+
+                        else if ( (true) ) {s = 1;}
+
+                         
+                        input.seek(index52_7);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 3 : 
+                        int LA52_5 = input.LA(1);
+
+                         
+                        int index52_5 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred95_InternalBimmodel()) ) {s = 10;}
+
+                        else if ( (true) ) {s = 1;}
+
+                         
+                        input.seek(index52_5);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 4 : 
+                        int LA52_9 = input.LA(1);
+
+                         
+                        int index52_9 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred95_InternalBimmodel()) ) {s = 10;}
+
+                        else if ( (true) ) {s = 1;}
+
+                         
+                        input.seek(index52_9);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 5 : 
+                        int LA52_2 = input.LA(1);
+
+                         
+                        int index52_2 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred95_InternalBimmodel()) ) {s = 10;}
+
+                        else if ( (true) ) {s = 1;}
+
+                         
+                        input.seek(index52_2);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 6 : 
+                        int LA52_4 = input.LA(1);
+
+                         
+                        int index52_4 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred95_InternalBimmodel()) ) {s = 10;}
+
+                        else if ( (true) ) {s = 1;}
+
+                         
+                        input.seek(index52_4);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 7 : 
+                        int LA52_3 = input.LA(1);
+
+                         
+                        int index52_3 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred95_InternalBimmodel()) ) {s = 10;}
+
+                        else if ( (true) ) {s = 1;}
+
+                         
+                        input.seek(index52_3);
+                        if ( s>=0 ) return s;
+                        break;
             }
             if (state.backtracking>0) {state.failed=true; return -1;}
             NoViableAltException nvae =
@@ -59724,11 +59730,11 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
     static final String dfa_50s = "\116\uffff";
     static final String dfa_51s = "\1\2\115\uffff";
     static final String dfa_52s = "\1\4\1\0\114\uffff";
-    static final String dfa_53s = "\1\131\1\0\114\uffff";
+    static final String dfa_53s = "\1\132\1\0\114\uffff";
     static final String dfa_54s = "\2\uffff\1\2\112\uffff\1\1";
     static final String dfa_55s = "\1\uffff\1\0\114\uffff}>";
     static final String[] dfa_56s = {
-            "\5\2\6\uffff\47\2\2\uffff\1\2\1\1\1\2\1\uffff\30\2\2\uffff\4\2",
+            "\5\2\6\uffff\47\2\3\uffff\11\2\1\1\21\2\2\uffff\2\2\1\uffff\2\2",
             "\1\uffff",
             "",
             "",
@@ -59860,7 +59866,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
         }
     }
     static final String[] dfa_57s = {
-            "\5\2\6\uffff\47\2\2\uffff\3\2\1\uffff\4\2\1\1\23\2\2\uffff\4\2",
+            "\5\2\6\uffff\47\2\3\uffff\6\2\1\1\24\2\2\uffff\2\2\1\uffff\2\2",
             "\1\uffff",
             "",
             "",
@@ -59986,11 +59992,11 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
     }
     static final String dfa_58s = "\46\uffff";
     static final String dfa_59s = "\1\4\2\0\43\uffff";
-    static final String dfa_60s = "\1\131\2\0\43\uffff";
+    static final String dfa_60s = "\1\132\2\0\43\uffff";
     static final String dfa_61s = "\3\uffff\1\1\1\uffff\1\2\40\uffff";
     static final String dfa_62s = "\1\uffff\1\0\1\1\43\uffff}>";
     static final String[] dfa_63s = {
-            "\1\5\1\1\3\5\23\uffff\1\5\3\uffff\1\3\2\uffff\2\5\4\uffff\1\5\3\uffff\10\5\4\uffff\1\2\1\uffff\1\3\3\uffff\3\5\1\uffff\1\5\1\uffff\1\5\2\uffff\11\5\1\uffff\1\5\5\uffff\2\5",
+            "\1\5\1\1\3\5\23\uffff\1\5\3\uffff\1\3\2\uffff\2\5\4\uffff\1\5\3\uffff\10\5\11\uffff\3\5\1\uffff\1\2\1\5\1\uffff\1\5\2\uffff\11\5\1\uffff\1\5\5\uffff\1\3\2\5",
             "\1\uffff",
             "\1\uffff",
             "",
@@ -60097,11 +60103,11 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
     }
     static final String dfa_64s = "\42\uffff";
     static final String dfa_65s = "\1\4\2\0\37\uffff";
-    static final String dfa_66s = "\1\131\2\0\37\uffff";
+    static final String dfa_66s = "\1\132\2\0\37\uffff";
     static final String dfa_67s = "\3\uffff\1\1\1\2\35\uffff";
     static final String dfa_68s = "\1\uffff\1\0\1\1\37\uffff}>";
     static final String[] dfa_69s = {
-            "\1\4\1\1\3\4\23\uffff\1\4\3\uffff\1\3\2\uffff\2\4\4\uffff\1\4\4\uffff\7\4\4\uffff\1\2\5\uffff\2\4\2\uffff\1\4\1\uffff\1\4\2\uffff\11\4\1\uffff\1\4\6\uffff\1\4",
+            "\1\4\1\1\3\4\23\uffff\1\4\3\uffff\1\3\2\uffff\2\4\4\uffff\1\4\4\uffff\7\4\11\uffff\2\4\2\uffff\1\2\1\4\1\uffff\1\4\2\uffff\11\4\1\uffff\1\4\7\uffff\1\4",
             "\1\uffff",
             "\1\uffff",
             "",
@@ -60291,7 +60297,7 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
         }
     }
     static final String[] dfa_70s = {
-            "\5\2\6\uffff\15\2\1\1\31\2\2\uffff\3\2\1\uffff\30\2\2\uffff\4\2",
+            "\5\2\6\uffff\15\2\1\1\31\2\3\uffff\33\2\2\uffff\2\2\1\uffff\2\2",
             "\1\uffff",
             "",
             "",
@@ -60505,11 +60511,11 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
     }
     static final String dfa_71s = "\1\41\115\uffff";
     static final String dfa_72s = "\1\4\40\0\55\uffff";
-    static final String dfa_73s = "\1\131\40\0\55\uffff";
+    static final String dfa_73s = "\1\132\40\0\55\uffff";
     static final String dfa_74s = "\41\uffff\1\2\53\uffff\1\1";
     static final String dfa_75s = "\1\uffff\1\0\1\1\1\2\1\3\1\4\1\5\1\6\1\7\1\10\1\11\1\12\1\13\1\14\1\15\1\16\1\17\1\20\1\21\1\22\1\23\1\24\1\25\1\26\1\27\1\30\1\31\1\32\1\33\1\34\1\35\1\36\1\37\55\uffff}>";
     static final String[] dfa_76s = {
-            "\1\27\1\1\1\23\1\24\1\25\6\uffff\15\41\1\15\6\41\1\10\1\7\4\41\1\6\4\41\1\2\1\3\1\4\1\5\1\16\1\21\1\12\1\41\2\uffff\1\41\1\40\1\41\1\uffff\3\41\1\17\1\20\2\41\1\31\1\41\1\13\2\41\1\32\1\33\1\34\1\11\1\26\1\30\1\35\1\36\1\37\1\41\1\14\1\41\2\uffff\3\41\1\22",
+            "\1\27\1\1\1\23\1\24\1\25\6\uffff\15\41\1\15\6\41\1\10\1\7\4\41\1\6\4\41\1\2\1\3\1\4\1\5\1\16\1\21\1\12\1\41\3\uffff\5\41\1\17\1\20\2\41\1\40\1\31\1\41\1\13\2\41\1\32\1\33\1\34\1\11\1\26\1\30\1\35\1\36\1\37\1\41\1\14\1\41\2\uffff\2\41\1\uffff\1\41\1\22",
             "\1\uffff",
             "\1\uffff",
             "\1\uffff",
@@ -61106,11 +61112,11 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
     static final String dfa_77s = "\117\uffff";
     static final String dfa_78s = "\1\2\116\uffff";
     static final String dfa_79s = "\1\4\1\0\115\uffff";
-    static final String dfa_80s = "\1\131\1\0\115\uffff";
+    static final String dfa_80s = "\1\132\1\0\115\uffff";
     static final String dfa_81s = "\2\uffff\1\2\113\uffff\1\1";
     static final String dfa_82s = "\1\uffff\1\0\115\uffff}>";
     static final String[] dfa_83s = {
-            "\5\2\6\uffff\15\2\1\1\31\2\2\uffff\3\2\1\uffff\30\2\1\uffff\5\2",
+            "\5\2\6\uffff\15\2\1\1\31\2\3\uffff\33\2\1\uffff\3\2\1\uffff\2\2",
             "\1\uffff",
             "",
             "",
@@ -61294,103 +61300,102 @@ public class InternalBimmodelParser extends AbstractInternalContentAssistParser 
     public static final BitSet FOLLOW_4 = new BitSet(new long[]{0x0000000000000022L});
     public static final BitSet FOLLOW_5 = new BitSet(new long[]{0x0010000000000000L});
     public static final BitSet FOLLOW_6 = new BitSet(new long[]{0x0040000000000000L});
-    public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x00A0000000000000L});
-    public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000000000000200L});
-    public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0020000000000200L});
-    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000000000000202L});
-    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0100000000000000L});
-    public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0200000000000000L});
+    public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x0120000000000000L});
+    public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000000000000200L});
+    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0080000000000000L});
+    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0080000000000002L});
+    public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x0200000000000000L});
+    public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000000000000020L});
     public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0400000000000000L});
-    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x0800000000000000L});
-    public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x0003C00000000020L});
-    public static final BitSet FOLLOW_18 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_19 = new BitSet(new long[]{0x821FC218100001F0L,0x000000000205FF29L});
-    public static final BitSet FOLLOW_20 = new BitSet(new long[]{0x00000000183E0000L});
-    public static final BitSet FOLLOW_21 = new BitSet(new long[]{0x0000000010000000L});
-    public static final BitSet FOLLOW_22 = new BitSet(new long[]{0x000000000C000000L});
-    public static final BitSet FOLLOW_23 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_24 = new BitSet(new long[]{0x0000000000008002L});
-    public static final BitSet FOLLOW_25 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_26 = new BitSet(new long[]{0x0000000000010002L});
-    public static final BitSet FOLLOW_27 = new BitSet(new long[]{0x0000000003C00000L});
-    public static final BitSet FOLLOW_28 = new BitSet(new long[]{0x0000000003C00002L});
-    public static final BitSet FOLLOW_29 = new BitSet(new long[]{0x100000001C000000L});
-    public static final BitSet FOLLOW_30 = new BitSet(new long[]{0x100000001C000002L});
-    public static final BitSet FOLLOW_31 = new BitSet(new long[]{0x0200000100000020L});
-    public static final BitSet FOLLOW_32 = new BitSet(new long[]{0x1000000000000000L});
-    public static final BitSet FOLLOW_33 = new BitSet(new long[]{0x00000007F8000000L});
-    public static final BitSet FOLLOW_34 = new BitSet(new long[]{0x00000007F8000002L});
-    public static final BitSet FOLLOW_35 = new BitSet(new long[]{0x0000000080000000L});
-    public static final BitSet FOLLOW_36 = new BitSet(new long[]{0x0000000008000000L});
-    public static final BitSet FOLLOW_37 = new BitSet(new long[]{0x0000000110000000L});
-    public static final BitSet FOLLOW_38 = new BitSet(new long[]{0x0000001800000000L});
-    public static final BitSet FOLLOW_39 = new BitSet(new long[]{0x0000001800000002L});
-    public static final BitSet FOLLOW_40 = new BitSet(new long[]{0x000001E000000000L});
-    public static final BitSet FOLLOW_41 = new BitSet(new long[]{0x000001E000000002L});
-    public static final BitSet FOLLOW_42 = new BitSet(new long[]{0x0000021800000000L});
-    public static final BitSet FOLLOW_43 = new BitSet(new long[]{0x2000000000000000L});
-    public static final BitSet FOLLOW_44 = new BitSet(new long[]{0x2000000000000002L});
-    public static final BitSet FOLLOW_45 = new BitSet(new long[]{0x00000C0000000000L});
-    public static final BitSet FOLLOW_46 = new BitSet(new long[]{0x0000100000000000L,0x0000000000C00000L});
-    public static final BitSet FOLLOW_47 = new BitSet(new long[]{0x0000100000000002L,0x0000000000C00000L});
-    public static final BitSet FOLLOW_48 = new BitSet(new long[]{0x0000100000000000L,0x0000000000400000L});
-    public static final BitSet FOLLOW_49 = new BitSet(new long[]{0x0007C00010000020L});
-    public static final BitSet FOLLOW_50 = new BitSet(new long[]{0x0200000000000000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_51 = new BitSet(new long[]{0x0200000100000020L,0x0000000000100000L});
-    public static final BitSet FOLLOW_52 = new BitSet(new long[]{0x4000000008000000L});
-    public static final BitSet FOLLOW_53 = new BitSet(new long[]{0x4000000000000002L});
-    public static final BitSet FOLLOW_54 = new BitSet(new long[]{0x8E1FC219100001F0L,0x000000000205FF29L});
-    public static final BitSet FOLLOW_55 = new BitSet(new long[]{0x4000000000000000L});
-    public static final BitSet FOLLOW_56 = new BitSet(new long[]{0x8A1FC219100001F0L,0x000000000205FF29L});
-    public static final BitSet FOLLOW_57 = new BitSet(new long[]{0x8000000000000000L});
-    public static final BitSet FOLLOW_58 = new BitSet(new long[]{0x8A3FC219100001F0L,0x000000000205FF29L});
+    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0003C00000000020L});
+    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0xC01FC218100001F0L,0x000000000405FF2CL});
+    public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x00000000183E0000L});
+    public static final BitSet FOLLOW_18 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_19 = new BitSet(new long[]{0x000000000C000000L});
+    public static final BitSet FOLLOW_20 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_21 = new BitSet(new long[]{0x0000000000008002L});
+    public static final BitSet FOLLOW_22 = new BitSet(new long[]{0x0000000000010000L});
+    public static final BitSet FOLLOW_23 = new BitSet(new long[]{0x0000000000010002L});
+    public static final BitSet FOLLOW_24 = new BitSet(new long[]{0x0000000003C00000L});
+    public static final BitSet FOLLOW_25 = new BitSet(new long[]{0x0000000003C00002L});
+    public static final BitSet FOLLOW_26 = new BitSet(new long[]{0x040000001C000000L});
+    public static final BitSet FOLLOW_27 = new BitSet(new long[]{0x040000001C000002L});
+    public static final BitSet FOLLOW_28 = new BitSet(new long[]{0x0000000100000020L,0x0000000000000004L});
+    public static final BitSet FOLLOW_29 = new BitSet(new long[]{0x0400000000000000L});
+    public static final BitSet FOLLOW_30 = new BitSet(new long[]{0x00000007F8000000L});
+    public static final BitSet FOLLOW_31 = new BitSet(new long[]{0x00000007F8000002L});
+    public static final BitSet FOLLOW_32 = new BitSet(new long[]{0x0000000080000000L});
+    public static final BitSet FOLLOW_33 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_34 = new BitSet(new long[]{0x0000000110000000L});
+    public static final BitSet FOLLOW_35 = new BitSet(new long[]{0x0000001800000000L});
+    public static final BitSet FOLLOW_36 = new BitSet(new long[]{0x0000001800000002L});
+    public static final BitSet FOLLOW_37 = new BitSet(new long[]{0x000001E000000000L});
+    public static final BitSet FOLLOW_38 = new BitSet(new long[]{0x000001E000000002L});
+    public static final BitSet FOLLOW_39 = new BitSet(new long[]{0x0000021800000000L});
+    public static final BitSet FOLLOW_40 = new BitSet(new long[]{0x0800000000000000L});
+    public static final BitSet FOLLOW_41 = new BitSet(new long[]{0x0800000000000002L});
+    public static final BitSet FOLLOW_42 = new BitSet(new long[]{0x00000C0000000000L});
+    public static final BitSet FOLLOW_43 = new BitSet(new long[]{0x0000100000000000L,0x0000000000C00000L});
+    public static final BitSet FOLLOW_44 = new BitSet(new long[]{0x0000100000000002L,0x0000000000C00000L});
+    public static final BitSet FOLLOW_45 = new BitSet(new long[]{0x0000100000000000L,0x0000000000400000L});
+    public static final BitSet FOLLOW_46 = new BitSet(new long[]{0x0007C00010000020L});
+    public static final BitSet FOLLOW_47 = new BitSet(new long[]{0x8000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_48 = new BitSet(new long[]{0x0000000100000020L,0x0000000000100004L});
+    public static final BitSet FOLLOW_49 = new BitSet(new long[]{0x1000000008000000L});
+    public static final BitSet FOLLOW_50 = new BitSet(new long[]{0x1000000000000002L});
+    public static final BitSet FOLLOW_51 = new BitSet(new long[]{0xE01FC219100001F0L,0x000000000505FF2CL});
+    public static final BitSet FOLLOW_52 = new BitSet(new long[]{0x1000000000000000L});
+    public static final BitSet FOLLOW_53 = new BitSet(new long[]{0xC01FC219100001F0L,0x000000000505FF2CL});
+    public static final BitSet FOLLOW_54 = new BitSet(new long[]{0x4000000000000000L});
+    public static final BitSet FOLLOW_55 = new BitSet(new long[]{0xC03FC219100001F0L,0x000000000505FF2CL});
+    public static final BitSet FOLLOW_56 = new BitSet(new long[]{0x8000000000000000L});
+    public static final BitSet FOLLOW_57 = new BitSet(new long[]{0xC01FC219100001F0L,0x000000000505FF2DL});
+    public static final BitSet FOLLOW_58 = new BitSet(new long[]{0xC01FE219100001F0L,0x000000000705FF2CL});
     public static final BitSet FOLLOW_59 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_60 = new BitSet(new long[]{0x8A1FC219100001F0L,0x000000000205FF2BL});
-    public static final BitSet FOLLOW_61 = new BitSet(new long[]{0x8A1FE219100001F0L,0x000000000305FF29L});
+    public static final BitSet FOLLOW_60 = new BitSet(new long[]{0x0000000100000020L,0x0000000001000004L});
+    public static final BitSet FOLLOW_61 = new BitSet(new long[]{0xC01FE219100001F2L,0x000000000705FF2CL});
     public static final BitSet FOLLOW_62 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_63 = new BitSet(new long[]{0x0A00000100000020L});
-    public static final BitSet FOLLOW_64 = new BitSet(new long[]{0x8A1FE219100001F2L,0x000000000305FF29L});
+    public static final BitSet FOLLOW_63 = new BitSet(new long[]{0x2000000000000000L});
+    public static final BitSet FOLLOW_64 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000008L});
     public static final BitSet FOLLOW_65 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000004L});
-    public static final BitSet FOLLOW_66 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000008L});
-    public static final BitSet FOLLOW_67 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000010L});
-    public static final BitSet FOLLOW_68 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000020L});
-    public static final BitSet FOLLOW_69 = new BitSet(new long[]{0x4320000100000020L,0x00000000000000C0L});
-    public static final BitSet FOLLOW_70 = new BitSet(new long[]{0x4300000100000022L,0x0000000000000080L});
-    public static final BitSet FOLLOW_71 = new BitSet(new long[]{0x4300000100000020L,0x0000000000000080L});
-    public static final BitSet FOLLOW_72 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000100L});
-    public static final BitSet FOLLOW_73 = new BitSet(new long[]{0x8A1FE219100001F0L,0x000000000305FF2DL});
-    public static final BitSet FOLLOW_74 = new BitSet(new long[]{0x8A1FC219100001F0L,0x000000000205FF2DL});
-    public static final BitSet FOLLOW_75 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000200L});
-    public static final BitSet FOLLOW_76 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000400L});
-    public static final BitSet FOLLOW_77 = new BitSet(new long[]{0x8A3FE219100001F0L,0x000000000305FF29L});
-    public static final BitSet FOLLOW_78 = new BitSet(new long[]{0x0000200000000000L,0x0000000001000000L});
-    public static final BitSet FOLLOW_79 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000800L});
-    public static final BitSet FOLLOW_80 = new BitSet(new long[]{0x0200000010000000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_81 = new BitSet(new long[]{0x0008000000000000L,0x0000000002000000L});
-    public static final BitSet FOLLOW_82 = new BitSet(new long[]{0x0000000000000000L,0x0000000000001000L});
-    public static final BitSet FOLLOW_83 = new BitSet(new long[]{0x00000000000001C0L});
-    public static final BitSet FOLLOW_84 = new BitSet(new long[]{0x80080000000001D0L,0x0000000002003001L});
-    public static final BitSet FOLLOW_85 = new BitSet(new long[]{0x0400000000000000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_86 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000001L});
-    public static final BitSet FOLLOW_87 = new BitSet(new long[]{0x0000000000000000L,0x0000000000004000L});
-    public static final BitSet FOLLOW_88 = new BitSet(new long[]{0x0000000000000000L,0x0000000000008000L});
-    public static final BitSet FOLLOW_89 = new BitSet(new long[]{0x0000000000000000L,0x0000000000010000L});
-    public static final BitSet FOLLOW_90 = new BitSet(new long[]{0x0000000000000000L,0x00000000000A0000L});
-    public static final BitSet FOLLOW_91 = new BitSet(new long[]{0x0000000000000000L,0x0000000000020000L});
-    public static final BitSet FOLLOW_92 = new BitSet(new long[]{0x0000000000000002L,0x0000000000080000L});
-    public static final BitSet FOLLOW_93 = new BitSet(new long[]{0x0000000000000000L,0x0000000000040000L});
-    public static final BitSet FOLLOW_94 = new BitSet(new long[]{0x0000100000000000L});
-    public static final BitSet FOLLOW_95 = new BitSet(new long[]{0x0000100000000002L});
-    public static final BitSet FOLLOW_96 = new BitSet(new long[]{0x0000000000000180L});
-    public static final BitSet FOLLOW_97 = new BitSet(new long[]{0x0600000100000020L});
-    public static final BitSet FOLLOW_98 = new BitSet(new long[]{0x0004400000000000L});
-    public static final BitSet FOLLOW_99 = new BitSet(new long[]{0x0000000000000000L,0x0000000000200000L});
-    public static final BitSet FOLLOW_100 = new BitSet(new long[]{0x0000000000000002L,0x0000000000200000L});
-    public static final BitSet FOLLOW_101 = new BitSet(new long[]{0x0000002000000000L});
-    public static final BitSet FOLLOW_102 = new BitSet(new long[]{0x0000800000000020L});
-    public static final BitSet FOLLOW_103 = new BitSet(new long[]{0x0002000000000020L});
-    public static final BitSet FOLLOW_104 = new BitSet(new long[]{0x0000002000000020L});
+    public static final BitSet FOLLOW_66 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000010L});
+    public static final BitSet FOLLOW_67 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000020L});
+    public static final BitSet FOLLOW_68 = new BitSet(new long[]{0x1220000100000020L,0x00000000000000C4L});
+    public static final BitSet FOLLOW_69 = new BitSet(new long[]{0x1200000100000022L,0x0000000000000084L});
+    public static final BitSet FOLLOW_70 = new BitSet(new long[]{0x1200000100000020L,0x0000000000000084L});
+    public static final BitSet FOLLOW_71 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000100L});
+    public static final BitSet FOLLOW_72 = new BitSet(new long[]{0xC01FE219100001F0L,0x000000000705FF2EL});
+    public static final BitSet FOLLOW_73 = new BitSet(new long[]{0xC01FC219100001F0L,0x000000000505FF2EL});
+    public static final BitSet FOLLOW_74 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000200L});
+    public static final BitSet FOLLOW_75 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000400L});
+    public static final BitSet FOLLOW_76 = new BitSet(new long[]{0xC03FE219100001F0L,0x000000000705FF2CL});
+    public static final BitSet FOLLOW_77 = new BitSet(new long[]{0x0000200000000000L,0x0000000002000000L});
+    public static final BitSet FOLLOW_78 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000800L});
+    public static final BitSet FOLLOW_79 = new BitSet(new long[]{0x8000000010000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_80 = new BitSet(new long[]{0x0008000000000000L,0x0000000004000000L});
+    public static final BitSet FOLLOW_81 = new BitSet(new long[]{0x0000000000000000L,0x0000000000001000L});
+    public static final BitSet FOLLOW_82 = new BitSet(new long[]{0x00000000000001C0L});
+    public static final BitSet FOLLOW_83 = new BitSet(new long[]{0xC0080000000001D0L,0x0000000004003000L});
+    public static final BitSet FOLLOW_84 = new BitSet(new long[]{0xA000000000000000L});
+    public static final BitSet FOLLOW_85 = new BitSet(new long[]{0x8000000000000002L});
+    public static final BitSet FOLLOW_86 = new BitSet(new long[]{0x0000000000000000L,0x0000000000004000L});
+    public static final BitSet FOLLOW_87 = new BitSet(new long[]{0x0000000000000000L,0x0000000000008000L});
+    public static final BitSet FOLLOW_88 = new BitSet(new long[]{0x0000000000000000L,0x0000000000010000L});
+    public static final BitSet FOLLOW_89 = new BitSet(new long[]{0x0000000000000000L,0x00000000000A0000L});
+    public static final BitSet FOLLOW_90 = new BitSet(new long[]{0x0000000000000000L,0x0000000000020000L});
+    public static final BitSet FOLLOW_91 = new BitSet(new long[]{0x0000000000000002L,0x0000000000080000L});
+    public static final BitSet FOLLOW_92 = new BitSet(new long[]{0x0000000000000000L,0x0000000000040000L});
+    public static final BitSet FOLLOW_93 = new BitSet(new long[]{0x0000100000000000L});
+    public static final BitSet FOLLOW_94 = new BitSet(new long[]{0x0000100000000002L});
+    public static final BitSet FOLLOW_95 = new BitSet(new long[]{0x0000000000000180L});
+    public static final BitSet FOLLOW_96 = new BitSet(new long[]{0x2000000100000020L,0x0000000000000004L});
+    public static final BitSet FOLLOW_97 = new BitSet(new long[]{0x0004400000000000L});
+    public static final BitSet FOLLOW_98 = new BitSet(new long[]{0x0000000000000000L,0x0000000000200000L});
+    public static final BitSet FOLLOW_99 = new BitSet(new long[]{0x0000000000000002L,0x0000000000200000L});
+    public static final BitSet FOLLOW_100 = new BitSet(new long[]{0x0000002000000000L});
+    public static final BitSet FOLLOW_101 = new BitSet(new long[]{0x0000800000000020L});
+    public static final BitSet FOLLOW_102 = new BitSet(new long[]{0x0002000000000020L});
+    public static final BitSet FOLLOW_103 = new BitSet(new long[]{0x0000002000000020L});
 
 }
