@@ -7,7 +7,7 @@ import org.eclipse.emf.ecore.resource.Resource
 import org.eclipse.xtext.generator.AbstractGenerator
 import org.eclipse.xtext.generator.IFileSystemAccess2
 import org.eclipse.xtext.generator.IGeneratorContext
-
+import org.dsl.bimchecker.bimmodel.Rule
 /**
  * Generates code from your model files on save.
  * 
@@ -21,5 +21,11 @@ class BimmodelGenerator extends AbstractGenerator {
 //				.filter(typeof(Greeting))
 //				.map[name]
 //				.join(', '))
+		fsa.generateFile('ir.txt',
+			resource.allContents
+			.filter(typeof(Rule))
+			.map[name]
+			.join(','))
+		
 	}
 }
