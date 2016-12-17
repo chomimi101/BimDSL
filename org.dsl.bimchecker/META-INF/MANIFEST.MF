@@ -30,3 +30,5 @@ Export-Package: org.dsl.bimchecker.bimmodel.util,
  org.dsl.bimchecker.services,
  org.dsl.bimchecker.jvmmodel
 Import-Package: org.apache.log4j
+Bundle-ClassPath: lib/org.json.jar,
+ .
