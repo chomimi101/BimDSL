@@ -3,7 +3,7 @@
  */
 package org.dsl.bimchecker.scoping;
 
-import org.eclipse.xtext.xbase.scoping.batch.XbaseBatchScopeProvider;
+import org.eclipse.xtext.scoping.impl.DelegatingScopeProvider;
 
-public abstract class AbstractBimmodelScopeProvider extends XbaseBatchScopeProvider {
+public abstract class AbstractBimmodelScopeProvider extends DelegatingScopeProvider {
 }

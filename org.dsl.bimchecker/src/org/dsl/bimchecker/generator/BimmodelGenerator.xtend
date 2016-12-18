@@ -46,16 +46,22 @@ class BimmodelGenerator extends AbstractGenerator {
 	         	rule.put("alias",alias);
 	         	if(element.annoinfo != null){
 	         		var annotation = new JSONObject();
-	         		annotation.put("aname",element.annoinfo.annotationName);
+	         		var annoname = "";
+	         		if (element.annoinfo.annotationName != null){
+	         			annoname = element.annoinfo.annotationName;
+	         		}
+	         		rule.put("aname",annoname);
 	         		if(element.annoinfo.annodetail != null){
-	         			var annodetail = new JSONArray(element.annoinfo.annodetail);
-	         			annotation.put("adetail",annodetail);
+	         			var annodetail = new JSONArray(element.annoinfo.annodetail.annos);
+	         			rule.put("adetail",annodetail);
 	         		}else{
-	         			annotation.put("adetail",new JSONArray());
+	         			rule.put("adetail",new JSONArray());
 	         		}	         		
-	         		rule.put("annotation",annotation);
+//	         		rule.put("annotation",annotation);
 	         	}else{
-	         		rule.put("annotation", new JSONObject());
+	         		rule.put("aname","");
+	         		rule.put("adetail",new JSONArray());
+//	         		rule.put("annotation", new JSONObject());
 	         	}
 	         	    	
 	         	s += rule.toString();

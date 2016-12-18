@@ -3,10 +3,24 @@
  */
 package org.dsl.bimchecker.generator;
 
+import com.google.common.base.Objects;
+import com.google.common.collect.Iterators;
+import java.util.Iterator;
+import org.dsl.bimchecker.bimmodel.Aliass;
+import org.dsl.bimchecker.bimmodel.Annotation;
+import org.dsl.bimchecker.bimmodel.AnnotationDetail;
+import org.dsl.bimchecker.bimmodel.Rule;
+import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.common.util.TreeIterator;
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.xtext.generator.AbstractGenerator;
 import org.eclipse.xtext.generator.IFileSystemAccess2;
 import org.eclipse.xtext.generator.IGeneratorContext;
+import org.eclipse.xtext.xbase.lib.Exceptions;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 /**
  * Generates code from your model files on save.
@@ -17,5 +31,67 @@ import org.eclipse.xtext.generator.IGeneratorContext;
 public class BimmodelGenerator extends AbstractGenerator {
   @Override
   public void doGenerate(final Resource resource, final IFileSystemAccess2 fsa, final IGeneratorContext context) {
+    TreeIterator<EObject> _allContents = resource.getAllContents();
+    Iterator<Rule> itr = Iterators.<Rule>filter(_allContents, Rule.class);
+    String s = new String();
+    while (itr.hasNext()) {
+      {
+        Rule element = itr.next();
+        JSONObject rule = new JSONObject();
+        Aliass _alialist = element.getAlialist();
+        EList<String> _aliass = _alialist.getAliass();
+        JSONArray alias = new JSONArray(_aliass);
+        try {
+          String _name = element.getName();
+          rule.put("rname", _name);
+          rule.put("alias", alias);
+          Annotation _annoinfo = element.getAnnoinfo();
+          boolean _notEquals = (!Objects.equal(_annoinfo, null));
+          if (_notEquals) {
+            JSONObject annotation = new JSONObject();
+            String annoname = "";
+            Annotation _annoinfo_1 = element.getAnnoinfo();
+            String _annotationName = _annoinfo_1.getAnnotationName();
+            boolean _notEquals_1 = (!Objects.equal(_annotationName, null));
+            if (_notEquals_1) {
+              Annotation _annoinfo_2 = element.getAnnoinfo();
+              String _annotationName_1 = _annoinfo_2.getAnnotationName();
+              annoname = _annotationName_1;
+            }
+            rule.put("aname", annoname);
+            Annotation _annoinfo_3 = element.getAnnoinfo();
+            AnnotationDetail _annodetail = _annoinfo_3.getAnnodetail();
+            boolean _notEquals_2 = (!Objects.equal(_annodetail, null));
+            if (_notEquals_2) {
+              Annotation _annoinfo_4 = element.getAnnoinfo();
+              AnnotationDetail _annodetail_1 = _annoinfo_4.getAnnodetail();
+              EList<String> _annos = _annodetail_1.getAnnos();
+              JSONArray annodetail = new JSONArray(_annos);
+              rule.put("adetail", annodetail);
+            } else {
+              JSONArray _jSONArray = new JSONArray();
+              rule.put("adetail", _jSONArray);
+            }
+          } else {
+            rule.put("aname", "");
+            JSONArray _jSONArray_1 = new JSONArray();
+            rule.put("adetail", _jSONArray_1);
+          }
+          String _s = s;
+          String _string = rule.toString();
+          s = (_s + _string);
+          String _s_1 = s;
+          s = (_s_1 + "\n");
+        } catch (final Throwable _t) {
+          if (_t instanceof JSONException) {
+            final JSONException e = (JSONException)_t;
+            System.out.print(e);
+          } else {
+            throw Exceptions.sneakyThrow(_t);
+          }
+        }
+      }
+    }
+    fsa.generateFile("ir.json", s);
   }
 }

@@ -8,6 +8,10 @@ import org.eclipse.xtext.generator.AbstractGenerator
 import org.eclipse.xtext.generator.IFileSystemAccess2
 import org.eclipse.xtext.generator.IGeneratorContext
 import org.dsl.bimchecker.bimmodel.Rule
+import org.json.JSONException
+import org.json.JSONObject
+import org.json.JSONArray
+
 /**
  * Generates code from your model files on save.
  * 
@@ -21,11 +25,52 @@ class BimmodelGenerator extends AbstractGenerator {
 //				.filter(typeof(Greeting))
 //				.map[name]
 //				.join(', '))
-		fsa.generateFile('ir.txt',
-			resource.allContents
+//		fsa.generateFile('ir.txt',
+//			resource.allContents
+//			.filter(typeof(Rule))
+//			.map[name]
+//			.join(','))
+		
+		var itr = resource.allContents
 			.filter(typeof(Rule))
-			.map[name]
-			.join(','))
+		var s = new String();
+		while(itr.hasNext()) {
+	         var element = itr.next();
+	         var rule = new JSONObject();
+	         var alias = new JSONArray(element.alialist.aliass);
+	         //judge null or empty
+	         
+	        
+	         try{
+	         	rule.put("rname",element.name);
+	         	rule.put("alias",alias);
+	         	if(element.annoinfo != null){
+	         		var annotation = new JSONObject();
+	         		var annoname = "";
+	         		if (element.annoinfo.annotationName != null){
+	         			annoname = element.annoinfo.annotationName;
+	         		}
+	         		rule.put("aname",annoname);
+	         		if(element.annoinfo.annodetail != null){
+	         			var annodetail = new JSONArray(element.annoinfo.annodetail.annos);
+	         			rule.put("adetail",annodetail);
+	         		}else{
+	         			rule.put("adetail",new JSONArray());
+	         		}	         		
+//	         		rule.put("annotation",annotation);
+	         	}else{
+	         		rule.put("aname","");
+	         		rule.put("adetail",new JSONArray());
+//	         		rule.put("annotation", new JSONObject());
+	         	}
+	         	    	
+	         	s += rule.toString();
+	         	s += '\n';
+	         }catch(JSONException e){
+	         	System.out.print(e);
+	         }
+      	}
+		fsa.generateFile('ir.json',s);
 		
 	}
 }
