@@ -46,8 +46,18 @@ class BimmodelValidator extends AbstractBimmodelValidator {
 			if(tmp.aliass.contains("ifcspace")){
 				var annoname = rule.annoinfo.annotationName;
 				var annovalue = rule.annoinfo.annodetail;
-				if(!(annoname.compareTo("Longname")==0 && annovalue==null)){
+				if(!(annoname.compareTo("Longname")==0)){
 					error("Rule with alia ifcspace can only have annotation 'LongName'",rule,RULE__NAME)
+				}
+			}
+			
+			var tmpSet = newHashSet();
+			var aliasNames = rule.alialist;
+			for(alia : rule.alialist.aliass){
+				if(!tmpSet.contains(alia)){
+					tmpSet.add(alia);
+				} else {
+					error("replicate class(alias) names:"+alia,rule,RULE__NAME);
 				}
 			}
 		}

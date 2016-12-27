@@ -45,7 +45,7 @@ public class InternalBimmodelParser extends AbstractInternalAntlrParser {
 
 
         public InternalBimmodelParser(TokenStream input) {
-             this(input, new RecognizerSharedState());
+            this(input, new RecognizerSharedState());
         }
         public InternalBimmodelParser(TokenStream input, RecognizerSharedState state) {
             super(input, state);

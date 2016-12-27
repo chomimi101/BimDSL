@@ -3,7 +3,6 @@
  */
 package org.dsl.bimchecker.validation;
 
-import com.google.common.base.Objects;
 import java.util.HashSet;
 import org.dsl.bimchecker.bimmodel.Aliass;
 import org.dsl.bimchecker.bimmodel.Annotation;
@@ -45,9 +44,24 @@ public class BimmodelValidator extends AbstractBimmodelValidator {
           String annoname = _annoinfo.getAnnotationName();
           Annotation _annoinfo_1 = rule.getAnnoinfo();
           AnnotationDetail annovalue = _annoinfo_1.getAnnodetail();
-          boolean _not_1 = (!((annoname.compareTo("Longname") == 0) && Objects.equal(annovalue, null)));
+          int _compareTo = annoname.compareTo("Longname");
+          boolean _equals = (_compareTo == 0);
+          boolean _not_1 = (!_equals);
           if (_not_1) {
             this.error("Rule with alia ifcspace can only have annotation \'LongName\'", rule, BimmodelPackage.Literals.RULE__NAME);
+          }
+        }
+        HashSet<String> tmpSet = CollectionLiterals.<String>newHashSet();
+        Aliass aliasNames = rule.getAlialist();
+        Aliass _alialist = rule.getAlialist();
+        EList<String> _aliass_1 = _alialist.getAliass();
+        for (final String alia : _aliass_1) {
+          boolean _contains_1 = tmpSet.contains(alia);
+          boolean _not_2 = (!_contains_1);
+          if (_not_2) {
+            tmpSet.add(alia);
+          } else {
+            this.error(("replicate class(alias) names:" + alia), rule, BimmodelPackage.Literals.RULE__NAME);
           }
         }
       }

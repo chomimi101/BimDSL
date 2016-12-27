@@ -345,7 +345,78 @@ public class BimmodelGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//terminal IFCNAME:
-	//	"ifc" 'a'..'z'+;
+	//	"ifc" ("wallstandardcase" |
+	//	"wall" |
+	//	"door" |
+	//	"doorstandardcase" |
+	//	"window" |
+	//	"stair" |
+	//	"ramp" |
+	//	"covering" |
+	//	"furniture" |
+	//	"systemfurnitureelement" |
+	//	"space" |
+	//	"column" |
+	//	"railing" |
+	//	"roof" |
+	//	"curtainwall" |
+	//	"buildingstorey" |
+	//	"pipesegment" |
+	//	"pipefitting" |
+	//	"pipevalve" |
+	//	"pipecovering" |
+	//	"cablepipesegment" |
+	//	"cablepipefitting" |
+	//	"cablecarriersegment" |
+	//	"cablecarrierfitting" |
+	//	"ductsegment" |
+	//	"ductcovering" |
+	//	"DuctFitting" |
+	//	"AirTerminal" |
+	//	"ductvalve" |
+	//	"ductsystem" |
+	//	"pipesystem" |
+	//	"lightfixture" |
+	//	"sanitaryterminal" |
+	//	"MechanicalAppliance" |
+	//	"ElectricAppliance" |
+	//	"Alarm" |
+	//	"Footing" |
+	//	"Column" |
+	//	"structuralframe" |
+	//	"ReinforcementMesh" |
+	//	"Group" |
+	//	"Assembly" |
+	//	"ReinforcingMesh" |
+	//	"ReinforcingBar" |
+	//	"model" |
+	//	"Slab" |
+	//	"BuildingElementPart" |
+	//	"FireSuppressionTerminal" |
+	//	"SwitchingDevice" |
+	//	"specialappliance" |
+	//	"Building" |
+	//	"Project" |
+	//	"Area" |
+	//	"Line" |
+	//	"valve" |
+	//	"Railing" |
+	//	"buildingelementproxy" |
+	//	"airterminal" |
+	//	"audiovisualappliance" |
+	//	"communicationsappliance" |
+	//	"electricappliance" |
+	//	"firesuppressionterminal" |
+	//	"lamp" |
+	//	"medicaldevice" |
+	//	"outlet" |
+	//	"spaceheater" |
+	//	"stackterminal" |
+	//	"wasteterminal" |
+	//	"ceiling" |
+	//	"system" |
+	//	"openingelement" |
+	//	"beam") | "Ifc" ("SwitchingDevice" | "FireSuppressionTerminal" | "Alarm" | "ElectricAppliance");
 	public TerminalRule getIFCNAMERule() {
 		return tIFCNAME;
 	}
