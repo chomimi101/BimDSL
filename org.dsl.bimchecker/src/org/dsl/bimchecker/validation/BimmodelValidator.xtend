@@ -52,7 +52,7 @@ class BimmodelValidator extends AbstractBimmodelValidator {
 			}
 			
 			var tmpSet = newHashSet();
-			var aliasNames = rule.alialist;
+//			var aliasNames = rule.alialist;
 			for(alia : rule.alialist.aliass){
 				if(!tmpSet.contains(alia)){
 					tmpSet.add(alia);

@@ -52,7 +52,6 @@ public class BimmodelValidator extends AbstractBimmodelValidator {
           }
         }
         HashSet<String> tmpSet = CollectionLiterals.<String>newHashSet();
-        Aliass aliasNames = rule.getAlialist();
         Aliass _alialist = rule.getAlialist();
         EList<String> _aliass_1 = _alialist.getAliass();
         for (final String alia : _aliass_1) {
