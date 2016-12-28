@@ -25,45 +25,63 @@ public class BimmodelValidator extends AbstractBimmodelValidator {
   public final static String DUBPLICATE_NAME = "duplicateName";
   
   @Check
-  public void checkRuleNameIsUnique(final Bimmodel m) {
-    final HashSet<String> ruleNames = CollectionLiterals.<String>newHashSet();
-    EList<Rule> _rules = m.getRules();
-    for (final Rule rule : _rules) {
-      {
-        String _name = rule.getName();
-        boolean _add = ruleNames.add(_name);
-        boolean _not = (!_add);
-        if (_not) {
-          this.error("Rule names must be unique.", rule, BimmodelPackage.Literals.RULE__NAME);
-        }
-        final Aliass tmp = rule.getAlialist();
-        EList<String> _aliass = tmp.getAliass();
-        boolean _contains = _aliass.contains("ifcspace");
-        if (_contains) {
-          Annotation _annoinfo = rule.getAnnoinfo();
-          String annoname = _annoinfo.getAnnotationName();
-          Annotation _annoinfo_1 = rule.getAnnoinfo();
-          AnnotationDetail annovalue = _annoinfo_1.getAnnodetail();
-          int _compareTo = annoname.compareTo("Longname");
-          boolean _equals = (_compareTo == 0);
-          boolean _not_1 = (!_equals);
-          if (_not_1) {
-            this.error("Rule with alia ifcspace can only have annotation \'LongName\'", rule, BimmodelPackage.Literals.RULE__NAME);
+  public int checkRuleNameIsUnique(final Bimmodel m) {
+    int _xblockexpression = (int) 0;
+    {
+      final HashSet<String> ruleNames = CollectionLiterals.<String>newHashSet();
+      EList<Rule> _rules = m.getRules();
+      for (final Rule rule : _rules) {
+        {
+          String _name = rule.getName();
+          boolean _add = ruleNames.add(_name);
+          boolean _not = (!_add);
+          if (_not) {
+            this.error("Rule names must be unique.", rule, BimmodelPackage.Literals.RULE__NAME);
           }
-        }
-        HashSet<String> tmpSet = CollectionLiterals.<String>newHashSet();
-        Aliass _alialist = rule.getAlialist();
-        EList<String> _aliass_1 = _alialist.getAliass();
-        for (final String alia : _aliass_1) {
-          boolean _contains_1 = tmpSet.contains(alia);
-          boolean _not_2 = (!_contains_1);
-          if (_not_2) {
-            tmpSet.add(alia);
-          } else {
-            this.error(("replicate class(alias) names:" + alia), rule, BimmodelPackage.Literals.RULE__NAME);
+          final Aliass tmp = rule.getAlialist();
+          EList<String> _aliass = tmp.getAliass();
+          boolean _contains = _aliass.contains("ifcspace");
+          if (_contains) {
+            Annotation _annoinfo = rule.getAnnoinfo();
+            String annoname = _annoinfo.getAnnotationName();
+            Annotation _annoinfo_1 = rule.getAnnoinfo();
+            AnnotationDetail annovalue = _annoinfo_1.getAnnodetail();
+            int _compareTo = annoname.compareTo("Longname");
+            boolean _equals = (_compareTo == 0);
+            boolean _not_1 = (!_equals);
+            if (_not_1) {
+              this.error("Rule with alia ifcspace can only have annotation \'LongName\'", rule, BimmodelPackage.Literals.RULE__NAME);
+            }
+          }
+          HashSet<String> tmpSet = CollectionLiterals.<String>newHashSet();
+          Aliass _alialist = rule.getAlialist();
+          EList<String> _aliass_1 = _alialist.getAliass();
+          for (final String alia : _aliass_1) {
+            boolean _contains_1 = tmpSet.contains(alia);
+            boolean _not_2 = (!_contains_1);
+            if (_not_2) {
+              tmpSet.add(alia);
+            } else {
+              this.error(("replicate class(alias) names:" + alia), rule, BimmodelPackage.Literals.RULE__NAME);
+            }
+          }
+          HashSet<String> annovalue_1 = CollectionLiterals.<String>newHashSet();
+          Annotation _annoinfo_2 = rule.getAnnoinfo();
+          AnnotationDetail _annodetail = _annoinfo_2.getAnnodetail();
+          EList<String> _annos = _annodetail.getAnnos();
+          for (final String anno : _annos) {
+            boolean _contains_2 = annovalue_1.contains(anno);
+            boolean _not_3 = (!_contains_2);
+            if (_not_3) {
+              annovalue_1.add(anno);
+            } else {
+              this.error(("replicate annotation value : " + anno), rule, BimmodelPackage.Literals.RULE__NAME);
+            }
           }
         }
       }
+      _xblockexpression = 2;
     }
+    return _xblockexpression;
   }
 }

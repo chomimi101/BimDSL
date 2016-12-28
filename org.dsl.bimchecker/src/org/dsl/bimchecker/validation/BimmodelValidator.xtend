@@ -60,7 +60,17 @@ class BimmodelValidator extends AbstractBimmodelValidator {
 					error("replicate class(alias) names:"+alia,rule,RULE__NAME);
 				}
 			}
-		}
+			
+			var annovalue = newHashSet();
+//			var aliasNames = rule.alialist;
+			for(anno : rule.annoinfo.annodetail.annos){
+				if(!annovalue.contains(anno)){
+					annovalue.add(anno);
+				} else {
+					error("replicate annotation value : "+anno,rule,RULE__NAME);
+				}
+			}
+		}2
 	}
 	
 }

@@ -19,13 +19,13 @@ Rule:
 //别名由至少一个ifc专属名词(IFCNAME)组成
 //aliass对应于Aliass类的属性成员
 Aliass:
-	'alias' '=' aliass+=IFCNAME ('or' aliass+=IFCNAME)*
+	'alias' 'is' aliass+=IFCNAME ('or' aliass+=IFCNAME)*
 ;
 
 //标注由标识符(ID)以及至多一个标注参数列表(AnnotationDetail)组成
 //annotationName,annodetail对应于Annotation类的属性成员
 Annotation:
-	'annotation' ':' annotationName=ID (annodetail=AnnotationDetail)? 
+	'annotation' 'is' annotationName=ID (annodetail=AnnotationDetail)? 
 ;
 
 //标注参数列表由一个或多个的字符串组成，后期还是封装成类似于ObjectName的规则进行限制
